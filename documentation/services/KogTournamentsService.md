@@ -24,7 +24,7 @@ List tournaments for the King of Glory videogame
 | range    | [RangeOverKogShortTournaments](../models/RangeOverKogShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverKogShortTournaments](../models/SearchOverKogShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetKogTournamentsPage](../models/GetKogTournamentsPage.md)                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -162,7 +162,7 @@ List past King of Glory tournaments
 | range    | [RangeOverKogShortTournaments](../models/RangeOverKogShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverKogShortTournaments](../models/SearchOverKogShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetKogTournamentsPastPage](../models/GetKogTournamentsPastPage.md)         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -300,7 +300,7 @@ List running King of Glory tournaments
 | range    | [RangeOverKogShortTournaments](../models/RangeOverKogShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverKogShortTournaments](../models/SearchOverKogShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetKogTournamentsRunningPage](../models/GetKogTournamentsRunningPage.md)   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -438,7 +438,7 @@ List upcoming King of Glory tournaments
 | range    | [RangeOverKogShortTournaments](../models/RangeOverKogShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverKogShortTournaments](../models/SearchOverKogShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetKogTournamentsUpcomingPage](../models/GetKogTournamentsUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -560,5 +560,3 @@ result = sdk.kog_tournaments.get_kog_tournaments_upcoming(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -24,7 +24,7 @@ List matches for the LoL Wild Rift videogame
 | range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolWildRiftMatchesPage](../models/GetLolWildRiftMatchesPage.md)       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -193,14 +193,14 @@ List past LoL Wild Rift matches
 
 **Parameters**
 
-| Name     | Type                                                                        | Required | Description                                                                                                                                         |
-| :------- | :-------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | [FilterOverLolWildRiftMatches](../models/FilterOverLolWildRiftMatches.md)   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort     | List[any]                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md)   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolWildRiftMatchesPastPage](../models/GetLolWildRiftMatchesPastPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page | int                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name     | Type                                                                      | Required | Description                                                                                                                                         |
+| :------- | :------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filter   | [FilterOverLolWildRiftMatches](../models/FilterOverLolWildRiftMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort     | List[any]                                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page     | [Page](../models/Page.md)                                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page | int                                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -368,14 +368,14 @@ List running LoL Wild Rift matches
 
 **Parameters**
 
-| Name     | Type                                                                              | Required | Description                                                                                                                                         |
-| :------- | :-------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | [FilterOverLolWildRiftMatches](../models/FilterOverLolWildRiftMatches.md)         | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)           | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort     | List[any]                                                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md)         | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolWildRiftMatchesRunningPage](../models/GetLolWildRiftMatchesRunningPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page | int                                                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name     | Type                                                                      | Required | Description                                                                                                                                         |
+| :------- | :------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filter   | [FilterOverLolWildRiftMatches](../models/FilterOverLolWildRiftMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort     | List[any]                                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page     | [Page](../models/Page.md)                                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page | int                                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -543,14 +543,14 @@ List upcoming LoL Wild Rift matches
 
 **Parameters**
 
-| Name     | Type                                                                                | Required | Description                                                                                                                                         |
-| :------- | :---------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | [FilterOverLolWildRiftMatches](../models/FilterOverLolWildRiftMatches.md)           | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)             | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort     | List[any]                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md)           | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolWildRiftMatchesUpcomingPage](../models/GetLolWildRiftMatchesUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page | int                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name     | Type                                                                      | Required | Description                                                                                                                                         |
+| :------- | :------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filter   | [FilterOverLolWildRiftMatches](../models/FilterOverLolWildRiftMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range    | [RangeOverLolWildRiftMatches](../models/RangeOverLolWildRiftMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort     | List[any]                                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search   | [SearchOverLolWildRiftMatches](../models/SearchOverLolWildRiftMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page     | [Page](../models/Page.md)                                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page | int                                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -708,5 +708,3 @@ result = sdk.lo_l_wild_rift_matches.get_lol_wild_rift_matches_upcoming(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

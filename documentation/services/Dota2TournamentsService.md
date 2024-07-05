@@ -24,7 +24,7 @@ List tournaments for the Dota 2 videogame
 | range    | [RangeOverDota2ShortTournaments](../models/RangeOverDota2ShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverDota2ShortTournaments](../models/SearchOverDota2ShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetDota2TournamentsPage](../models/GetDota2TournamentsPage.md)                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -162,7 +162,7 @@ List past Dota 2 tournaments
 | range    | [RangeOverDota2ShortTournaments](../models/RangeOverDota2ShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverDota2ShortTournaments](../models/SearchOverDota2ShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetDota2TournamentsPastPage](../models/GetDota2TournamentsPastPage.md)         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -300,7 +300,7 @@ List running Dota 2 tournaments
 | range    | [RangeOverDota2ShortTournaments](../models/RangeOverDota2ShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverDota2ShortTournaments](../models/SearchOverDota2ShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetDota2TournamentsRunningPage](../models/GetDota2TournamentsRunningPage.md)   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -438,7 +438,7 @@ List upcoming Dota 2 tournaments
 | range    | [RangeOverDota2ShortTournaments](../models/RangeOverDota2ShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverDota2ShortTournaments](../models/SearchOverDota2ShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetDota2TournamentsUpcomingPage](../models/GetDota2TournamentsUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -560,5 +560,3 @@ result = sdk.dota2_tournaments.get_dota2_tournaments_upcoming(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

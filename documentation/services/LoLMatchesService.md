@@ -25,7 +25,7 @@ List matches for the League of Legends videogame
 | range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolMatchesPage](../models/GetLolMatchesPage.md)       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -194,14 +194,14 @@ List past League of Legends matches
 
 **Parameters**
 
-| Name     | Type                                                        | Required | Description                                                                                                                                         |
-| :------- | :---------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | [FilterOverLoLMatches](../models/FilterOverLoLMatches.md)   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort     | List[any]                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md)   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolMatchesPastPage](../models/GetLolMatchesPastPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page | int                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name     | Type                                                      | Required | Description                                                                                                                                         |
+| :------- | :-------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filter   | [FilterOverLoLMatches](../models/FilterOverLoLMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort     | List[any]                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page     | [Page](../models/Page.md)                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page | int                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -369,14 +369,14 @@ List running League of Legends matches
 
 **Parameters**
 
-| Name     | Type                                                              | Required | Description                                                                                                                                         |
-| :------- | :---------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | [FilterOverLoLMatches](../models/FilterOverLoLMatches.md)         | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)           | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort     | List[any]                                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md)         | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolMatchesRunningPage](../models/GetLolMatchesRunningPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page | int                                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name     | Type                                                      | Required | Description                                                                                                                                         |
+| :------- | :-------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filter   | [FilterOverLoLMatches](../models/FilterOverLoLMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort     | List[any]                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page     | [Page](../models/Page.md)                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page | int                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -544,14 +544,14 @@ List upcoming League of Legends matches
 
 **Parameters**
 
-| Name     | Type                                                                | Required | Description                                                                                                                                         |
-| :------- | :------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | [FilterOverLoLMatches](../models/FilterOverLoLMatches.md)           | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)             | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort     | List[any]                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md)           | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLolMatchesUpcomingPage](../models/GetLolMatchesUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page | int                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name     | Type                                                      | Required | Description                                                                                                                                         |
+| :------- | :-------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filter   | [FilterOverLoLMatches](../models/FilterOverLoLMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range    | [RangeOverLoLMatches](../models/RangeOverLoLMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort     | List[any]                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search   | [SearchOverLoLMatches](../models/SearchOverLoLMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page     | [Page](../models/Page.md)                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page | int                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -742,5 +742,3 @@ result = sdk.lo_l_matches.get_lol_matches_match_id_or_slug(match_id_or_slug=matc
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

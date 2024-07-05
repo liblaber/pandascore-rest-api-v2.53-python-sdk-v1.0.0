@@ -24,7 +24,7 @@ List tournaments for the Rainbow Six Siege videogame
 | range    | [RangeOverR6SiegeShortTournaments](../models/RangeOverR6SiegeShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverR6SiegeShortTournaments](../models/SearchOverR6SiegeShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetR6siegeTournamentsPage](../models/GetR6siegeTournamentsPage.md)                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -162,7 +162,7 @@ List past Rainbow Six Siege tournaments
 | range    | [RangeOverR6SiegeShortTournaments](../models/RangeOverR6SiegeShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverR6SiegeShortTournaments](../models/SearchOverR6SiegeShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetR6siegeTournamentsPastPage](../models/GetR6siegeTournamentsPastPage.md)         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -300,7 +300,7 @@ List running Rainbow Six Siege tournaments
 | range    | [RangeOverR6SiegeShortTournaments](../models/RangeOverR6SiegeShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverR6SiegeShortTournaments](../models/SearchOverR6SiegeShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetR6siegeTournamentsRunningPage](../models/GetR6siegeTournamentsRunningPage.md)   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -438,7 +438,7 @@ List upcoming Rainbow Six Siege tournaments
 | range    | [RangeOverR6SiegeShortTournaments](../models/RangeOverR6SiegeShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverR6SiegeShortTournaments](../models/SearchOverR6SiegeShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetR6siegeTournamentsUpcomingPage](../models/GetR6siegeTournamentsUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -560,5 +560,3 @@ result = sdk.r6_siege_tournaments.get_r6siege_tournaments_upcoming(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

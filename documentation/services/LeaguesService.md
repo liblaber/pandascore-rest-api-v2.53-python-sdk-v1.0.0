@@ -28,7 +28,7 @@ List leagues
 | range    | [RangeOverLeagues](../models/RangeOverLeagues.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverLeagues](../models/SearchOverLeagues.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetLeaguesPage](../models/GetLeaguesPage.md)       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -143,15 +143,15 @@ List matches of the given league
 
 **Parameters**
 
-| Name              | Type                                                                                    | Required | Description                                                                                                                                         |
-| :---------------- | :-------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                                           | ✅       | A league ID or slug                                                                                                                                 |
-| filter            | [FilterOverMatches](../models/FilterOverMatches.md)                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverMatches](../models/RangeOverMatches.md)                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverMatches](../models/SearchOverMatches.md)                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetLeaguesLeagueIdOrSlugMatchesPage](../models/GetLeaguesLeagueIdOrSlugMatchesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)       | ✅       | A league ID or slug                                                                                                                                 |
+| filter            | [FilterOverMatches](../models/FilterOverMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverMatches](../models/RangeOverMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverMatches](../models/SearchOverMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -321,15 +321,15 @@ List past matches for the given league
 
 **Parameters**
 
-| Name              | Type                                                                                            | Required | Description                                                                                                                                         |
-| :---------------- | :---------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                                                   | ✅       | A league ID or slug                                                                                                                                 |
-| filter            | [FilterOverMatches](../models/FilterOverMatches.md)                                             | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverMatches](../models/RangeOverMatches.md)                                               | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverMatches](../models/SearchOverMatches.md)                                             | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetLeaguesLeagueIdOrSlugMatchesPastPage](../models/GetLeaguesLeagueIdOrSlugMatchesPastPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)       | ✅       | A league ID or slug                                                                                                                                 |
+| filter            | [FilterOverMatches](../models/FilterOverMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverMatches](../models/RangeOverMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverMatches](../models/SearchOverMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -499,15 +499,15 @@ List currently running matches for the given league
 
 **Parameters**
 
-| Name              | Type                                                                                                  | Required | Description                                                                                                                                         |
-| :---------------- | :---------------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                                                         | ✅       | A league ID or slug                                                                                                                                 |
-| filter            | [FilterOverMatches](../models/FilterOverMatches.md)                                                   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverMatches](../models/RangeOverMatches.md)                                                     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverMatches](../models/SearchOverMatches.md)                                                   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetLeaguesLeagueIdOrSlugMatchesRunningPage](../models/GetLeaguesLeagueIdOrSlugMatchesRunningPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)       | ✅       | A league ID or slug                                                                                                                                 |
+| filter            | [FilterOverMatches](../models/FilterOverMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverMatches](../models/RangeOverMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverMatches](../models/SearchOverMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -677,15 +677,15 @@ List upcoming matches for the given league
 
 **Parameters**
 
-| Name              | Type                                                                                                    | Required | Description                                                                                                                                         |
-| :---------------- | :------------------------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                                                           | ✅       | A league ID or slug                                                                                                                                 |
-| filter            | [FilterOverMatches](../models/FilterOverMatches.md)                                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverMatches](../models/RangeOverMatches.md)                                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverMatches](../models/SearchOverMatches.md)                                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetLeaguesLeagueIdOrSlugMatchesUpcomingPage](../models/GetLeaguesLeagueIdOrSlugMatchesUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)       | ✅       | A league ID or slug                                                                                                                                 |
+| filter            | [FilterOverMatches](../models/FilterOverMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverMatches](../models/RangeOverMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverMatches](../models/SearchOverMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -855,15 +855,15 @@ List series for the given league
 
 **Parameters**
 
-| Name              | Type                                                                                  | Required | Description                                                                                                                                         |
-| :---------------- | :------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                                         | ✅       | A league ID or slug                                                                                                                                 |
-| filter            | [FilterOverSeries](../models/FilterOverSeries.md)                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverSeries](../models/RangeOverSeries.md)                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverSeries](../models/SearchOverSeries.md)                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetLeaguesLeagueIdOrSlugSeriesPage](../models/GetLeaguesLeagueIdOrSlugSeriesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                              | Required | Description                                                                                                                                         |
+| :---------------- | :------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)     | ✅       | A league ID or slug                                                                                                                                 |
+| filter            | [FilterOverSeries](../models/FilterOverSeries.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverSeries](../models/RangeOverSeries.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverSeries](../models/SearchOverSeries.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -986,15 +986,15 @@ List tournaments of the given league
 
 **Parameters**
 
-| Name              | Type                                                                                            | Required | Description                                                                                                                                         |
-| :---------------- | :---------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                                                   | ✅       | A league ID or slug                                                                                                                                 |
-| filter            | [FilterOverShortTournaments](../models/FilterOverShortTournaments.md)                           | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)                             | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md)                           | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetLeaguesLeagueIdOrSlugTournamentsPage](../models/GetLeaguesLeagueIdOrSlugTournamentsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                                  | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| league_id_or_slug | [LeagueIdOrSlug](../models/LeagueIdOrSlug.md)                         | ✅       | A league ID or slug                                                                                                                                 |
+| filter            | [FilterOverShortTournaments](../models/FilterOverShortTournaments.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -1117,5 +1117,3 @@ result = sdk.leagues.get_leagues_league_id_or_slug_tournaments(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

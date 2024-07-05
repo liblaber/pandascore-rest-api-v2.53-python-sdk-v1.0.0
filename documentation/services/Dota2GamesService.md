@@ -50,11 +50,11 @@ List frames for a given Dota 2 game
 
 **Parameters**
 
-| Name          | Type                                                                                  | Required | Description                                                          |
-| :------------ | :------------------------------------------------------------------------------------ | :------- | :------------------------------------------------------------------- |
-| dota2_game_id | int                                                                                   | ✅       | A game ID                                                            |
-| page          | [GetDota2GamesDota2GameIdFramesPage](../models/GetDota2GamesDota2GameIdFramesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page      | int                                                                                   | ❌       | Equivalent to `page[size]`                                           |
+| Name          | Type                      | Required | Description                                                          |
+| :------------ | :------------------------ | :------- | :------------------------------------------------------------------- |
+| dota2_game_id | int                       | ✅       | A game ID                                                            |
+| page          | [Page](../models/Page.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page      | int                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -89,15 +89,15 @@ List games for a given Dota 2 match
 
 **Parameters**
 
-| Name             | Type                                                                                        | Required | Description                                                                                                                                         |
-| :--------------- | :------------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| match_id_or_slug | [MatchIdOrSlug](../models/MatchIdOrSlug.md)                                                 | ✅       | A match ID or slug                                                                                                                                  |
-| filter           | [FilterOverDota2Games](../models/FilterOverDota2Games.md)                                   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range            | [RangeOverDota2Games](../models/RangeOverDota2Games.md)                                     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort             | List[any]                                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search           | [SearchOverDota2Games](../models/SearchOverDota2Games.md)                                   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page             | [GetDota2MatchesMatchIdOrSlugGamesPage](../models/GetDota2MatchesMatchIdOrSlugGamesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page         | int                                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name             | Type                                                      | Required | Description                                                                                                                                         |
+| :--------------- | :-------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| match_id_or_slug | [MatchIdOrSlug](../models/MatchIdOrSlug.md)               | ✅       | A match ID or slug                                                                                                                                  |
+| filter           | [FilterOverDota2Games](../models/FilterOverDota2Games.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range            | [RangeOverDota2Games](../models/RangeOverDota2Games.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort             | List[any]                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search           | [SearchOverDota2Games](../models/SearchOverDota2Games.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page             | [Page](../models/Page.md)                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page         | int                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -219,11 +219,11 @@ List finished games for a given Dota 2 team
 
 **Parameters**
 
-| Name            | Type                                                                                  | Required | Description                                                          |
-| :-------------- | :------------------------------------------------------------------------------------ | :------- | :------------------------------------------------------------------- |
-| team_id_or_slug | [TeamIdOrSlug](../models/TeamIdOrSlug.md)                                             | ✅       | A team ID or slug                                                    |
-| page            | [GetDota2TeamsTeamIdOrSlugGamesPage](../models/GetDota2TeamsTeamIdOrSlugGamesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page        | int                                                                                   | ❌       | Equivalent to `page[size]`                                           |
+| Name            | Type                                      | Required | Description                                                          |
+| :-------------- | :---------------------------------------- | :------- | :------------------------------------------------------------------- |
+| team_id_or_slug | [TeamIdOrSlug](../models/TeamIdOrSlug.md) | ✅       | A team ID or slug                                                    |
+| page            | [Page](../models/Page.md)                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page        | int                                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -249,5 +249,3 @@ result = sdk.dota2_games.get_dota2_teams_team_id_or_slug_games(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -26,7 +26,7 @@ List players
 | range    | [RangeOverPlayers](../models/RangeOverPlayers.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverPlayers](../models/SearchOverPlayers.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetPlayersPage](../models/GetPlayersPage.md)       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -176,15 +176,15 @@ List leagues for the given player. Only leagues from the player's current videog
 
 **Parameters**
 
-| Name              | Type                                                                                    | Required | Description                                                                                                                                         |
-| :---------------- | :-------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)                                           | ✅       | A player ID or slug                                                                                                                                 |
-| filter            | [FilterOverLeagues](../models/FilterOverLeagues.md)                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverLeagues](../models/RangeOverLeagues.md)                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverLeagues](../models/SearchOverLeagues.md)                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetPlayersPlayerIdOrSlugLeaguesPage](../models/GetPlayersPlayerIdOrSlugLeaguesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)       | ✅       | A player ID or slug                                                                                                                                 |
+| filter            | [FilterOverLeagues](../models/FilterOverLeagues.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverLeagues](../models/RangeOverLeagues.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverLeagues](../models/SearchOverLeagues.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -267,15 +267,15 @@ List matches for the given player. Only matches from the player's current videog
 
 **Parameters**
 
-| Name              | Type                                                                                    | Required | Description                                                                                                                                         |
-| :---------------- | :-------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)                                           | ✅       | A player ID or slug                                                                                                                                 |
-| filter            | [FilterOverMatches](../models/FilterOverMatches.md)                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverMatches](../models/RangeOverMatches.md)                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverMatches](../models/SearchOverMatches.md)                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetPlayersPlayerIdOrSlugMatchesPage](../models/GetPlayersPlayerIdOrSlugMatchesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)       | ✅       | A player ID or slug                                                                                                                                 |
+| filter            | [FilterOverMatches](../models/FilterOverMatches.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverMatches](../models/RangeOverMatches.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverMatches](../models/SearchOverMatches.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -445,15 +445,15 @@ List series for the given player. Only series from the player's current videogam
 
 **Parameters**
 
-| Name              | Type                                                                                  | Required | Description                                                                                                                                         |
-| :---------------- | :------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)                                         | ✅       | A player ID or slug                                                                                                                                 |
-| filter            | [FilterOverSeries](../models/FilterOverSeries.md)                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverSeries](../models/RangeOverSeries.md)                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverSeries](../models/SearchOverSeries.md)                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetPlayersPlayerIdOrSlugSeriesPage](../models/GetPlayersPlayerIdOrSlugSeriesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                              | Required | Description                                                                                                                                         |
+| :---------------- | :------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)     | ✅       | A player ID or slug                                                                                                                                 |
+| filter            | [FilterOverSeries](../models/FilterOverSeries.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverSeries](../models/RangeOverSeries.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverSeries](../models/SearchOverSeries.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -576,15 +576,15 @@ List tournaments for the given player. Only tournaments from the player's curren
 
 **Parameters**
 
-| Name              | Type                                                                                            | Required | Description                                                                                                                                         |
-| :---------------- | :---------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)                                                   | ✅       | A player ID or slug                                                                                                                                 |
-| filter            | [FilterOverShortTournaments](../models/FilterOverShortTournaments.md)                           | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range             | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)                             | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort              | List[any]                                                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search            | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md)                           | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page              | [GetPlayersPlayerIdOrSlugTournamentsPage](../models/GetPlayersPlayerIdOrSlugTournamentsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page          | int                                                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name              | Type                                                                  | Required | Description                                                                                                                                         |
+| :---------------- | :-------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| player_id_or_slug | [PlayerIdOrSlug](../models/PlayerIdOrSlug.md)                         | ✅       | A player ID or slug                                                                                                                                 |
+| filter            | [FilterOverShortTournaments](../models/FilterOverShortTournaments.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range             | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort              | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search            | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page              | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page          | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -707,5 +707,3 @@ result = sdk.players.get_players_player_id_or_slug_tournaments(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

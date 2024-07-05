@@ -21,10 +21,10 @@ List videogames
 
 **Parameters**
 
-| Name     | Type                                                | Required | Description                                                          |
-| :------- | :-------------------------------------------------- | :------- | :------------------------------------------------------------------- |
-| page     | [GetVideogamesPage](../models/GetVideogamesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page | int                                                 | ❌       | Equivalent to `page[size]`                                           |
+| Name     | Type                      | Required | Description                                                          |
+| :------- | :------------------------ | :------- | :------------------------------------------------------------------- |
+| page     | [Page](../models/Page.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page | int                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -92,15 +92,15 @@ List leagues for a given videogame
 
 **Parameters**
 
-| Name                 | Type                                                                                                | Required | Description                                                                                                                                         |
-| :------------------- | :-------------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md)                                                 | ✅       | A videogame ID or slug                                                                                                                              |
-| filter               | [FilterOverLeagues](../models/FilterOverLeagues.md)                                                 | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range                | [RangeOverLeagues](../models/RangeOverLeagues.md)                                                   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort                 | List[any]                                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search               | [SearchOverLeagues](../models/SearchOverLeagues.md)                                                 | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page                 | [GetVideogamesVideogameIdOrSlugLeaguesPage](../models/GetVideogamesVideogameIdOrSlugLeaguesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page             | int                                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name                 | Type                                                | Required | Description                                                                                                                                         |
+| :------------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md) | ✅       | A videogame ID or slug                                                                                                                              |
+| filter               | [FilterOverLeagues](../models/FilterOverLeagues.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range                | [RangeOverLeagues](../models/RangeOverLeagues.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort                 | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search               | [SearchOverLeagues](../models/SearchOverLeagues.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page                 | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page             | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -184,15 +184,15 @@ List series for the given videogame
 
 **Parameters**
 
-| Name                 | Type                                                                                              | Required | Description                                                                                                                                         |
-| :------------------- | :------------------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md)                                               | ✅       | A videogame ID or slug                                                                                                                              |
-| filter               | [FilterOverSeries](../models/FilterOverSeries.md)                                                 | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range                | [RangeOverSeries](../models/RangeOverSeries.md)                                                   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort                 | List[any]                                                                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search               | [SearchOverSeries](../models/SearchOverSeries.md)                                                 | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page                 | [GetVideogamesVideogameIdOrSlugSeriesPage](../models/GetVideogamesVideogameIdOrSlugSeriesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page             | int                                                                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name                 | Type                                                | Required | Description                                                                                                                                         |
+| :------------------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md) | ✅       | A videogame ID or slug                                                                                                                              |
+| filter               | [FilterOverSeries](../models/FilterOverSeries.md)   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range                | [RangeOverSeries](../models/RangeOverSeries.md)     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort                 | List[any]                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search               | [SearchOverSeries](../models/SearchOverSeries.md)   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page                 | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page             | int                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -316,11 +316,11 @@ List available titles for a given videogame
 
 **Parameters**
 
-| Name                 | Type                                                                                              | Required | Description                                                          |
-| :------------------- | :------------------------------------------------------------------------------------------------ | :------- | :------------------------------------------------------------------- |
-| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md)                                               | ✅       | A videogame ID or slug                                               |
-| page                 | [GetVideogamesVideogameIdOrSlugTitlesPage](../models/GetVideogamesVideogameIdOrSlugTitlesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page             | int                                                                                               | ❌       | Equivalent to `page[size]`                                           |
+| Name                 | Type                                                | Required | Description                                                          |
+| :------------------- | :-------------------------------------------------- | :------- | :------------------------------------------------------------------- |
+| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md) | ✅       | A videogame ID or slug                                               |
+| page                 | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page             | int                                                 | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -357,15 +357,15 @@ List tournaments of the given videogame
 
 **Parameters**
 
-| Name                 | Type                                                                                                        | Required | Description                                                                                                                                         |
-| :------------------- | :---------------------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md)                                                         | ✅       | A videogame ID or slug                                                                                                                              |
-| filter               | [FilterOverShortTournaments](../models/FilterOverShortTournaments.md)                                       | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range                | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)                                         | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort                 | List[any]                                                                                                   | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search               | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md)                                       | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page                 | [GetVideogamesVideogameIdOrSlugTournamentsPage](../models/GetVideogamesVideogameIdOrSlugTournamentsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page             | int                                                                                                         | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name                 | Type                                                                  | Required | Description                                                                                                                                         |
+| :------------------- | :-------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md)                   | ✅       | A videogame ID or slug                                                                                                                              |
+| filter               | [FilterOverShortTournaments](../models/FilterOverShortTournaments.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range                | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort                 | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search               | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page                 | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page             | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -499,11 +499,11 @@ List available versions for a given videogame
 
 **Parameters**
 
-| Name                 | Type                                                                                                  | Required | Description                                                          |
-| :------------------- | :---------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------- |
-| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md)                                                   | ✅       | A videogame ID or slug                                               |
-| page                 | [GetVideogamesVideogameIdOrSlugVersionsPage](../models/GetVideogamesVideogameIdOrSlugVersionsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page             | int                                                                                                   | ❌       | Equivalent to `page[size]`                                           |
+| Name                 | Type                                                | Required | Description                                                          |
+| :------------------- | :-------------------------------------------------- | :------- | :------------------------------------------------------------------- |
+| videogame_id_or_slug | [VideogameIdOrSlug](../models/VideogameIdOrSlug.md) | ✅       | A videogame ID or slug                                               |
+| page                 | [Page](../models/Page.md)                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page             | int                                                 | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -530,5 +530,3 @@ result = sdk.videogames.get_videogames_videogame_id_or_slug_versions(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

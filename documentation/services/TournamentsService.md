@@ -30,7 +30,7 @@ List tournaments
 | range    | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetTournamentsPage](../models/GetTournamentsPage.md)                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -168,7 +168,7 @@ List past tournaments
 | range    | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetTournamentsPastPage](../models/GetTournamentsPastPage.md)         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -306,7 +306,7 @@ List currently running tournaments
 | range    | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetTournamentsRunningPage](../models/GetTournamentsRunningPage.md)   | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -444,7 +444,7 @@ List upcoming tournaments
 | range    | [RangeOverShortTournaments](../models/RangeOverShortTournaments.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort     | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
 | search   | [SearchOverShortTournaments](../models/SearchOverShortTournaments.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page     | [GetTournamentsUpcomingPage](../models/GetTournamentsUpcomingPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page     | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
@@ -609,15 +609,15 @@ Get the brackets of the given tournament
 
 **Parameters**
 
-| Name                  | Type                                                                                                      | Required | Description                                                                                                                                         |
-| :-------------------- | :-------------------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md)                                                     | ✅       | A tournament ID or slug                                                                                                                             |
-| filter                | [FilterOverBrackets](../models/FilterOverBrackets.md)                                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range                 | [RangeOverBrackets](../models/RangeOverBrackets.md)                                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort                  | List[any]                                                                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search                | [SearchOverBrackets](../models/SearchOverBrackets.md)                                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page                  | [GetTournamentsTournamentIdOrSlugBracketsPage](../models/GetTournamentsTournamentIdOrSlugBracketsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page              | int                                                                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name                  | Type                                                  | Required | Description                                                                                                                                         |
+| :-------------------- | :---------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md) | ✅       | A tournament ID or slug                                                                                                                             |
+| filter                | [FilterOverBrackets](../models/FilterOverBrackets.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range                 | [RangeOverBrackets](../models/RangeOverBrackets.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort                  | List[any]                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search                | [SearchOverBrackets](../models/SearchOverBrackets.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page                  | [Page](../models/Page.md)                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page              | int                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -762,15 +762,15 @@ List matches for the given tournament
 
 **Parameters**
 
-| Name                  | Type                                                                                                    | Required | Description                                                                                                                                         |
-| :-------------------- | :------------------------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md)                                                   | ✅       | A tournament ID or slug                                                                                                                             |
-| filter                | [FilterOverMatches](../models/FilterOverMatches.md)                                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range                 | [RangeOverMatches](../models/RangeOverMatches.md)                                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort                  | List[any]                                                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search                | [SearchOverMatches](../models/SearchOverMatches.md)                                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page                  | [GetTournamentsTournamentIdOrSlugMatchesPage](../models/GetTournamentsTournamentIdOrSlugMatchesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page              | int                                                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name                  | Type                                                  | Required | Description                                                                                                                                         |
+| :-------------------- | :---------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md) | ✅       | A tournament ID or slug                                                                                                                             |
+| filter                | [FilterOverMatches](../models/FilterOverMatches.md)   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range                 | [RangeOverMatches](../models/RangeOverMatches.md)     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort                  | List[any]                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search                | [SearchOverMatches](../models/SearchOverMatches.md)   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page                  | [Page](../models/Page.md)                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page              | int                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -973,11 +973,11 @@ Get the current standings for a given tournament
 
 **Parameters**
 
-| Name                  | Type                                                                                                        | Required | Description                                                          |
-| :-------------------- | :---------------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------- |
-| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md)                                                       | ✅       | A tournament ID or slug                                              |
-| page                  | [GetTournamentsTournamentIdOrSlugStandingsPage](../models/GetTournamentsTournamentIdOrSlugStandingsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page              | int                                                                                                         | ❌       | Equivalent to `page[size]`                                           |
+| Name                  | Type                                                  | Required | Description                                                          |
+| :-------------------- | :---------------------------------------------------- | :------- | :------------------------------------------------------------------- |
+| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md) | ✅       | A tournament ID or slug                                              |
+| page                  | [Page](../models/Page.md)                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page              | int                                                   | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -1013,15 +1013,15 @@ List teams for the given tournament
 
 **Parameters**
 
-| Name                  | Type                                                                                                | Required | Description                                                                                                                                         |
-| :-------------------- | :-------------------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md)                                               | ✅       | A tournament ID or slug                                                                                                                             |
-| filter                | [FilterOverTeams](../models/FilterOverTeams.md)                                                     | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range                 | [RangeOverTeams](../models/RangeOverTeams.md)                                                       | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort                  | List[any]                                                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search                | [SearchOverTeams](../models/SearchOverTeams.md)                                                     | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page                  | [GetTournamentsTournamentIdOrSlugTeamsPage](../models/GetTournamentsTournamentIdOrSlugTeamsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page              | int                                                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name                  | Type                                                  | Required | Description                                                                                                                                         |
+| :-------------------- | :---------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tournament_id_or_slug | [TournamentIdOrSlug](../models/TournamentIdOrSlug.md) | ✅       | A tournament ID or slug                                                                                                                             |
+| filter                | [FilterOverTeams](../models/FilterOverTeams.md)       | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range                 | [RangeOverTeams](../models/RangeOverTeams.md)         | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort                  | List[any]                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search                | [SearchOverTeams](../models/SearchOverTeams.md)       | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page                  | [Page](../models/Page.md)                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page              | int                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -1104,5 +1104,3 @@ result = sdk.tournaments.get_tournaments_tournament_id_or_slug_teams(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

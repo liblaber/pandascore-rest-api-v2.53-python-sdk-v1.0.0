@@ -23,7 +23,7 @@ Get the latest additions. <br/> <br/>This endpoint only shows unchanged objects.
 | filter    | [FilterOverAdditionIncidents](../models/FilterOverAdditionIncidents.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
 | range     | [RangeOverAdditionIncidents](../models/RangeOverAdditionIncidents.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort      | List[any]                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| page      | [GetAdditionsPage](../models/GetAdditionsPage.md)                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page      | [Page](../models/Page.md)                                               | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page  | int                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
 | type\_    | List[any]                                                               | ❌       | Filter by result type(s)                                                                                                                            |
 | since     | str                                                                     | ❌       | Filter out older results                                                                                                                            |
@@ -99,7 +99,7 @@ Get the latest updates. <br/> <br/>This endpoint only provides the latest change
 | filter    | [FilterOverChangeIncidents](../models/FilterOverChangeIncidents.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
 | range     | [RangeOverChangeIncidents](../models/RangeOverChangeIncidents.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort      | List[any]                                                           | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| page      | [GetChangesPage](../models/GetChangesPage.md)                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page      | [Page](../models/Page.md)                                           | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page  | int                                                                 | ❌       | Equivalent to `page[size]`                                                                                                                          |
 | type\_    | List[any]                                                           | ❌       | Filter by result type(s)                                                                                                                            |
 | since     | str                                                                 | ❌       | Filter out older results                                                                                                                            |
@@ -175,7 +175,7 @@ Get the latest deleted documents
 | filter    | [FilterOverDeletionIncidents](../models/FilterOverDeletionIncidents.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
 | range     | [RangeOverDeletionIncidents](../models/RangeOverDeletionIncidents.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort      | List[any]                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| page      | [GetDeletionsPage](../models/GetDeletionsPage.md)                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page      | [Page](../models/Page.md)                                               | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page  | int                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
 | type\_    | List[any]                                                               | ❌       | Filter by result type(s)                                                                                                                            |
 | since     | str                                                                     | ❌       | Filter out older results                                                                                                                            |
@@ -250,7 +250,7 @@ Get the latest updates and additions. <br/> <br/>This endpoint only provides the
 | filter    | [FilterOverIncidents](../models/FilterOverIncidents.md)   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
 | range     | [RangeOverIncidents](../models/RangeOverIncidents.md)     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
 | sort      | List[any]                                                 | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| page      | [GetIncidentsPage](../models/GetIncidentsPage.md)         | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| page      | [Page](../models/Page.md)                                 | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
 | per_page  | int                                                       | ❌       | Equivalent to `page[size]`                                                                                                                          |
 | type\_    | List[any]                                                 | ❌       | Filter by result type(s)                                                                                                                            |
 | since     | str                                                       | ❌       | Filter out older results                                                                                                                            |
@@ -311,5 +311,3 @@ result = sdk.incidents.get_incidents(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

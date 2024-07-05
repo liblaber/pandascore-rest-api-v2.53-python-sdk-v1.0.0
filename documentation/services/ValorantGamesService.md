@@ -50,11 +50,11 @@ List events for a given Valorant game
 
 **Parameters**
 
-| Name             | Type                                                                                              | Required | Description                                                          |
-| :--------------- | :------------------------------------------------------------------------------------------------ | :------- | :------------------------------------------------------------------- |
-| valorant_game_id | int                                                                                               | ✅       | A Valorant game ID                                                   |
-| page             | [GetValorantGamesValorantGameIdEventsPage](../models/GetValorantGamesValorantGameIdEventsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page         | int                                                                                               | ❌       | Equivalent to `page[size]`                                           |
+| Name             | Type                      | Required | Description                                                          |
+| :--------------- | :------------------------ | :------- | :------------------------------------------------------------------- |
+| valorant_game_id | int                       | ✅       | A Valorant game ID                                                   |
+| page             | [Page](../models/Page.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page         | int                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -89,11 +89,11 @@ List rounds in a Valorant game
 
 **Parameters**
 
-| Name             | Type                                                                                              | Required | Description                                                          |
-| :--------------- | :------------------------------------------------------------------------------------------------ | :------- | :------------------------------------------------------------------- |
-| valorant_game_id | int                                                                                               | ✅       | A Valorant game ID                                                   |
-| page             | [GetValorantGamesValorantGameIdRoundsPage](../models/GetValorantGamesValorantGameIdRoundsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page         | int                                                                                               | ❌       | Equivalent to `page[size]`                                           |
+| Name             | Type                      | Required | Description                                                          |
+| :--------------- | :------------------------ | :------- | :------------------------------------------------------------------- |
+| valorant_game_id | int                       | ✅       | A Valorant game ID                                                   |
+| page             | [Page](../models/Page.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page         | int                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -128,15 +128,15 @@ List games for a given Valorant match
 
 **Parameters**
 
-| Name             | Type                                                                                              | Required | Description                                                                                                                                         |
-| :--------------- | :------------------------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| match_id_or_slug | [MatchIdOrSlug](../models/MatchIdOrSlug.md)                                                       | ✅       | A match ID or slug                                                                                                                                  |
-| filter           | [FilterOverValorantGames](../models/FilterOverValorantGames.md)                                   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range            | [RangeOverValorantGames](../models/RangeOverValorantGames.md)                                     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort             | List[any]                                                                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search           | [SearchOverValorantGames](../models/SearchOverValorantGames.md)                                   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page             | [GetValorantMatchesMatchIdOrSlugGamesPage](../models/GetValorantMatchesMatchIdOrSlugGamesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page         | int                                                                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name             | Type                                                            | Required | Description                                                                                                                                         |
+| :--------------- | :-------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| match_id_or_slug | [MatchIdOrSlug](../models/MatchIdOrSlug.md)                     | ✅       | A match ID or slug                                                                                                                                  |
+| filter           | [FilterOverValorantGames](../models/FilterOverValorantGames.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range            | [RangeOverValorantGames](../models/RangeOverValorantGames.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort             | List[any]                                                       | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search           | [SearchOverValorantGames](../models/SearchOverValorantGames.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page             | [Page](../models/Page.md)                                       | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page         | int                                                             | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -229,5 +229,3 @@ result = sdk.valorant_games.get_valorant_matches_match_id_or_slug_games(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->

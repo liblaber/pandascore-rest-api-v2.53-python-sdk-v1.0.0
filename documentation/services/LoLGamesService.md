@@ -51,11 +51,11 @@ List events for a given League of Legends game
 
 **Parameters**
 
-| Name        | Type                                                                          | Required | Description                                                          |
-| :---------- | :---------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------- |
-| lol_game_id | int                                                                           | ✅       | A LoL game ID                                                        |
-| page        | [GetLolGamesLolGameIdEventsPage](../models/GetLolGamesLolGameIdEventsPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page    | int                                                                           | ❌       | Equivalent to `page[size]`                                           |
+| Name        | Type                      | Required | Description                                                          |
+| :---------- | :------------------------ | :------- | :------------------------------------------------------------------- |
+| lol_game_id | int                       | ✅       | A LoL game ID                                                        |
+| page        | [Page](../models/Page.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page    | int                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -90,11 +90,11 @@ List frames for a given League of Legends game
 
 **Parameters**
 
-| Name        | Type                                                                          | Required | Description                                                          |
-| :---------- | :---------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------- |
-| lol_game_id | int                                                                           | ✅       | A LoL game ID                                                        |
-| page        | [GetLolGamesLolGameIdFramesPage](../models/GetLolGamesLolGameIdFramesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
-| per_page    | int                                                                           | ❌       | Equivalent to `page[size]`                                           |
+| Name        | Type                      | Required | Description                                                          |
+| :---------- | :------------------------ | :------- | :------------------------------------------------------------------- |
+| lol_game_id | int                       | ✅       | A LoL game ID                                                        |
+| page        | [Page](../models/Page.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2` |
+| per_page    | int                       | ❌       | Equivalent to `page[size]`                                           |
 
 **Return Type**
 
@@ -129,15 +129,15 @@ List games for a given League of Legends match
 
 **Parameters**
 
-| Name             | Type                                                                                    | Required | Description                                                                                                                                         |
-| :--------------- | :-------------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| match_id_or_slug | [MatchIdOrSlug](../models/MatchIdOrSlug.md)                                             | ✅       | A match ID or slug                                                                                                                                  |
-| filter           | [FilterOverLoLGames](../models/FilterOverLoLGames.md)                                   | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range            | [RangeOverLoLGames](../models/RangeOverLoLGames.md)                                     | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort             | List[any]                                                                               | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search           | [SearchOverLoLGames](../models/SearchOverLoLGames.md)                                   | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page             | [GetLolMatchesMatchIdOrSlugGamesPage](../models/GetLolMatchesMatchIdOrSlugGamesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page         | int                                                                                     | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name             | Type                                                  | Required | Description                                                                                                                                         |
+| :--------------- | :---------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| match_id_or_slug | [MatchIdOrSlug](../models/MatchIdOrSlug.md)           | ✅       | A match ID or slug                                                                                                                                  |
+| filter           | [FilterOverLoLGames](../models/FilterOverLoLGames.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range            | [RangeOverLoLGames](../models/RangeOverLoLGames.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort             | List[any]                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search           | [SearchOverLoLGames](../models/SearchOverLoLGames.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page             | [Page](../models/Page.md)                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page         | int                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -253,15 +253,15 @@ List finished games for a given League of Legends team
 
 **Parameters**
 
-| Name            | Type                                                                              | Required | Description                                                                                                                                         |
-| :-------------- | :-------------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| team_id_or_slug | [TeamIdOrSlug](../models/TeamIdOrSlug.md)                                         | ✅       | A team ID or slug                                                                                                                                   |
-| filter          | [FilterOverLoLTeamLastGames](../models/FilterOverLoLTeamLastGames.md)             | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
-| range           | [RangeOverLoLTeamLastGames](../models/RangeOverLoLTeamLastGames.md)               | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
-| sort            | List[any]                                                                         | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
-| search          | [SearchOverLoLTeamLastGames](../models/SearchOverLoLTeamLastGames.md)             | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
-| page            | [GetLolTeamsTeamIdOrSlugGamesPage](../models/GetLolTeamsTeamIdOrSlugGamesPage.md) | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
-| per_page        | int                                                                               | ❌       | Equivalent to `page[size]`                                                                                                                          |
+| Name            | Type                                                                  | Required | Description                                                                                                                                         |
+| :-------------- | :-------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| team_id_or_slug | [TeamIdOrSlug](../models/TeamIdOrSlug.md)                             | ✅       | A team ID or slug                                                                                                                                   |
+| filter          | [FilterOverLoLTeamLastGames](../models/FilterOverLoLTeamLastGames.md) | ❌       | Options to filter results. String fields are case sensitive <br/>For more information on filtering, see [docs](/docs/filtering-and-sorting#filter). |
+| range           | [RangeOverLoLTeamLastGames](../models/RangeOverLoLTeamLastGames.md)   | ❌       | Options to select results within ranges <br/>For more information on ranges, see [docs](/docs/filtering-and-sorting#range).                         |
+| sort            | List[any]                                                             | ❌       | Options to sort results <br/>For more information on sorting, see [docs](/docs/filtering-and-sorting#sort).                                         |
+| search          | [SearchOverLoLTeamLastGames](../models/SearchOverLoLTeamLastGames.md) | ❌       | Options to search results <br/>For more information on searching, see [docs](/docs/filtering-and-sorting#search).                                   |
+| page            | [Page](../models/Page.md)                                             | ❌       | Pagination in the form of `page=2` or `page[size]=30&page[number]=2`                                                                                |
+| per_page        | int                                                                   | ❌       | Equivalent to `page[size]`                                                                                                                          |
 
 **Return Type**
 
@@ -367,5 +367,3 @@ result = sdk.lo_l_games.get_lol_teams_team_id_or_slug_games(
 
 print(result)
 ```
-
-<!-- This file was generated by liblab | https://liblab.com/ -->
