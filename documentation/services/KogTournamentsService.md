@@ -34,49 +34,50 @@ List tournaments for the King of Glory videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogShortTournaments(
     begin_at=[
-        "aute dolor "
+        "voluptate i"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "dolor a"
+        "Lo"
     ],
     has_bracket=False,
     id_=[
-        5
+        8
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "eiusmod proide"
+        "adipisici"
     ],
     name=[
-        "aliquip aliqu"
+        "deserunt "
     ],
     prizepool=[
-        "pariatur"
+        "incidi"
     ],
     serie_id=[
-        2
+        8
     ],
     slug=[
-        "q"
+        "jb0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        10
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverKogShortTournaments(
 )
 range=RangeOverKogShortTournaments(
     begin_at=[
-        "ad veli"
+        "do des"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "oc"
-    ],
-    has_bracket=[
-        False
-    ],
-    id_=[
-        7
-    ],
-    modified_at=[
         "a"
     ],
+    has_bracket=[
+        True
+    ],
+    id_=[
+        3
+    ],
+    modified_at=[
+        "ut D"
+    ],
     name=[
-        "consequat L"
+        "et ea "
     ],
     prizepool=[
-        "nostrud no"
+        "ex et Lo"
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "x"
+        "hpq1rop"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverKogShortTournaments(
-    name="nulla minim ess",
-    prizepool="eiusmod ",
-    slug="j8k4da6o4",
+    name="amet ut ",
+    prizepool="laborum in v",
+    slug="csu",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past King of Glory tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogShortTournaments(
     begin_at=[
-        "aute dolor "
+        "voluptate i"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "dolor a"
+        "Lo"
     ],
     has_bracket=False,
     id_=[
-        5
+        8
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "eiusmod proide"
+        "adipisici"
     ],
     name=[
-        "aliquip aliqu"
+        "deserunt "
     ],
     prizepool=[
-        "pariatur"
+        "incidi"
     ],
     serie_id=[
-        2
+        8
     ],
     slug=[
-        "q"
+        "jb0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        10
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverKogShortTournaments(
 )
 range=RangeOverKogShortTournaments(
     begin_at=[
-        "ad veli"
+        "do des"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "oc"
-    ],
-    has_bracket=[
-        False
-    ],
-    id_=[
-        7
-    ],
-    modified_at=[
         "a"
     ],
+    has_bracket=[
+        True
+    ],
+    id_=[
+        3
+    ],
+    modified_at=[
+        "ut D"
+    ],
     name=[
-        "consequat L"
+        "et ea "
     ],
     prizepool=[
-        "nostrud no"
+        "ex et Lo"
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "x"
+        "hpq1rop"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverKogShortTournaments(
-    name="nulla minim ess",
-    prizepool="eiusmod ",
-    slug="j8k4da6o4",
+    name="amet ut ",
+    prizepool="laborum in v",
+    slug="csu",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running King of Glory tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogShortTournaments(
     begin_at=[
-        "aute dolor "
+        "voluptate i"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "dolor a"
+        "Lo"
     ],
     has_bracket=False,
     id_=[
-        5
+        8
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "eiusmod proide"
+        "adipisici"
     ],
     name=[
-        "aliquip aliqu"
+        "deserunt "
     ],
     prizepool=[
-        "pariatur"
+        "incidi"
     ],
     serie_id=[
-        2
+        8
     ],
     slug=[
-        "q"
+        "jb0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        10
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverKogShortTournaments(
 )
 range=RangeOverKogShortTournaments(
     begin_at=[
-        "ad veli"
+        "do des"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "oc"
-    ],
-    has_bracket=[
-        False
-    ],
-    id_=[
-        7
-    ],
-    modified_at=[
         "a"
     ],
+    has_bracket=[
+        True
+    ],
+    id_=[
+        3
+    ],
+    modified_at=[
+        "ut D"
+    ],
     name=[
-        "consequat L"
+        "et ea "
     ],
     prizepool=[
-        "nostrud no"
+        "ex et Lo"
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "x"
+        "hpq1rop"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverKogShortTournaments(
-    name="nulla minim ess",
-    prizepool="eiusmod ",
-    slug="j8k4da6o4",
+    name="amet ut ",
+    prizepool="laborum in v",
+    slug="csu",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming King of Glory tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogShortTournaments, RangeOverKogShortTournaments, SearchOverKogShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogShortTournaments(
     begin_at=[
-        "aute dolor "
+        "voluptate i"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "dolor a"
+        "Lo"
     ],
     has_bracket=False,
     id_=[
-        5
+        8
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "eiusmod proide"
+        "adipisici"
     ],
     name=[
-        "aliquip aliqu"
+        "deserunt "
     ],
     prizepool=[
-        "pariatur"
+        "incidi"
     ],
     serie_id=[
-        2
+        8
     ],
     slug=[
-        "q"
+        "jb0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        10
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverKogShortTournaments(
 )
 range=RangeOverKogShortTournaments(
     begin_at=[
-        "ad veli"
+        "do des"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "oc"
-    ],
-    has_bracket=[
-        False
-    ],
-    id_=[
-        7
-    ],
-    modified_at=[
         "a"
     ],
+    has_bracket=[
+        True
+    ],
+    id_=[
+        3
+    ],
+    modified_at=[
+        "ut D"
+    ],
     name=[
-        "consequat L"
+        "et ea "
     ],
     prizepool=[
-        "nostrud no"
+        "ex et Lo"
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "x"
+        "hpq1rop"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverKogShortTournaments(
-    name="nulla minim ess",
-    prizepool="eiusmod ",
-    slug="j8k4da6o4",
+    name="amet ut ",
+    prizepool="laborum in v",
+    slug="csu",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.kog_tournaments.get_kog_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

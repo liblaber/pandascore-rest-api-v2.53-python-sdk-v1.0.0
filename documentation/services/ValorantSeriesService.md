@@ -34,43 +34,44 @@ List series for the Valorant videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantSeries(
     begin_at=[
-        "veniam Ut inci"
+        "vo"
     ],
     end_at=[
-        "culpa est t"
+        "officia"
     ],
     id_=[
-        10
+        4
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "p"
+        "Exce"
     ],
     name=[
-        "cillu"
+        "veniam "
     ],
     season=[
-        "autenostr"
+        "qui est a"
     ],
     slug=[
-        "gnh6hc_tp"
+        "a-__fpigd"
     ],
     videogame_title=[
-        2
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverValorantSeries(
 )
 range=RangeOverValorantSeries(
     begin_at=[
-        "do dolore"
+        "nisi r"
     ],
     end_at=[
-        "i"
+        "esse do"
     ],
     id_=[
-        3
+        2
     ],
     league_id=[
-        3
+        2
     ],
     modified_at=[
-        "ipsum sint q"
+        "sun"
     ],
     name=[
-        "conseq"
+        "dolore in in"
     ],
     season=[
-        "ad dolo"
+        "labore do dolo"
     ],
     slug=[
-        "vpazo5qc863"
+        "a046lpfr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantSeries(
-    name="ullamco",
-    season="aliqua",
-    slug="a9pz",
+    name="doeiu",
+    season="veniam ",
+    slug="1-0pexfqf",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past Valorant series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantSeries(
     begin_at=[
-        "veniam Ut inci"
+        "vo"
     ],
     end_at=[
-        "culpa est t"
+        "officia"
     ],
     id_=[
-        10
+        4
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "p"
+        "Exce"
     ],
     name=[
-        "cillu"
+        "veniam "
     ],
     season=[
-        "autenostr"
+        "qui est a"
     ],
     slug=[
-        "gnh6hc_tp"
+        "a-__fpigd"
     ],
     videogame_title=[
-        2
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverValorantSeries(
 )
 range=RangeOverValorantSeries(
     begin_at=[
-        "do dolore"
+        "nisi r"
     ],
     end_at=[
-        "i"
+        "esse do"
     ],
     id_=[
-        3
+        2
     ],
     league_id=[
-        3
+        2
     ],
     modified_at=[
-        "ipsum sint q"
+        "sun"
     ],
     name=[
-        "conseq"
+        "dolore in in"
     ],
     season=[
-        "ad dolo"
+        "labore do dolo"
     ],
     slug=[
-        "vpazo5qc863"
+        "a046lpfr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantSeries(
-    name="ullamco",
-    season="aliqua",
-    slug="a9pz",
+    name="doeiu",
+    season="veniam ",
+    slug="1-0pexfqf",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running Valorant series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantSeries(
     begin_at=[
-        "veniam Ut inci"
+        "vo"
     ],
     end_at=[
-        "culpa est t"
+        "officia"
     ],
     id_=[
-        10
+        4
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "p"
+        "Exce"
     ],
     name=[
-        "cillu"
+        "veniam "
     ],
     season=[
-        "autenostr"
+        "qui est a"
     ],
     slug=[
-        "gnh6hc_tp"
+        "a-__fpigd"
     ],
     videogame_title=[
-        2
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverValorantSeries(
 )
 range=RangeOverValorantSeries(
     begin_at=[
-        "do dolore"
+        "nisi r"
     ],
     end_at=[
-        "i"
+        "esse do"
     ],
     id_=[
-        3
+        2
     ],
     league_id=[
-        3
+        2
     ],
     modified_at=[
-        "ipsum sint q"
+        "sun"
     ],
     name=[
-        "conseq"
+        "dolore in in"
     ],
     season=[
-        "ad dolo"
+        "labore do dolo"
     ],
     slug=[
-        "vpazo5qc863"
+        "a046lpfr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantSeries(
-    name="ullamco",
-    season="aliqua",
-    slug="a9pz",
+    name="doeiu",
+    season="veniam ",
+    slug="1-0pexfqf",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming Valorant series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantSeries, RangeOverValorantSeries, SearchOverValorantSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantSeries(
     begin_at=[
-        "veniam Ut inci"
+        "vo"
     ],
     end_at=[
-        "culpa est t"
+        "officia"
     ],
     id_=[
-        10
+        4
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "p"
+        "Exce"
     ],
     name=[
-        "cillu"
+        "veniam "
     ],
     season=[
-        "autenostr"
+        "qui est a"
     ],
     slug=[
-        "gnh6hc_tp"
+        "a-__fpigd"
     ],
     videogame_title=[
-        2
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverValorantSeries(
 )
 range=RangeOverValorantSeries(
     begin_at=[
-        "do dolore"
+        "nisi r"
     ],
     end_at=[
-        "i"
+        "esse do"
     ],
     id_=[
-        3
+        2
     ],
     league_id=[
-        3
+        2
     ],
     modified_at=[
-        "ipsum sint q"
+        "sun"
     ],
     name=[
-        "conseq"
+        "dolore in in"
     ],
     season=[
-        "ad dolo"
+        "labore do dolo"
     ],
     slug=[
-        "vpazo5qc863"
+        "a046lpfr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantSeries(
-    name="ullamco",
-    season="aliqua",
-    slug="a9pz",
+    name="doeiu",
+    season="veniam ",
+    slug="1-0pexfqf",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.valorant_series.get_valorant_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

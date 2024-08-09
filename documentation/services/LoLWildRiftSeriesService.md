@@ -34,43 +34,44 @@ List series for the LoL Wild Rift videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftSeries(
     begin_at=[
-        "proident quis "
+        "labo"
     ],
     end_at=[
-        "Ut eiusmod labo"
+        "co"
     ],
     id_=[
-        2
-    ],
-    league_id=[
         5
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt u"
+        "in labor"
     ],
     name=[
-        "laborum irure "
+        "velit"
     ],
     season=[
-        "officia Lo"
+        "fugiat "
     ],
     slug=[
-        "6p7ayq"
+        "hph-bv"
     ],
     videogame_title=[
         3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverLolWildRiftSeries(
 )
 range=RangeOverLolWildRiftSeries(
     begin_at=[
-        "s"
+        "ex"
     ],
     end_at=[
-        "pr"
+        "ad qui aut"
     ],
     id_=[
-        2
+        3
     ],
     league_id=[
         5
     ],
     modified_at=[
-        "occaecat a"
+        "ma"
     ],
     name=[
-        "dolor irur"
+        "ut de"
     ],
     season=[
-        "sunt v"
+        "nostr"
     ],
     slug=[
-        "-ug"
+        "6os7g3o0bh7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftSeries(
-    name="veniam e",
-    season="laborum",
-    slug="c",
+    name="ea nulla proi",
+    season="culpa pariat",
+    slug="_tw34do",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past LoL Wild Rift series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftSeries(
     begin_at=[
-        "proident quis "
+        "labo"
     ],
     end_at=[
-        "Ut eiusmod labo"
+        "co"
     ],
     id_=[
-        2
-    ],
-    league_id=[
         5
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt u"
+        "in labor"
     ],
     name=[
-        "laborum irure "
+        "velit"
     ],
     season=[
-        "officia Lo"
+        "fugiat "
     ],
     slug=[
-        "6p7ayq"
+        "hph-bv"
     ],
     videogame_title=[
         3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverLolWildRiftSeries(
 )
 range=RangeOverLolWildRiftSeries(
     begin_at=[
-        "s"
+        "ex"
     ],
     end_at=[
-        "pr"
+        "ad qui aut"
     ],
     id_=[
-        2
+        3
     ],
     league_id=[
         5
     ],
     modified_at=[
-        "occaecat a"
+        "ma"
     ],
     name=[
-        "dolor irur"
+        "ut de"
     ],
     season=[
-        "sunt v"
+        "nostr"
     ],
     slug=[
-        "-ug"
+        "6os7g3o0bh7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftSeries(
-    name="veniam e",
-    season="laborum",
-    slug="c",
+    name="ea nulla proi",
+    season="culpa pariat",
+    slug="_tw34do",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running LoL Wild Rift series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftSeries(
     begin_at=[
-        "proident quis "
+        "labo"
     ],
     end_at=[
-        "Ut eiusmod labo"
+        "co"
     ],
     id_=[
-        2
-    ],
-    league_id=[
         5
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt u"
+        "in labor"
     ],
     name=[
-        "laborum irure "
+        "velit"
     ],
     season=[
-        "officia Lo"
+        "fugiat "
     ],
     slug=[
-        "6p7ayq"
+        "hph-bv"
     ],
     videogame_title=[
         3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverLolWildRiftSeries(
 )
 range=RangeOverLolWildRiftSeries(
     begin_at=[
-        "s"
+        "ex"
     ],
     end_at=[
-        "pr"
+        "ad qui aut"
     ],
     id_=[
-        2
+        3
     ],
     league_id=[
         5
     ],
     modified_at=[
-        "occaecat a"
+        "ma"
     ],
     name=[
-        "dolor irur"
+        "ut de"
     ],
     season=[
-        "sunt v"
+        "nostr"
     ],
     slug=[
-        "-ug"
+        "6os7g3o0bh7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftSeries(
-    name="veniam e",
-    season="laborum",
-    slug="c",
+    name="ea nulla proi",
+    season="culpa pariat",
+    slug="_tw34do",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming LoL Wild Rift series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftSeries, RangeOverLolWildRiftSeries, SearchOverLolWildRiftSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftSeries(
     begin_at=[
-        "proident quis "
+        "labo"
     ],
     end_at=[
-        "Ut eiusmod labo"
+        "co"
     ],
     id_=[
-        2
-    ],
-    league_id=[
         5
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt u"
+        "in labor"
     ],
     name=[
-        "laborum irure "
+        "velit"
     ],
     season=[
-        "officia Lo"
+        "fugiat "
     ],
     slug=[
-        "6p7ayq"
+        "hph-bv"
     ],
     videogame_title=[
         3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverLolWildRiftSeries(
 )
 range=RangeOverLolWildRiftSeries(
     begin_at=[
-        "s"
+        "ex"
     ],
     end_at=[
-        "pr"
+        "ad qui aut"
     ],
     id_=[
-        2
+        3
     ],
     league_id=[
         5
     ],
     modified_at=[
-        "occaecat a"
+        "ma"
     ],
     name=[
-        "dolor irur"
+        "ut de"
     ],
     season=[
-        "sunt v"
+        "nostr"
     ],
     slug=[
-        "-ug"
+        "6os7g3o0bh7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftSeries(
-    name="veniam e",
-    season="laborum",
-    slug="c",
+    name="ea nulla proi",
+    season="culpa pariat",
+    slug="_tw34do",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.lo_l_wild_rift_series.get_lol_wild_rift_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -34,49 +34,50 @@ List tournaments for the StarCraft Brood War videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "aute do"
+        "lab"
     ],
     detailed_stats=False,
     end_at=[
-        "veni"
+        "aliqui"
     ],
     has_bracket=False,
     id_=[
-        4
+        9
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "elit labore i"
+        "culpa labor"
     ],
     name=[
-        "laboris aliquip"
+        "sunt dolore"
     ],
     prizepool=[
-        "ametlabore"
+        "officia "
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "l94-5k"
+        "k7gctqo03q9"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverStarcraftBroodWarShortTournaments(
 )
 range=RangeOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "sint l"
+        "sint in"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "cupidata"
+        "ipsum aliqua oc"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        4
+        2
     ],
     modified_at=[
-        "aliquip ut l"
+        "nulla esse ip"
     ],
     name=[
-        "aliquip"
+        "etcommodo cu"
     ],
     prizepool=[
-        "incididu"
+        "labore "
     ],
     serie_id=[
-        10
+        2
     ],
     slug=[
-        "gc_hr"
+        "1a4r6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarShortTournaments(
-    name="quiad veniam",
-    prizepool="non sint ",
-    slug="9",
+    name="sit ea an",
+    prizepool="exercit",
+    slug="i9djk",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past StarCraft Brood War tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "aute do"
+        "lab"
     ],
     detailed_stats=False,
     end_at=[
-        "veni"
+        "aliqui"
     ],
     has_bracket=False,
     id_=[
-        4
+        9
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "elit labore i"
+        "culpa labor"
     ],
     name=[
-        "laboris aliquip"
+        "sunt dolore"
     ],
     prizepool=[
-        "ametlabore"
+        "officia "
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "l94-5k"
+        "k7gctqo03q9"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverStarcraftBroodWarShortTournaments(
 )
 range=RangeOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "sint l"
+        "sint in"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "cupidata"
+        "ipsum aliqua oc"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        4
+        2
     ],
     modified_at=[
-        "aliquip ut l"
+        "nulla esse ip"
     ],
     name=[
-        "aliquip"
+        "etcommodo cu"
     ],
     prizepool=[
-        "incididu"
+        "labore "
     ],
     serie_id=[
-        10
+        2
     ],
     slug=[
-        "gc_hr"
+        "1a4r6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarShortTournaments(
-    name="quiad veniam",
-    prizepool="non sint ",
-    slug="9",
+    name="sit ea an",
+    prizepool="exercit",
+    slug="i9djk",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running StarCraft Brood War tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "aute do"
+        "lab"
     ],
     detailed_stats=False,
     end_at=[
-        "veni"
+        "aliqui"
     ],
     has_bracket=False,
     id_=[
-        4
+        9
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "elit labore i"
+        "culpa labor"
     ],
     name=[
-        "laboris aliquip"
+        "sunt dolore"
     ],
     prizepool=[
-        "ametlabore"
+        "officia "
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "l94-5k"
+        "k7gctqo03q9"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverStarcraftBroodWarShortTournaments(
 )
 range=RangeOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "sint l"
+        "sint in"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "cupidata"
+        "ipsum aliqua oc"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        4
+        2
     ],
     modified_at=[
-        "aliquip ut l"
+        "nulla esse ip"
     ],
     name=[
-        "aliquip"
+        "etcommodo cu"
     ],
     prizepool=[
-        "incididu"
+        "labore "
     ],
     serie_id=[
-        10
+        2
     ],
     slug=[
-        "gc_hr"
+        "1a4r6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarShortTournaments(
-    name="quiad veniam",
-    prizepool="non sint ",
-    slug="9",
+    name="sit ea an",
+    prizepool="exercit",
+    slug="i9djk",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming StarCraft Brood War tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarShortTournaments, RangeOverStarcraftBroodWarShortTournaments, SearchOverStarcraftBroodWarShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "aute do"
+        "lab"
     ],
     detailed_stats=False,
     end_at=[
-        "veni"
+        "aliqui"
     ],
     has_bracket=False,
     id_=[
-        4
+        9
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "elit labore i"
+        "culpa labor"
     ],
     name=[
-        "laboris aliquip"
+        "sunt dolore"
     ],
     prizepool=[
-        "ametlabore"
+        "officia "
     ],
     serie_id=[
-        8
+        3
     ],
     slug=[
-        "l94-5k"
+        "k7gctqo03q9"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverStarcraftBroodWarShortTournaments(
 )
 range=RangeOverStarcraftBroodWarShortTournaments(
     begin_at=[
-        "sint l"
+        "sint in"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "cupidata"
+        "ipsum aliqua oc"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        4
+        2
     ],
     modified_at=[
-        "aliquip ut l"
+        "nulla esse ip"
     ],
     name=[
-        "aliquip"
+        "etcommodo cu"
     ],
     prizepool=[
-        "incididu"
+        "labore "
     ],
     serie_id=[
-        10
+        2
     ],
     slug=[
-        "gc_hr"
+        "1a4r6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarShortTournaments(
-    name="quiad veniam",
-    prizepool="non sint ",
-    slug="9",
+    name="sit ea an",
+    prizepool="exercit",
+    slug="i9djk",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.star_craft_brood_war_tournaments.get_starcraft_brood_war_tournament
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

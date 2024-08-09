@@ -32,13 +32,14 @@ Get detailed statistics of Dota2 players for the given match
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.dota2_stats.get_dota2_matches_match_id_or_slug_players_stats(match_id_or_slug=match_id_or_slug)
 
@@ -69,18 +70,19 @@ Get detailed statistics of a given Dota2 player
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetDota2PlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetDota2PlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
+player_id_or_slug=9
 
 result = sdk.dota2_stats.get_dota2_players_player_id_or_slug_stats(
     player_id_or_slug=player_id_or_slug,
-    games_count=8,
+    games_count=4,
     side="radiant",
     from_="2017-07-21",
     to="2017-07-21"
@@ -112,20 +114,21 @@ Get detailed statistics of a given Dota2 player for the given serie
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetDota2PlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetDota2PlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-player_id_or_slug=4
+serie_id_or_slug=10
+player_id_or_slug=9
 
 result = sdk.dota2_stats.get_dota2_series_serie_id_or_slug_players_player_id_or_slug_stats(
     serie_id_or_slug=serie_id_or_slug,
     player_id_or_slug=player_id_or_slug,
-    games_count=1,
+    games_count=6,
     side="radiant"
 )
 
@@ -155,20 +158,21 @@ Get detailed statistics of a given Dota2 team for the given serie
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetDota2PlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetDota2PlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-team_id_or_slug=7
+serie_id_or_slug=10
+team_id_or_slug=10
 
 result = sdk.dota2_stats.get_dota2_series_serie_id_or_slug_teams_team_id_or_slug_stats(
     serie_id_or_slug=serie_id_or_slug,
     team_id_or_slug=team_id_or_slug,
-    games_count=2,
+    games_count=9,
     side="radiant"
 )
 
@@ -199,18 +203,19 @@ Get detailed statistics of a given Dota2 team
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetDota2PlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetDota2PlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-team_id_or_slug=7
+team_id_or_slug=10
 
 result = sdk.dota2_stats.get_dota2_teams_team_id_or_slug_stats(
     team_id_or_slug=team_id_or_slug,
-    games_count=3,
+    games_count=4,
     side="radiant",
     from_="2017-07-21",
     to="2017-07-21"
@@ -242,20 +247,21 @@ Get detailed statistics of a given Dota2 player for the given tournament
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetDota2PlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetDota2PlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-tournament_id_or_slug=7
-player_id_or_slug=4
+tournament_id_or_slug=2
+player_id_or_slug=9
 
 result = sdk.dota2_stats.get_dota2_tournaments_tournament_id_or_slug_players_player_id_or_slug_stats(
     tournament_id_or_slug=tournament_id_or_slug,
     player_id_or_slug=player_id_or_slug,
-    games_count=1,
+    games_count=7,
     side="radiant"
 )
 
@@ -285,22 +291,25 @@ Get detailed statistics of a given Dota2 team for the given tournament
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetDota2PlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetDota2PlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-tournament_id_or_slug=7
-team_id_or_slug=7
+tournament_id_or_slug=2
+team_id_or_slug=10
 
 result = sdk.dota2_stats.get_dota2_tournaments_tournament_id_or_slug_teams_team_id_or_slug_stats(
     tournament_id_or_slug=tournament_id_or_slug,
     team_id_or_slug=team_id_or_slug,
-    games_count=10,
+    games_count=3,
     side="radiant"
 )
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

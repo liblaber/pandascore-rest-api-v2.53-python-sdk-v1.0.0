@@ -36,77 +36,78 @@ List matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverMatches(
     begin_at=[
-        "esse enim in"
+        "ani"
     ],
     detailed_stats=False,
     draw=False,
     end_at=[
-        "fugiat offic"
+        "ad ut com"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=True,
     id_=[
-        1
+        3
     ],
     league_id=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "occa"
+        "aute sit"
     ],
     name=[
-        "non sed"
+        "exercitation te"
     ],
     not_started=False,
     number_of_games=[
-        9
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=True,
+    opponents_filled=True,
+    past=False,
     running=True,
     scheduled_at=[
-        "es"
+        "esse aute n"
     ],
     serie_id=[
-        4
+        10
     ],
     slug=[
-        "ZBBpq-e"
+        "HiGqjR9"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        3
     ],
-    unscheduled=True,
+    unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0065.71"
+        "1125897835.45"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -114,7 +115,7 @@ filter=FilterOverMatches(
 )
 range=RangeOverMatches(
     begin_at=[
-        "sed occ"
+        "al"
     ],
     detailed_stats=[
         False
@@ -123,7 +124,7 @@ range=RangeOverMatches(
         False
     ],
     end_at=[
-        "aliq"
+        "do d"
     ],
     forfeit=[
         False
@@ -135,28 +136,28 @@ range=RangeOverMatches(
         "all_games_played"
     ],
     modified_at=[
-        "proident culpa"
+        "dolore ve"
     ],
     name=[
-        "in ad"
+        "dolore "
     ],
     number_of_games=[
-        1
+        10
     ],
     scheduled_at=[
-        "oc"
+        "nisi sed aut"
     ],
     slug=[
-        "8-ymAu4"
+        "bAjOZ"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -167,8 +168,8 @@ sort=[
 ]
 search=SearchOverMatches(
     match_type="all_games_played",
-    name="Excepteu",
-    slug="Ld3hli",
+    name="nulla veniam ",
+    slug="WfL1ZPQ",
     status="canceled",
     winner_type="Player"
 )
@@ -211,77 +212,78 @@ List past matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverMatches(
     begin_at=[
-        "esse enim in"
+        "ani"
     ],
     detailed_stats=False,
     draw=False,
     end_at=[
-        "fugiat offic"
+        "ad ut com"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=True,
     id_=[
-        1
+        3
     ],
     league_id=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "occa"
+        "aute sit"
     ],
     name=[
-        "non sed"
+        "exercitation te"
     ],
     not_started=False,
     number_of_games=[
-        9
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=True,
+    opponents_filled=True,
+    past=False,
     running=True,
     scheduled_at=[
-        "es"
+        "esse aute n"
     ],
     serie_id=[
-        4
+        10
     ],
     slug=[
-        "ZBBpq-e"
+        "HiGqjR9"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        3
     ],
-    unscheduled=True,
+    unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0065.71"
+        "1125897835.45"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -289,7 +291,7 @@ filter=FilterOverMatches(
 )
 range=RangeOverMatches(
     begin_at=[
-        "sed occ"
+        "al"
     ],
     detailed_stats=[
         False
@@ -298,7 +300,7 @@ range=RangeOverMatches(
         False
     ],
     end_at=[
-        "aliq"
+        "do d"
     ],
     forfeit=[
         False
@@ -310,28 +312,28 @@ range=RangeOverMatches(
         "all_games_played"
     ],
     modified_at=[
-        "proident culpa"
+        "dolore ve"
     ],
     name=[
-        "in ad"
+        "dolore "
     ],
     number_of_games=[
-        1
+        10
     ],
     scheduled_at=[
-        "oc"
+        "nisi sed aut"
     ],
     slug=[
-        "8-ymAu4"
+        "bAjOZ"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -342,8 +344,8 @@ sort=[
 ]
 search=SearchOverMatches(
     match_type="all_games_played",
-    name="Excepteu",
-    slug="Ld3hli",
+    name="nulla veniam ",
+    slug="WfL1ZPQ",
     status="canceled",
     winner_type="Player"
 )
@@ -386,77 +388,78 @@ List currently running matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverMatches(
     begin_at=[
-        "esse enim in"
+        "ani"
     ],
     detailed_stats=False,
     draw=False,
     end_at=[
-        "fugiat offic"
+        "ad ut com"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=True,
     id_=[
-        1
+        3
     ],
     league_id=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "occa"
+        "aute sit"
     ],
     name=[
-        "non sed"
+        "exercitation te"
     ],
     not_started=False,
     number_of_games=[
-        9
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=True,
+    opponents_filled=True,
+    past=False,
     running=True,
     scheduled_at=[
-        "es"
+        "esse aute n"
     ],
     serie_id=[
-        4
+        10
     ],
     slug=[
-        "ZBBpq-e"
+        "HiGqjR9"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        3
     ],
-    unscheduled=True,
+    unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0065.71"
+        "1125897835.45"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -464,7 +467,7 @@ filter=FilterOverMatches(
 )
 range=RangeOverMatches(
     begin_at=[
-        "sed occ"
+        "al"
     ],
     detailed_stats=[
         False
@@ -473,7 +476,7 @@ range=RangeOverMatches(
         False
     ],
     end_at=[
-        "aliq"
+        "do d"
     ],
     forfeit=[
         False
@@ -485,28 +488,28 @@ range=RangeOverMatches(
         "all_games_played"
     ],
     modified_at=[
-        "proident culpa"
+        "dolore ve"
     ],
     name=[
-        "in ad"
+        "dolore "
     ],
     number_of_games=[
-        1
+        10
     ],
     scheduled_at=[
-        "oc"
+        "nisi sed aut"
     ],
     slug=[
-        "8-ymAu4"
+        "bAjOZ"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -517,8 +520,8 @@ sort=[
 ]
 search=SearchOverMatches(
     match_type="all_games_played",
-    name="Excepteu",
-    slug="Ld3hli",
+    name="nulla veniam ",
+    slug="WfL1ZPQ",
     status="canceled",
     winner_type="Player"
 )
@@ -561,77 +564,78 @@ List upcoming matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverMatches(
     begin_at=[
-        "esse enim in"
+        "ani"
     ],
     detailed_stats=False,
     draw=False,
     end_at=[
-        "fugiat offic"
+        "ad ut com"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=True,
     id_=[
-        1
+        3
     ],
     league_id=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "occa"
+        "aute sit"
     ],
     name=[
-        "non sed"
+        "exercitation te"
     ],
     not_started=False,
     number_of_games=[
-        9
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=True,
+    opponents_filled=True,
+    past=False,
     running=True,
     scheduled_at=[
-        "es"
+        "esse aute n"
     ],
     serie_id=[
-        4
+        10
     ],
     slug=[
-        "ZBBpq-e"
+        "HiGqjR9"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        3
     ],
-    unscheduled=True,
+    unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0065.71"
+        "1125897835.45"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -639,7 +643,7 @@ filter=FilterOverMatches(
 )
 range=RangeOverMatches(
     begin_at=[
-        "sed occ"
+        "al"
     ],
     detailed_stats=[
         False
@@ -648,7 +652,7 @@ range=RangeOverMatches(
         False
     ],
     end_at=[
-        "aliq"
+        "do d"
     ],
     forfeit=[
         False
@@ -660,28 +664,28 @@ range=RangeOverMatches(
         "all_games_played"
     ],
     modified_at=[
-        "proident culpa"
+        "dolore ve"
     ],
     name=[
-        "in ad"
+        "dolore "
     ],
     number_of_games=[
-        1
+        10
     ],
     scheduled_at=[
-        "oc"
+        "nisi sed aut"
     ],
     slug=[
-        "8-ymAu4"
+        "bAjOZ"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -692,8 +696,8 @@ sort=[
 ]
 search=SearchOverMatches(
     match_type="all_games_played",
-    name="Excepteu",
-    slug="Ld3hli",
+    name="nulla veniam ",
+    slug="WfL1ZPQ",
     status="canceled",
     winner_type="Player"
 )
@@ -731,13 +735,14 @@ Get a single match by ID or by slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.matches.get_matches_match_id_or_slug(match_id_or_slug=match_id_or_slug)
 
@@ -764,15 +769,18 @@ List opponents (player or teams) for the given match
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.matches.get_matches_match_id_or_slug_opponents(match_id_or_slug=match_id_or_slug)
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

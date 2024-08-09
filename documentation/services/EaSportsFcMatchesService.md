@@ -34,77 +34,78 @@ List matches for the EA Sports FC videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaMatches(
     begin_at=[
-        "id"
+        "laboris elit"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     draw=False,
     end_at=[
-        "velit aut"
+        "ad enim incidi"
     ],
-    finished=False,
+    finished=True,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        7
+        2
     ],
     league_id=[
-        7
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut "
+        "elit "
     ],
     name=[
-        "aliquip ea "
+        "laborum do "
     ],
     not_started=True,
     number_of_games=[
-        3
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=False,
     running=False,
     scheduled_at=[
-        "eu"
+        "dolor cupida"
     ],
     serie_id=[
-        6
+        9
     ],
     slug=[
-        "ekOBhd25X"
+        "5y-BKFQ "
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        5
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        10
     ],
     videogame_version=[
-        "9242.1106"
+        "5793643.972"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverFifaMatches(
 )
 range=RangeOverFifaMatches(
     begin_at=[
-        "adipi"
+        "labore ea p"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         True
     ],
     end_at=[
-        "dolor"
+        "con"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ipsu"
+        "dolore"
     ],
     name=[
-        "sint magna"
+        "id deserunt "
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "ve"
+        "al"
     ],
     slug=[
-        "_2ZnoXZ l"
+        "AH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverFifaMatches(
     match_type="all_games_played",
-    name="nulla",
-    slug="bXNGNhENGu",
+    name="dolore ci",
+    slug="L",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past EA Sports FC matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaMatches(
     begin_at=[
-        "id"
+        "laboris elit"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     draw=False,
     end_at=[
-        "velit aut"
+        "ad enim incidi"
     ],
-    finished=False,
+    finished=True,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        7
+        2
     ],
     league_id=[
-        7
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut "
+        "elit "
     ],
     name=[
-        "aliquip ea "
+        "laborum do "
     ],
     not_started=True,
     number_of_games=[
-        3
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=False,
     running=False,
     scheduled_at=[
-        "eu"
+        "dolor cupida"
     ],
     serie_id=[
-        6
+        9
     ],
     slug=[
-        "ekOBhd25X"
+        "5y-BKFQ "
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        5
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        10
     ],
     videogame_version=[
-        "9242.1106"
+        "5793643.972"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverFifaMatches(
 )
 range=RangeOverFifaMatches(
     begin_at=[
-        "adipi"
+        "labore ea p"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         True
     ],
     end_at=[
-        "dolor"
+        "con"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ipsu"
+        "dolore"
     ],
     name=[
-        "sint magna"
+        "id deserunt "
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "ve"
+        "al"
     ],
     slug=[
-        "_2ZnoXZ l"
+        "AH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverFifaMatches(
     match_type="all_games_played",
-    name="nulla",
-    slug="bXNGNhENGu",
+    name="dolore ci",
+    slug="L",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running EA Sports FC matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaMatches(
     begin_at=[
-        "id"
+        "laboris elit"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     draw=False,
     end_at=[
-        "velit aut"
+        "ad enim incidi"
     ],
-    finished=False,
+    finished=True,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        7
+        2
     ],
     league_id=[
-        7
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut "
+        "elit "
     ],
     name=[
-        "aliquip ea "
+        "laborum do "
     ],
     not_started=True,
     number_of_games=[
-        3
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=False,
     running=False,
     scheduled_at=[
-        "eu"
+        "dolor cupida"
     ],
     serie_id=[
-        6
+        9
     ],
     slug=[
-        "ekOBhd25X"
+        "5y-BKFQ "
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        5
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        10
     ],
     videogame_version=[
-        "9242.1106"
+        "5793643.972"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverFifaMatches(
 )
 range=RangeOverFifaMatches(
     begin_at=[
-        "adipi"
+        "labore ea p"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         True
     ],
     end_at=[
-        "dolor"
+        "con"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ipsu"
+        "dolore"
     ],
     name=[
-        "sint magna"
+        "id deserunt "
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "ve"
+        "al"
     ],
     slug=[
-        "_2ZnoXZ l"
+        "AH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverFifaMatches(
     match_type="all_games_played",
-    name="nulla",
-    slug="bXNGNhENGu",
+    name="dolore ci",
+    slug="L",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming EA Sports FC matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaMatches, RangeOverFifaMatches, SearchOverFifaMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaMatches(
     begin_at=[
-        "id"
+        "laboris elit"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     draw=False,
     end_at=[
-        "velit aut"
+        "ad enim incidi"
     ],
-    finished=False,
+    finished=True,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        7
+        2
     ],
     league_id=[
-        7
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut "
+        "elit "
     ],
     name=[
-        "aliquip ea "
+        "laborum do "
     ],
     not_started=True,
     number_of_games=[
-        3
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=False,
     running=False,
     scheduled_at=[
-        "eu"
+        "dolor cupida"
     ],
     serie_id=[
-        6
+        9
     ],
     slug=[
-        "ekOBhd25X"
+        "5y-BKFQ "
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        5
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        10
     ],
     videogame_version=[
-        "9242.1106"
+        "5793643.972"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverFifaMatches(
 )
 range=RangeOverFifaMatches(
     begin_at=[
-        "adipi"
+        "labore ea p"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         True
     ],
     end_at=[
-        "dolor"
+        "con"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ipsu"
+        "dolore"
     ],
     name=[
-        "sint magna"
+        "id deserunt "
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "ve"
+        "al"
     ],
     slug=[
-        "_2ZnoXZ l"
+        "AH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverFifaMatches(
     match_type="all_games_played",
-    name="nulla",
-    slug="bXNGNhENGu",
+    name="dolore ci",
+    slug="L",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.ea_sports_fc_matches.get_fifa_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

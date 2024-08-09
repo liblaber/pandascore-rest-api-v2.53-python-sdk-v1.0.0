@@ -34,49 +34,50 @@ List tournaments for the EA Sports FC videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaShortTournaments(
     begin_at=[
-        "quis id paria"
+        "cillum "
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "irure"
+        "ad ullam"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        5
+        9
     ],
     live_supported=True,
     modified_at=[
-        "sint mollit ir"
+        "s"
     ],
     name=[
-        "qui e"
+        "nulla"
     ],
     prizepool=[
-        "sunt "
+        "enim veniam"
     ],
     serie_id=[
-        7
+        6
     ],
     slug=[
-        "08-0h3xaa"
+        "-kk"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverFifaShortTournaments(
 )
 range=RangeOverFifaShortTournaments(
     begin_at=[
-        "in"
+        "tempor "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "laboris dolore "
+        "d"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        9
     ],
     modified_at=[
-        "dolo"
+        "cillum Dui"
     ],
     name=[
-        "ut ullam"
+        "veniam"
     ],
     prizepool=[
-        "ea fugia"
+        "officia cons"
     ],
     serie_id=[
         1
     ],
     slug=[
-        "id"
+        "3j"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaShortTournaments(
-    name="voluptate am",
-    prizepool="do adipisicing ",
-    slug="x_6l",
+    name="proident",
+    prizepool="exaliq",
+    slug="bffn",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past EA Sports FC tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaShortTournaments(
     begin_at=[
-        "quis id paria"
+        "cillum "
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "irure"
+        "ad ullam"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        5
+        9
     ],
     live_supported=True,
     modified_at=[
-        "sint mollit ir"
+        "s"
     ],
     name=[
-        "qui e"
+        "nulla"
     ],
     prizepool=[
-        "sunt "
+        "enim veniam"
     ],
     serie_id=[
-        7
+        6
     ],
     slug=[
-        "08-0h3xaa"
+        "-kk"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverFifaShortTournaments(
 )
 range=RangeOverFifaShortTournaments(
     begin_at=[
-        "in"
+        "tempor "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "laboris dolore "
+        "d"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        9
     ],
     modified_at=[
-        "dolo"
+        "cillum Dui"
     ],
     name=[
-        "ut ullam"
+        "veniam"
     ],
     prizepool=[
-        "ea fugia"
+        "officia cons"
     ],
     serie_id=[
         1
     ],
     slug=[
-        "id"
+        "3j"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaShortTournaments(
-    name="voluptate am",
-    prizepool="do adipisicing ",
-    slug="x_6l",
+    name="proident",
+    prizepool="exaliq",
+    slug="bffn",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running EA Sports FC tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaShortTournaments(
     begin_at=[
-        "quis id paria"
+        "cillum "
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "irure"
+        "ad ullam"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        5
+        9
     ],
     live_supported=True,
     modified_at=[
-        "sint mollit ir"
+        "s"
     ],
     name=[
-        "qui e"
+        "nulla"
     ],
     prizepool=[
-        "sunt "
+        "enim veniam"
     ],
     serie_id=[
-        7
+        6
     ],
     slug=[
-        "08-0h3xaa"
+        "-kk"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverFifaShortTournaments(
 )
 range=RangeOverFifaShortTournaments(
     begin_at=[
-        "in"
+        "tempor "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "laboris dolore "
+        "d"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        9
     ],
     modified_at=[
-        "dolo"
+        "cillum Dui"
     ],
     name=[
-        "ut ullam"
+        "veniam"
     ],
     prizepool=[
-        "ea fugia"
+        "officia cons"
     ],
     serie_id=[
         1
     ],
     slug=[
-        "id"
+        "3j"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaShortTournaments(
-    name="voluptate am",
-    prizepool="do adipisicing ",
-    slug="x_6l",
+    name="proident",
+    prizepool="exaliq",
+    slug="bffn",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming EA Sports FC tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaShortTournaments, RangeOverFifaShortTournaments, SearchOverFifaShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaShortTournaments(
     begin_at=[
-        "quis id paria"
+        "cillum "
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "irure"
+        "ad ullam"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        5
+        9
     ],
     live_supported=True,
     modified_at=[
-        "sint mollit ir"
+        "s"
     ],
     name=[
-        "qui e"
+        "nulla"
     ],
     prizepool=[
-        "sunt "
+        "enim veniam"
     ],
     serie_id=[
-        7
+        6
     ],
     slug=[
-        "08-0h3xaa"
+        "-kk"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverFifaShortTournaments(
 )
 range=RangeOverFifaShortTournaments(
     begin_at=[
-        "in"
+        "tempor "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "laboris dolore "
+        "d"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        9
     ],
     modified_at=[
-        "dolo"
+        "cillum Dui"
     ],
     name=[
-        "ut ullam"
+        "veniam"
     ],
     prizepool=[
-        "ea fugia"
+        "officia cons"
     ],
     serie_id=[
         1
     ],
     slug=[
-        "id"
+        "3j"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaShortTournaments(
-    name="voluptate am",
-    prizepool="do adipisicing ",
-    slug="x_6l",
+    name="proident",
+    prizepool="exaliq",
+    slug="bffn",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.ea_sports_fc_tournaments.get_fifa_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

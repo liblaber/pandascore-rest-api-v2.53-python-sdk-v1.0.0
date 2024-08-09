@@ -34,43 +34,44 @@ List series for the Overwatch videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwSeries(
     begin_at=[
-        "r"
+        "deserunt"
     ],
     end_at=[
-        "ex labore dolor"
+        "dolore"
     ],
     id_=[
-        2
+        8
     ],
     league_id=[
-        9
+        3
     ],
     modified_at=[
-        "ut eu dolor"
+        "non in "
     ],
     name=[
-        "qui labore in "
+        "ut consectetu"
     ],
     season=[
-        "magna e"
+        "incidi"
     ],
     slug=[
-        "z"
+        "0s_31dv1"
     ],
     videogame_title=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverOwSeries(
 )
 range=RangeOverOwSeries(
     begin_at=[
-        "nostrud nisi do"
+        "Exce"
     ],
     end_at=[
-        "pariatur"
+        "t"
     ],
     id_=[
-        10
-    ],
-    league_id=[
         1
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt"
+        "nostrud i"
     ],
     name=[
-        "nisi D"
+        "sed enim do"
     ],
     season=[
-        "labore in in"
+        "culpa laborum "
     ],
     slug=[
-        "0"
+        "98"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverOwSeries(
-    name="reprehende",
-    season="proiden",
-    slug="pg2",
+    name="ut qui",
+    season="eiusmod",
+    slug="van0",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past Overwatch series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwSeries(
     begin_at=[
-        "r"
+        "deserunt"
     ],
     end_at=[
-        "ex labore dolor"
+        "dolore"
     ],
     id_=[
-        2
+        8
     ],
     league_id=[
-        9
+        3
     ],
     modified_at=[
-        "ut eu dolor"
+        "non in "
     ],
     name=[
-        "qui labore in "
+        "ut consectetu"
     ],
     season=[
-        "magna e"
+        "incidi"
     ],
     slug=[
-        "z"
+        "0s_31dv1"
     ],
     videogame_title=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverOwSeries(
 )
 range=RangeOverOwSeries(
     begin_at=[
-        "nostrud nisi do"
+        "Exce"
     ],
     end_at=[
-        "pariatur"
+        "t"
     ],
     id_=[
-        10
-    ],
-    league_id=[
         1
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt"
+        "nostrud i"
     ],
     name=[
-        "nisi D"
+        "sed enim do"
     ],
     season=[
-        "labore in in"
+        "culpa laborum "
     ],
     slug=[
-        "0"
+        "98"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverOwSeries(
-    name="reprehende",
-    season="proiden",
-    slug="pg2",
+    name="ut qui",
+    season="eiusmod",
+    slug="van0",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running Overwatch series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwSeries(
     begin_at=[
-        "r"
+        "deserunt"
     ],
     end_at=[
-        "ex labore dolor"
+        "dolore"
     ],
     id_=[
-        2
+        8
     ],
     league_id=[
-        9
+        3
     ],
     modified_at=[
-        "ut eu dolor"
+        "non in "
     ],
     name=[
-        "qui labore in "
+        "ut consectetu"
     ],
     season=[
-        "magna e"
+        "incidi"
     ],
     slug=[
-        "z"
+        "0s_31dv1"
     ],
     videogame_title=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverOwSeries(
 )
 range=RangeOverOwSeries(
     begin_at=[
-        "nostrud nisi do"
+        "Exce"
     ],
     end_at=[
-        "pariatur"
+        "t"
     ],
     id_=[
-        10
-    ],
-    league_id=[
         1
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt"
+        "nostrud i"
     ],
     name=[
-        "nisi D"
+        "sed enim do"
     ],
     season=[
-        "labore in in"
+        "culpa laborum "
     ],
     slug=[
-        "0"
+        "98"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverOwSeries(
-    name="reprehende",
-    season="proiden",
-    slug="pg2",
+    name="ut qui",
+    season="eiusmod",
+    slug="van0",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming Overwatch series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwSeries, RangeOverOwSeries, SearchOverOwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwSeries(
     begin_at=[
-        "r"
+        "deserunt"
     ],
     end_at=[
-        "ex labore dolor"
+        "dolore"
     ],
     id_=[
-        2
+        8
     ],
     league_id=[
-        9
+        3
     ],
     modified_at=[
-        "ut eu dolor"
+        "non in "
     ],
     name=[
-        "qui labore in "
+        "ut consectetu"
     ],
     season=[
-        "magna e"
+        "incidi"
     ],
     slug=[
-        "z"
+        "0s_31dv1"
     ],
     videogame_title=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverOwSeries(
 )
 range=RangeOverOwSeries(
     begin_at=[
-        "nostrud nisi do"
+        "Exce"
     ],
     end_at=[
-        "pariatur"
+        "t"
     ],
     id_=[
-        10
-    ],
-    league_id=[
         1
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "sunt"
+        "nostrud i"
     ],
     name=[
-        "nisi D"
+        "sed enim do"
     ],
     season=[
-        "labore in in"
+        "culpa laborum "
     ],
     slug=[
-        "0"
+        "98"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverOwSeries(
-    name="reprehende",
-    season="proiden",
-    slug="pg2",
+    name="ut qui",
+    season="eiusmod",
+    slug="van0",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.ow_series.get_ow_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

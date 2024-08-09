@@ -35,58 +35,59 @@ List matches for the Counter-Strike videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoMatches(
     begin_at=[
-        "dolor"
+        "incidi"
     ],
     detailed_stats=True,
     draw=True,
     end_at=[
-        "aute aliqua "
+        "exercita"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        1
+        3
     ],
     league_id=[
-        2
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "irure ei"
+        "aliqua"
     ],
     name=[
-        "anim adipisicin"
+        "aliquip eius"
     ],
     not_started=True,
     number_of_games=[
-        5
+        10
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=False,
-    running=True,
+    running=False,
     scheduled_at=[
-        "mag"
+        "voluptate adipi"
     ],
     serie_id=[
-        9
+        5
     ],
     slug=[
-        "Vd"
+        "kid"
     ],
     status=[
         "canceled"
@@ -99,13 +100,13 @@ filter=FilterOverCsgoMatches(
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "077459.50255259049.45"
+        "46404802.4461.3142"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -113,49 +114,49 @@ filter=FilterOverCsgoMatches(
 )
 range=RangeOverCsgoMatches(
     begin_at=[
-        "ut adipisicing "
+        "incididunt ut"
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         True
     ],
     end_at=[
-        "deserunt d"
+        "in ex aute"
     ],
     forfeit=[
         False
     ],
     id_=[
-        1
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "et"
+        "do"
     ],
     name=[
-        "sints"
+        "adipisici"
     ],
     number_of_games=[
-        8
+        0
     ],
     scheduled_at=[
-        "voluptate"
+        "dolor Ut"
     ],
     slug=[
-        "rR-r"
+        "R37RucjN7s"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -166,8 +167,8 @@ sort=[
 ]
 search=SearchOverCsgoMatches(
     match_type="all_games_played",
-    name="ullam",
-    slug="lG l",
+    name="aliqua anim",
+    slug="x6lAktgCkB",
     status="canceled",
     winner_type="Player"
 )
@@ -210,58 +211,59 @@ List past Counter-Strike matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoMatches(
     begin_at=[
-        "dolor"
+        "incidi"
     ],
     detailed_stats=True,
     draw=True,
     end_at=[
-        "aute aliqua "
+        "exercita"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        1
+        3
     ],
     league_id=[
-        2
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "irure ei"
+        "aliqua"
     ],
     name=[
-        "anim adipisicin"
+        "aliquip eius"
     ],
     not_started=True,
     number_of_games=[
-        5
+        10
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=False,
-    running=True,
+    running=False,
     scheduled_at=[
-        "mag"
+        "voluptate adipi"
     ],
     serie_id=[
-        9
+        5
     ],
     slug=[
-        "Vd"
+        "kid"
     ],
     status=[
         "canceled"
@@ -274,13 +276,13 @@ filter=FilterOverCsgoMatches(
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "077459.50255259049.45"
+        "46404802.4461.3142"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -288,49 +290,49 @@ filter=FilterOverCsgoMatches(
 )
 range=RangeOverCsgoMatches(
     begin_at=[
-        "ut adipisicing "
+        "incididunt ut"
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         True
     ],
     end_at=[
-        "deserunt d"
+        "in ex aute"
     ],
     forfeit=[
         False
     ],
     id_=[
-        1
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "et"
+        "do"
     ],
     name=[
-        "sints"
+        "adipisici"
     ],
     number_of_games=[
-        8
+        0
     ],
     scheduled_at=[
-        "voluptate"
+        "dolor Ut"
     ],
     slug=[
-        "rR-r"
+        "R37RucjN7s"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -341,8 +343,8 @@ sort=[
 ]
 search=SearchOverCsgoMatches(
     match_type="all_games_played",
-    name="ullam",
-    slug="lG l",
+    name="aliqua anim",
+    slug="x6lAktgCkB",
     status="canceled",
     winner_type="Player"
 )
@@ -385,58 +387,59 @@ List running Counter-Strike matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoMatches(
     begin_at=[
-        "dolor"
+        "incidi"
     ],
     detailed_stats=True,
     draw=True,
     end_at=[
-        "aute aliqua "
+        "exercita"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        1
+        3
     ],
     league_id=[
-        2
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "irure ei"
+        "aliqua"
     ],
     name=[
-        "anim adipisicin"
+        "aliquip eius"
     ],
     not_started=True,
     number_of_games=[
-        5
+        10
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=False,
-    running=True,
+    running=False,
     scheduled_at=[
-        "mag"
+        "voluptate adipi"
     ],
     serie_id=[
-        9
+        5
     ],
     slug=[
-        "Vd"
+        "kid"
     ],
     status=[
         "canceled"
@@ -449,13 +452,13 @@ filter=FilterOverCsgoMatches(
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "077459.50255259049.45"
+        "46404802.4461.3142"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -463,49 +466,49 @@ filter=FilterOverCsgoMatches(
 )
 range=RangeOverCsgoMatches(
     begin_at=[
-        "ut adipisicing "
+        "incididunt ut"
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         True
     ],
     end_at=[
-        "deserunt d"
+        "in ex aute"
     ],
     forfeit=[
         False
     ],
     id_=[
-        1
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "et"
+        "do"
     ],
     name=[
-        "sints"
+        "adipisici"
     ],
     number_of_games=[
-        8
+        0
     ],
     scheduled_at=[
-        "voluptate"
+        "dolor Ut"
     ],
     slug=[
-        "rR-r"
+        "R37RucjN7s"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -516,8 +519,8 @@ sort=[
 ]
 search=SearchOverCsgoMatches(
     match_type="all_games_played",
-    name="ullam",
-    slug="lG l",
+    name="aliqua anim",
+    slug="x6lAktgCkB",
     status="canceled",
     winner_type="Player"
 )
@@ -560,58 +563,59 @@ List upcoming Counter-Strike matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoMatches, RangeOverCsgoMatches, SearchOverCsgoMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoMatches(
     begin_at=[
-        "dolor"
+        "incidi"
     ],
     detailed_stats=True,
     draw=True,
     end_at=[
-        "aute aliqua "
+        "exercita"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        1
+        3
     ],
     league_id=[
-        2
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "irure ei"
+        "aliqua"
     ],
     name=[
-        "anim adipisicin"
+        "aliquip eius"
     ],
     not_started=True,
     number_of_games=[
-        5
+        10
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=False,
-    running=True,
+    running=False,
     scheduled_at=[
-        "mag"
+        "voluptate adipi"
     ],
     serie_id=[
-        9
+        5
     ],
     slug=[
-        "Vd"
+        "kid"
     ],
     status=[
         "canceled"
@@ -624,13 +628,13 @@ filter=FilterOverCsgoMatches(
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "077459.50255259049.45"
+        "46404802.4461.3142"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -638,49 +642,49 @@ filter=FilterOverCsgoMatches(
 )
 range=RangeOverCsgoMatches(
     begin_at=[
-        "ut adipisicing "
+        "incididunt ut"
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         True
     ],
     end_at=[
-        "deserunt d"
+        "in ex aute"
     ],
     forfeit=[
         False
     ],
     id_=[
-        1
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "et"
+        "do"
     ],
     name=[
-        "sints"
+        "adipisici"
     ],
     number_of_games=[
-        8
+        0
     ],
     scheduled_at=[
-        "voluptate"
+        "dolor Ut"
     ],
     slug=[
-        "rR-r"
+        "R37RucjN7s"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -691,8 +695,8 @@ sort=[
 ]
 search=SearchOverCsgoMatches(
     match_type="all_games_played",
-    name="ullam",
-    slug="lG l",
+    name="aliqua anim",
+    slug="x6lAktgCkB",
     status="canceled",
     winner_type="Player"
 )
@@ -730,15 +734,18 @@ Get a single Counter-Strike match by ID or slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.counter_strike_matches.get_csgo_matches_match_id_or_slug(match_id_or_slug=match_id_or_slug)
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

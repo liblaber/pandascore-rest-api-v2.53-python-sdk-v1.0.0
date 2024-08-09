@@ -34,43 +34,44 @@ List series for the Dota 2 videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Series(
     begin_at=[
-        "et"
+        "cillum d"
     ],
     end_at=[
-        "ut"
+        "laboris"
     ],
     id_=[
-        3
+        5
     ],
     league_id=[
-        7
-    ],
-    modified_at=[
-        "nostrud"
-    ],
-    name=[
-        "Utinip"
-    ],
-    season=[
-        "innostrud i"
-    ],
-    slug=[
-        "_fv34g5ds"
-    ],
-    videogame_title=[
         3
     ],
-    winner_id=[
+    modified_at=[
+        "null"
+    ],
+    name=[
+        "dolore"
+    ],
+    season=[
+        "ut qui "
+    ],
+    slug=[
+        "e7cx9f3y"
+    ],
+    videogame_title=[
         9
+    ],
+    winner_id=[
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverDota2Series(
 )
 range=RangeOverDota2Series(
     begin_at=[
-        "culpa do"
+        "exercitation"
     ],
     end_at=[
-        "exercitation of"
+        "ex"
     ],
     id_=[
-        1
+        4
     ],
     league_id=[
         10
     ],
     modified_at=[
-        "nostrud labo"
+        "incididunt "
     ],
     name=[
-        "nostrud se"
+        "dolor elit co"
     ],
     season=[
-        "Lorem id Ut "
+        "exercitat"
     ],
     slug=[
-        "fjj0_"
+        "6wkd46"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2Series(
-    name="nulla",
-    season="elitad c",
-    slug="zhc",
+    name="dolore ut en",
+    season="autesed",
+    slug="1jo-8",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past Dota 2 series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Series(
     begin_at=[
-        "et"
+        "cillum d"
     ],
     end_at=[
-        "ut"
+        "laboris"
     ],
     id_=[
-        3
+        5
     ],
     league_id=[
-        7
-    ],
-    modified_at=[
-        "nostrud"
-    ],
-    name=[
-        "Utinip"
-    ],
-    season=[
-        "innostrud i"
-    ],
-    slug=[
-        "_fv34g5ds"
-    ],
-    videogame_title=[
         3
     ],
-    winner_id=[
+    modified_at=[
+        "null"
+    ],
+    name=[
+        "dolore"
+    ],
+    season=[
+        "ut qui "
+    ],
+    slug=[
+        "e7cx9f3y"
+    ],
+    videogame_title=[
         9
+    ],
+    winner_id=[
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverDota2Series(
 )
 range=RangeOverDota2Series(
     begin_at=[
-        "culpa do"
+        "exercitation"
     ],
     end_at=[
-        "exercitation of"
+        "ex"
     ],
     id_=[
-        1
+        4
     ],
     league_id=[
         10
     ],
     modified_at=[
-        "nostrud labo"
+        "incididunt "
     ],
     name=[
-        "nostrud se"
+        "dolor elit co"
     ],
     season=[
-        "Lorem id Ut "
+        "exercitat"
     ],
     slug=[
-        "fjj0_"
+        "6wkd46"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2Series(
-    name="nulla",
-    season="elitad c",
-    slug="zhc",
+    name="dolore ut en",
+    season="autesed",
+    slug="1jo-8",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running Dota 2 series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Series(
     begin_at=[
-        "et"
+        "cillum d"
     ],
     end_at=[
-        "ut"
+        "laboris"
     ],
     id_=[
-        3
+        5
     ],
     league_id=[
-        7
-    ],
-    modified_at=[
-        "nostrud"
-    ],
-    name=[
-        "Utinip"
-    ],
-    season=[
-        "innostrud i"
-    ],
-    slug=[
-        "_fv34g5ds"
-    ],
-    videogame_title=[
         3
     ],
-    winner_id=[
+    modified_at=[
+        "null"
+    ],
+    name=[
+        "dolore"
+    ],
+    season=[
+        "ut qui "
+    ],
+    slug=[
+        "e7cx9f3y"
+    ],
+    videogame_title=[
         9
+    ],
+    winner_id=[
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverDota2Series(
 )
 range=RangeOverDota2Series(
     begin_at=[
-        "culpa do"
+        "exercitation"
     ],
     end_at=[
-        "exercitation of"
+        "ex"
     ],
     id_=[
-        1
+        4
     ],
     league_id=[
         10
     ],
     modified_at=[
-        "nostrud labo"
+        "incididunt "
     ],
     name=[
-        "nostrud se"
+        "dolor elit co"
     ],
     season=[
-        "Lorem id Ut "
+        "exercitat"
     ],
     slug=[
-        "fjj0_"
+        "6wkd46"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2Series(
-    name="nulla",
-    season="elitad c",
-    slug="zhc",
+    name="dolore ut en",
+    season="autesed",
+    slug="1jo-8",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming Dota 2 series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Series, RangeOverDota2Series, SearchOverDota2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Series(
     begin_at=[
-        "et"
+        "cillum d"
     ],
     end_at=[
-        "ut"
+        "laboris"
     ],
     id_=[
-        3
+        5
     ],
     league_id=[
-        7
-    ],
-    modified_at=[
-        "nostrud"
-    ],
-    name=[
-        "Utinip"
-    ],
-    season=[
-        "innostrud i"
-    ],
-    slug=[
-        "_fv34g5ds"
-    ],
-    videogame_title=[
         3
     ],
-    winner_id=[
+    modified_at=[
+        "null"
+    ],
+    name=[
+        "dolore"
+    ],
+    season=[
+        "ut qui "
+    ],
+    slug=[
+        "e7cx9f3y"
+    ],
+    videogame_title=[
         9
+    ],
+    winner_id=[
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverDota2Series(
 )
 range=RangeOverDota2Series(
     begin_at=[
-        "culpa do"
+        "exercitation"
     ],
     end_at=[
-        "exercitation of"
+        "ex"
     ],
     id_=[
-        1
+        4
     ],
     league_id=[
         10
     ],
     modified_at=[
-        "nostrud labo"
+        "incididunt "
     ],
     name=[
-        "nostrud se"
+        "dolor elit co"
     ],
     season=[
-        "Lorem id Ut "
+        "exercitat"
     ],
     slug=[
-        "fjj0_"
+        "6wkd46"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2Series(
-    name="nulla",
-    season="elitad c",
-    slug="zhc",
+    name="dolore ut en",
+    season="autesed",
+    slug="1jo-8",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.dota2_series.get_dota2_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

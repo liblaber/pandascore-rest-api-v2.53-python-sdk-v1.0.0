@@ -34,77 +34,78 @@ List matches for the Rocket League videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlMatches(
     begin_at=[
-        "in exer"
+        "culpa r"
     ],
-    detailed_stats=False,
-    draw=False,
+    detailed_stats=True,
+    draw=True,
     end_at=[
-        "elit "
+        "in Ut "
     ],
     finished=False,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        1
+        9
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "labo"
+        "ut"
     ],
     name=[
-        "sit in"
+        "ullamco en"
     ],
     not_started=False,
     number_of_games=[
-        3
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=False,
+    running=True,
     scheduled_at=[
-        "in"
+        "dolore"
     ],
     serie_id=[
-        2
+        6
     ],
     slug=[
-        "7Z"
+        "L2B6u2"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        2
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "0.66864.31104119"
+        "6734585794.51.57967777"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverRlMatches(
 )
 range=RangeOverRlMatches(
     begin_at=[
-        "conse"
+        "amet "
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         False
     ],
     end_at=[
-        "voluptate "
+        "eu officia id d"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        10
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "si"
+        "i"
     ],
     name=[
-        "occaecat"
+        "reprehend"
     ],
     number_of_games=[
-        4
+        7
     ],
     scheduled_at=[
-        "E"
+        "occaecat mo"
     ],
     slug=[
-        "I-iXslS3c"
+        "SC"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverRlMatches(
     match_type="all_games_played",
-    name="sint cupid",
-    slug="hXiBh9rdf1",
+    name="commodo pariatu",
+    slug="Y",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past Rocket League matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlMatches(
     begin_at=[
-        "in exer"
+        "culpa r"
     ],
-    detailed_stats=False,
-    draw=False,
+    detailed_stats=True,
+    draw=True,
     end_at=[
-        "elit "
+        "in Ut "
     ],
     finished=False,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        1
+        9
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "labo"
+        "ut"
     ],
     name=[
-        "sit in"
+        "ullamco en"
     ],
     not_started=False,
     number_of_games=[
-        3
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=False,
+    running=True,
     scheduled_at=[
-        "in"
+        "dolore"
     ],
     serie_id=[
-        2
+        6
     ],
     slug=[
-        "7Z"
+        "L2B6u2"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        2
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "0.66864.31104119"
+        "6734585794.51.57967777"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverRlMatches(
 )
 range=RangeOverRlMatches(
     begin_at=[
-        "conse"
+        "amet "
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         False
     ],
     end_at=[
-        "voluptate "
+        "eu officia id d"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        10
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "si"
+        "i"
     ],
     name=[
-        "occaecat"
+        "reprehend"
     ],
     number_of_games=[
-        4
+        7
     ],
     scheduled_at=[
-        "E"
+        "occaecat mo"
     ],
     slug=[
-        "I-iXslS3c"
+        "SC"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverRlMatches(
     match_type="all_games_played",
-    name="sint cupid",
-    slug="hXiBh9rdf1",
+    name="commodo pariatu",
+    slug="Y",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running Rocket League matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlMatches(
     begin_at=[
-        "in exer"
+        "culpa r"
     ],
-    detailed_stats=False,
-    draw=False,
+    detailed_stats=True,
+    draw=True,
     end_at=[
-        "elit "
+        "in Ut "
     ],
     finished=False,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        1
+        9
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "labo"
+        "ut"
     ],
     name=[
-        "sit in"
+        "ullamco en"
     ],
     not_started=False,
     number_of_games=[
-        3
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=False,
+    running=True,
     scheduled_at=[
-        "in"
+        "dolore"
     ],
     serie_id=[
-        2
+        6
     ],
     slug=[
-        "7Z"
+        "L2B6u2"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        2
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "0.66864.31104119"
+        "6734585794.51.57967777"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverRlMatches(
 )
 range=RangeOverRlMatches(
     begin_at=[
-        "conse"
+        "amet "
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         False
     ],
     end_at=[
-        "voluptate "
+        "eu officia id d"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        10
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "si"
+        "i"
     ],
     name=[
-        "occaecat"
+        "reprehend"
     ],
     number_of_games=[
-        4
+        7
     ],
     scheduled_at=[
-        "E"
+        "occaecat mo"
     ],
     slug=[
-        "I-iXslS3c"
+        "SC"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverRlMatches(
     match_type="all_games_played",
-    name="sint cupid",
-    slug="hXiBh9rdf1",
+    name="commodo pariatu",
+    slug="Y",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming Rocket League matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlMatches, RangeOverRlMatches, SearchOverRlMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlMatches(
     begin_at=[
-        "in exer"
+        "culpa r"
     ],
-    detailed_stats=False,
-    draw=False,
+    detailed_stats=True,
+    draw=True,
     end_at=[
-        "elit "
+        "in Ut "
     ],
     finished=False,
     forfeit=False,
-    future=True,
+    future=False,
     id_=[
-        1
+        9
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "labo"
+        "ut"
     ],
     name=[
-        "sit in"
+        "ullamco en"
     ],
     not_started=False,
     number_of_games=[
-        3
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=False,
+    running=True,
     scheduled_at=[
-        "in"
+        "dolore"
     ],
     serie_id=[
-        2
+        6
     ],
     slug=[
-        "7Z"
+        "L2B6u2"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        2
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        4
     ],
     videogame_version=[
-        "0.66864.31104119"
+        "6734585794.51.57967777"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverRlMatches(
 )
 range=RangeOverRlMatches(
     begin_at=[
-        "conse"
+        "amet "
     ],
     detailed_stats=[
-        True
+        False
     ],
     draw=[
         False
     ],
     end_at=[
-        "voluptate "
+        "eu officia id d"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        10
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "si"
+        "i"
     ],
     name=[
-        "occaecat"
+        "reprehend"
     ],
     number_of_games=[
-        4
+        7
     ],
     scheduled_at=[
-        "E"
+        "occaecat mo"
     ],
     slug=[
-        "I-iXslS3c"
+        "SC"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverRlMatches(
     match_type="all_games_played",
-    name="sint cupid",
-    slug="hXiBh9rdf1",
+    name="commodo pariatu",
+    slug="Y",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.rl_matches.get_rl_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

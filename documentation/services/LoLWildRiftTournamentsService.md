@@ -34,49 +34,50 @@ List tournaments for the LoL Wild Rift videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftShortTournaments(
     begin_at=[
-        "e"
+        "ex"
     ],
     detailed_stats=True,
     end_at=[
-        "fugi"
+        "ipsu"
     ],
     has_bracket=False,
     id_=[
-        1
+        2
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "Lorem in inc"
+        "aliqua dol"
     ],
     name=[
-        "aliquip la"
+        "fugiat de"
     ],
     prizepool=[
-        "aliqua"
+        "ipsum"
     ],
     serie_id=[
-        9
+        6
     ],
     slug=[
-        "r5854nkzr"
+        "_5i7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverLolWildRiftShortTournaments(
 )
 range=RangeOverLolWildRiftShortTournaments(
     begin_at=[
-        "in"
+        "culpa vol"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "ea u"
+        "sit"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        10
-    ],
-    modified_at=[
-        "elit dolore"
-    ],
-    name=[
-        "Duis p"
-    ],
-    prizepool=[
-        "laboris in d"
-    ],
-    serie_id=[
         1
     ],
+    modified_at=[
+        "s"
+    ],
+    name=[
+        "ullamco magna "
+    ],
+    prizepool=[
+        "dolor in"
+    ],
+    serie_id=[
+        4
+    ],
     slug=[
-        "m5"
+        "_acxcod3epr"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftShortTournaments(
-    name="et cillum repr",
-    prizepool="Lorem a",
-    slug="qhle8wo8",
+    name="cillum",
+    prizepool="cillum aliqu",
+    slug="omd-",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past LoL Wild Rift tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftShortTournaments(
     begin_at=[
-        "e"
+        "ex"
     ],
     detailed_stats=True,
     end_at=[
-        "fugi"
+        "ipsu"
     ],
     has_bracket=False,
     id_=[
-        1
+        2
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "Lorem in inc"
+        "aliqua dol"
     ],
     name=[
-        "aliquip la"
+        "fugiat de"
     ],
     prizepool=[
-        "aliqua"
+        "ipsum"
     ],
     serie_id=[
-        9
+        6
     ],
     slug=[
-        "r5854nkzr"
+        "_5i7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverLolWildRiftShortTournaments(
 )
 range=RangeOverLolWildRiftShortTournaments(
     begin_at=[
-        "in"
+        "culpa vol"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "ea u"
+        "sit"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        10
-    ],
-    modified_at=[
-        "elit dolore"
-    ],
-    name=[
-        "Duis p"
-    ],
-    prizepool=[
-        "laboris in d"
-    ],
-    serie_id=[
         1
     ],
+    modified_at=[
+        "s"
+    ],
+    name=[
+        "ullamco magna "
+    ],
+    prizepool=[
+        "dolor in"
+    ],
+    serie_id=[
+        4
+    ],
     slug=[
-        "m5"
+        "_acxcod3epr"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftShortTournaments(
-    name="et cillum repr",
-    prizepool="Lorem a",
-    slug="qhle8wo8",
+    name="cillum",
+    prizepool="cillum aliqu",
+    slug="omd-",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running LoL Wild Rift tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftShortTournaments(
     begin_at=[
-        "e"
+        "ex"
     ],
     detailed_stats=True,
     end_at=[
-        "fugi"
+        "ipsu"
     ],
     has_bracket=False,
     id_=[
-        1
+        2
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "Lorem in inc"
+        "aliqua dol"
     ],
     name=[
-        "aliquip la"
+        "fugiat de"
     ],
     prizepool=[
-        "aliqua"
+        "ipsum"
     ],
     serie_id=[
-        9
+        6
     ],
     slug=[
-        "r5854nkzr"
+        "_5i7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverLolWildRiftShortTournaments(
 )
 range=RangeOverLolWildRiftShortTournaments(
     begin_at=[
-        "in"
+        "culpa vol"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "ea u"
+        "sit"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        10
-    ],
-    modified_at=[
-        "elit dolore"
-    ],
-    name=[
-        "Duis p"
-    ],
-    prizepool=[
-        "laboris in d"
-    ],
-    serie_id=[
         1
     ],
+    modified_at=[
+        "s"
+    ],
+    name=[
+        "ullamco magna "
+    ],
+    prizepool=[
+        "dolor in"
+    ],
+    serie_id=[
+        4
+    ],
     slug=[
-        "m5"
+        "_acxcod3epr"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftShortTournaments(
-    name="et cillum repr",
-    prizepool="Lorem a",
-    slug="qhle8wo8",
+    name="cillum",
+    prizepool="cillum aliqu",
+    slug="omd-",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming LoL Wild Rift tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftShortTournaments, RangeOverLolWildRiftShortTournaments, SearchOverLolWildRiftShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftShortTournaments(
     begin_at=[
-        "e"
+        "ex"
     ],
     detailed_stats=True,
     end_at=[
-        "fugi"
+        "ipsu"
     ],
     has_bracket=False,
     id_=[
-        1
+        2
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "Lorem in inc"
+        "aliqua dol"
     ],
     name=[
-        "aliquip la"
+        "fugiat de"
     ],
     prizepool=[
-        "aliqua"
+        "ipsum"
     ],
     serie_id=[
-        9
+        6
     ],
     slug=[
-        "r5854nkzr"
+        "_5i7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        6
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverLolWildRiftShortTournaments(
 )
 range=RangeOverLolWildRiftShortTournaments(
     begin_at=[
-        "in"
+        "culpa vol"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "ea u"
+        "sit"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        10
-    ],
-    modified_at=[
-        "elit dolore"
-    ],
-    name=[
-        "Duis p"
-    ],
-    prizepool=[
-        "laboris in d"
-    ],
-    serie_id=[
         1
     ],
+    modified_at=[
+        "s"
+    ],
+    name=[
+        "ullamco magna "
+    ],
+    prizepool=[
+        "dolor in"
+    ],
+    serie_id=[
+        4
+    ],
     slug=[
-        "m5"
+        "_acxcod3epr"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverLolWildRiftShortTournaments(
-    name="et cillum repr",
-    prizepool="Lorem a",
-    slug="qhle8wo8",
+    name="cillum",
+    prizepool="cillum aliqu",
+    slug="omd-",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.lo_l_wild_rift_tournaments.get_lol_wild_rift_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -34,77 +34,78 @@ List matches for the King of Glory videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogMatches(
     begin_at=[
-        "si"
+        "Du"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=False,
     end_at=[
-        "incididunt"
+        "voluptate"
     ],
-    finished=True,
+    finished=False,
     forfeit=True,
-    future=False,
+    future=True,
     id_=[
-        3
+        6
     ],
     league_id=[
-        5
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "vol"
+        "labore id fugi"
     ],
     name=[
-        "occaecat incid"
+        "nostrud veniam"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        8
+        7
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "ex Lorem"
+        "sed Du"
     ],
     serie_id=[
         10
     ],
     slug=[
-        "W"
+        "GJ7GWuEfy"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        1
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        6
     ],
     videogame_version=[
-        "999910.0.28456811073"
+        "6.4314860.74685349364"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverKogMatches(
 )
 range=RangeOverKogMatches(
     begin_at=[
-        "cillum quis "
+        "Lo"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "ut nulla i"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "eu minim par"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        2
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "eu dolor"
+        "est"
     ],
     name=[
-        "ea ad Ut consec"
+        "Lorem "
     ],
     number_of_games=[
-        5
+        2
     ],
     scheduled_at=[
-        "do enim sunt "
+        "et"
     ],
     slug=[
-        "h NmcNL9-0"
+        "vBKKlSKdbR"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverKogMatches(
     match_type="all_games_played",
-    name="volupta",
-    slug="-7nlLhwc",
+    name="cillum v",
+    slug="Vy-2dZKJxf",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past King of Glory matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogMatches(
     begin_at=[
-        "si"
+        "Du"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=False,
     end_at=[
-        "incididunt"
+        "voluptate"
     ],
-    finished=True,
+    finished=False,
     forfeit=True,
-    future=False,
+    future=True,
     id_=[
-        3
+        6
     ],
     league_id=[
-        5
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "vol"
+        "labore id fugi"
     ],
     name=[
-        "occaecat incid"
+        "nostrud veniam"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        8
+        7
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "ex Lorem"
+        "sed Du"
     ],
     serie_id=[
         10
     ],
     slug=[
-        "W"
+        "GJ7GWuEfy"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        1
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        6
     ],
     videogame_version=[
-        "999910.0.28456811073"
+        "6.4314860.74685349364"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverKogMatches(
 )
 range=RangeOverKogMatches(
     begin_at=[
-        "cillum quis "
+        "Lo"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "ut nulla i"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "eu minim par"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        2
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "eu dolor"
+        "est"
     ],
     name=[
-        "ea ad Ut consec"
+        "Lorem "
     ],
     number_of_games=[
-        5
+        2
     ],
     scheduled_at=[
-        "do enim sunt "
+        "et"
     ],
     slug=[
-        "h NmcNL9-0"
+        "vBKKlSKdbR"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverKogMatches(
     match_type="all_games_played",
-    name="volupta",
-    slug="-7nlLhwc",
+    name="cillum v",
+    slug="Vy-2dZKJxf",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running King of Glory matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogMatches(
     begin_at=[
-        "si"
+        "Du"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=False,
     end_at=[
-        "incididunt"
+        "voluptate"
     ],
-    finished=True,
+    finished=False,
     forfeit=True,
-    future=False,
+    future=True,
     id_=[
-        3
+        6
     ],
     league_id=[
-        5
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "vol"
+        "labore id fugi"
     ],
     name=[
-        "occaecat incid"
+        "nostrud veniam"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        8
+        7
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "ex Lorem"
+        "sed Du"
     ],
     serie_id=[
         10
     ],
     slug=[
-        "W"
+        "GJ7GWuEfy"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        1
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        6
     ],
     videogame_version=[
-        "999910.0.28456811073"
+        "6.4314860.74685349364"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverKogMatches(
 )
 range=RangeOverKogMatches(
     begin_at=[
-        "cillum quis "
+        "Lo"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "ut nulla i"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "eu minim par"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        2
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "eu dolor"
+        "est"
     ],
     name=[
-        "ea ad Ut consec"
+        "Lorem "
     ],
     number_of_games=[
-        5
+        2
     ],
     scheduled_at=[
-        "do enim sunt "
+        "et"
     ],
     slug=[
-        "h NmcNL9-0"
+        "vBKKlSKdbR"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverKogMatches(
     match_type="all_games_played",
-    name="volupta",
-    slug="-7nlLhwc",
+    name="cillum v",
+    slug="Vy-2dZKJxf",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming King of Glory matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogMatches, RangeOverKogMatches, SearchOverKogMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogMatches(
     begin_at=[
-        "si"
+        "Du"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=False,
     end_at=[
-        "incididunt"
+        "voluptate"
     ],
-    finished=True,
+    finished=False,
     forfeit=True,
-    future=False,
+    future=True,
     id_=[
-        3
+        6
     ],
     league_id=[
-        5
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "vol"
+        "labore id fugi"
     ],
     name=[
-        "occaecat incid"
+        "nostrud veniam"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        8
+        7
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "ex Lorem"
+        "sed Du"
     ],
     serie_id=[
         10
     ],
     slug=[
-        "W"
+        "GJ7GWuEfy"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        1
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        1
+        6
     ],
     videogame_version=[
-        "999910.0.28456811073"
+        "6.4314860.74685349364"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverKogMatches(
 )
 range=RangeOverKogMatches(
     begin_at=[
-        "cillum quis "
+        "Lo"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "ut nulla i"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "eu minim par"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        2
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "eu dolor"
+        "est"
     ],
     name=[
-        "ea ad Ut consec"
+        "Lorem "
     ],
     number_of_games=[
-        5
+        2
     ],
     scheduled_at=[
-        "do enim sunt "
+        "et"
     ],
     slug=[
-        "h NmcNL9-0"
+        "vBKKlSKdbR"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverKogMatches(
     match_type="all_games_played",
-    name="volupta",
-    slug="-7nlLhwc",
+    name="cillum v",
+    slug="Vy-2dZKJxf",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.kog_matches.get_kog_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

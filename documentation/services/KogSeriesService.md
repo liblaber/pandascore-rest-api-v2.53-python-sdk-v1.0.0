@@ -34,43 +34,44 @@ List series for the King of Glory videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogSeries(
     begin_at=[
-        "incidid"
+        "ex"
     ],
     end_at=[
-        "laborum"
+        "in sit no"
     ],
     id_=[
-        1
+        8
     ],
     league_id=[
         9
     ],
     modified_at=[
-        "et in c"
+        "veniam"
     ],
     name=[
-        "Duis incid"
+        "aliquip eiu"
     ],
     season=[
-        "sunt labore"
+        "nulla"
     ],
     slug=[
-        "-6saz6z3-"
+        "_p3_cuw5"
     ],
     videogame_title=[
-        8
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,10 +82,10 @@ filter=FilterOverKogSeries(
 )
 range=RangeOverKogSeries(
     begin_at=[
-        "tempor offici"
+        "i"
     ],
     end_at=[
-        "in est labore"
+        "ut"
     ],
     id_=[
         2
@@ -93,19 +94,19 @@ range=RangeOverKogSeries(
         4
     ],
     modified_at=[
-        "eiusmod vo"
+        "minim id p"
     ],
     name=[
-        "ut fug"
+        "volupta"
     ],
     season=[
-        "eu repre"
+        "officia"
     ],
     slug=[
-        "_t6ingqea25"
+        "nl"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverKogSeries(
-    name="nisi consectetu",
-    season="enim u",
-    slug="908hom2vf_",
+    name="aliqu",
+    season="dolor ipsum ",
+    slug="-n",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past King of Glory series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogSeries(
     begin_at=[
-        "incidid"
+        "ex"
     ],
     end_at=[
-        "laborum"
+        "in sit no"
     ],
     id_=[
-        1
+        8
     ],
     league_id=[
         9
     ],
     modified_at=[
-        "et in c"
+        "veniam"
     ],
     name=[
-        "Duis incid"
+        "aliquip eiu"
     ],
     season=[
-        "sunt labore"
+        "nulla"
     ],
     slug=[
-        "-6saz6z3-"
+        "_p3_cuw5"
     ],
     videogame_title=[
-        8
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,10 +211,10 @@ filter=FilterOverKogSeries(
 )
 range=RangeOverKogSeries(
     begin_at=[
-        "tempor offici"
+        "i"
     ],
     end_at=[
-        "in est labore"
+        "ut"
     ],
     id_=[
         2
@@ -221,19 +223,19 @@ range=RangeOverKogSeries(
         4
     ],
     modified_at=[
-        "eiusmod vo"
+        "minim id p"
     ],
     name=[
-        "ut fug"
+        "volupta"
     ],
     season=[
-        "eu repre"
+        "officia"
     ],
     slug=[
-        "_t6ingqea25"
+        "nl"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverKogSeries(
-    name="nisi consectetu",
-    season="enim u",
-    slug="908hom2vf_",
+    name="aliqu",
+    season="dolor ipsum ",
+    slug="-n",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running King of Glory series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogSeries(
     begin_at=[
-        "incidid"
+        "ex"
     ],
     end_at=[
-        "laborum"
+        "in sit no"
     ],
     id_=[
-        1
+        8
     ],
     league_id=[
         9
     ],
     modified_at=[
-        "et in c"
+        "veniam"
     ],
     name=[
-        "Duis incid"
+        "aliquip eiu"
     ],
     season=[
-        "sunt labore"
+        "nulla"
     ],
     slug=[
-        "-6saz6z3-"
+        "_p3_cuw5"
     ],
     videogame_title=[
-        8
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,10 +340,10 @@ filter=FilterOverKogSeries(
 )
 range=RangeOverKogSeries(
     begin_at=[
-        "tempor offici"
+        "i"
     ],
     end_at=[
-        "in est labore"
+        "ut"
     ],
     id_=[
         2
@@ -349,19 +352,19 @@ range=RangeOverKogSeries(
         4
     ],
     modified_at=[
-        "eiusmod vo"
+        "minim id p"
     ],
     name=[
-        "ut fug"
+        "volupta"
     ],
     season=[
-        "eu repre"
+        "officia"
     ],
     slug=[
-        "_t6ingqea25"
+        "nl"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverKogSeries(
-    name="nisi consectetu",
-    season="enim u",
-    slug="908hom2vf_",
+    name="aliqu",
+    season="dolor ipsum ",
+    slug="-n",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming King of Glory series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverKogSeries, RangeOverKogSeries, SearchOverKogSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverKogSeries(
     begin_at=[
-        "incidid"
+        "ex"
     ],
     end_at=[
-        "laborum"
+        "in sit no"
     ],
     id_=[
-        1
+        8
     ],
     league_id=[
         9
     ],
     modified_at=[
-        "et in c"
+        "veniam"
     ],
     name=[
-        "Duis incid"
+        "aliquip eiu"
     ],
     season=[
-        "sunt labore"
+        "nulla"
     ],
     slug=[
-        "-6saz6z3-"
+        "_p3_cuw5"
     ],
     videogame_title=[
-        8
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,10 +469,10 @@ filter=FilterOverKogSeries(
 )
 range=RangeOverKogSeries(
     begin_at=[
-        "tempor offici"
+        "i"
     ],
     end_at=[
-        "in est labore"
+        "ut"
     ],
     id_=[
         2
@@ -477,19 +481,19 @@ range=RangeOverKogSeries(
         4
     ],
     modified_at=[
-        "eiusmod vo"
+        "minim id p"
     ],
     name=[
-        "ut fug"
+        "volupta"
     ],
     season=[
-        "eu repre"
+        "officia"
     ],
     slug=[
-        "_t6ingqea25"
+        "nl"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverKogSeries(
-    name="nisi consectetu",
-    season="enim u",
-    slug="908hom2vf_",
+    name="aliqu",
+    season="dolor ipsum ",
+    slug="-n",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.kog_series.get_kog_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

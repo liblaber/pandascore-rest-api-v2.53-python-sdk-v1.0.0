@@ -34,40 +34,41 @@ List tournaments for the Valorant videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantShortTournaments(
     begin_at=[
-        "minim l"
+        "officia in"
     ],
     detailed_stats=True,
     end_at=[
-        "in dolore co"
+        "mollit e"
     ],
     has_bracket=True,
     id_=[
-        3
+        7
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "in"
+        "a"
     ],
     name=[
-        "in ipsum sint "
+        "ullamco "
     ],
     prizepool=[
-        "dolor te"
+        "ex cul"
     ],
     serie_id=[
-        8
+        9
     ],
     slug=[
-        "enin"
+        "e2vhv2hg3i"
     ],
     tier=[
         "a"
@@ -76,7 +77,7 @@ filter=FilterOverValorantShortTournaments(
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverValorantShortTournaments(
 )
 range=RangeOverValorantShortTournaments(
     begin_at=[
-        "proident"
+        "deser"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "c"
+        "do pro"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        6
     ],
     modified_at=[
-        "s"
+        "i"
     ],
     name=[
-        "occaecat"
+        "veniam "
     ],
     prizepool=[
-        "aute "
+        "tempor Except"
     ],
     serie_id=[
-        5
+        2
     ],
     slug=[
-        "vr"
+        "m2czt"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantShortTournaments(
-    name="occaeca",
-    prizepool="cillum irure a",
-    slug="rq8",
+    name="nisi es",
+    prizepool="Duis eiusmod ",
+    slug="roj8g5wbb",
     tier="a",
     winner_type="Player"
 )
@@ -172,40 +173,41 @@ List past Valorant tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantShortTournaments(
     begin_at=[
-        "minim l"
+        "officia in"
     ],
     detailed_stats=True,
     end_at=[
-        "in dolore co"
+        "mollit e"
     ],
     has_bracket=True,
     id_=[
-        3
+        7
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "in"
+        "a"
     ],
     name=[
-        "in ipsum sint "
+        "ullamco "
     ],
     prizepool=[
-        "dolor te"
+        "ex cul"
     ],
     serie_id=[
-        8
+        9
     ],
     slug=[
-        "enin"
+        "e2vhv2hg3i"
     ],
     tier=[
         "a"
@@ -214,7 +216,7 @@ filter=FilterOverValorantShortTournaments(
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverValorantShortTournaments(
 )
 range=RangeOverValorantShortTournaments(
     begin_at=[
-        "proident"
+        "deser"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "c"
+        "do pro"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        6
     ],
     modified_at=[
-        "s"
+        "i"
     ],
     name=[
-        "occaecat"
+        "veniam "
     ],
     prizepool=[
-        "aute "
+        "tempor Except"
     ],
     serie_id=[
-        5
+        2
     ],
     slug=[
-        "vr"
+        "m2czt"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantShortTournaments(
-    name="occaeca",
-    prizepool="cillum irure a",
-    slug="rq8",
+    name="nisi es",
+    prizepool="Duis eiusmod ",
+    slug="roj8g5wbb",
     tier="a",
     winner_type="Player"
 )
@@ -310,40 +312,41 @@ List running Valorant tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantShortTournaments(
     begin_at=[
-        "minim l"
+        "officia in"
     ],
     detailed_stats=True,
     end_at=[
-        "in dolore co"
+        "mollit e"
     ],
     has_bracket=True,
     id_=[
-        3
+        7
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "in"
+        "a"
     ],
     name=[
-        "in ipsum sint "
+        "ullamco "
     ],
     prizepool=[
-        "dolor te"
+        "ex cul"
     ],
     serie_id=[
-        8
+        9
     ],
     slug=[
-        "enin"
+        "e2vhv2hg3i"
     ],
     tier=[
         "a"
@@ -352,7 +355,7 @@ filter=FilterOverValorantShortTournaments(
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverValorantShortTournaments(
 )
 range=RangeOverValorantShortTournaments(
     begin_at=[
-        "proident"
+        "deser"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "c"
+        "do pro"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        6
     ],
     modified_at=[
-        "s"
+        "i"
     ],
     name=[
-        "occaecat"
+        "veniam "
     ],
     prizepool=[
-        "aute "
+        "tempor Except"
     ],
     serie_id=[
-        5
+        2
     ],
     slug=[
-        "vr"
+        "m2czt"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantShortTournaments(
-    name="occaeca",
-    prizepool="cillum irure a",
-    slug="rq8",
+    name="nisi es",
+    prizepool="Duis eiusmod ",
+    slug="roj8g5wbb",
     tier="a",
     winner_type="Player"
 )
@@ -448,40 +451,41 @@ List upcoming Valorant tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantShortTournaments, RangeOverValorantShortTournaments, SearchOverValorantShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantShortTournaments(
     begin_at=[
-        "minim l"
+        "officia in"
     ],
     detailed_stats=True,
     end_at=[
-        "in dolore co"
+        "mollit e"
     ],
     has_bracket=True,
     id_=[
-        3
+        7
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "in"
+        "a"
     ],
     name=[
-        "in ipsum sint "
+        "ullamco "
     ],
     prizepool=[
-        "dolor te"
+        "ex cul"
     ],
     serie_id=[
-        8
+        9
     ],
     slug=[
-        "enin"
+        "e2vhv2hg3i"
     ],
     tier=[
         "a"
@@ -490,7 +494,7 @@ filter=FilterOverValorantShortTournaments(
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverValorantShortTournaments(
 )
 range=RangeOverValorantShortTournaments(
     begin_at=[
-        "proident"
+        "deser"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "c"
+        "do pro"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        6
     ],
     modified_at=[
-        "s"
+        "i"
     ],
     name=[
-        "occaecat"
+        "veniam "
     ],
     prizepool=[
-        "aute "
+        "tempor Except"
     ],
     serie_id=[
-        5
+        2
     ],
     slug=[
-        "vr"
+        "m2czt"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverValorantShortTournaments(
-    name="occaeca",
-    prizepool="cillum irure a",
-    slug="rq8",
+    name="nisi es",
+    prizepool="Duis eiusmod ",
+    slug="roj8g5wbb",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.valorant_tournaments.get_valorant_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

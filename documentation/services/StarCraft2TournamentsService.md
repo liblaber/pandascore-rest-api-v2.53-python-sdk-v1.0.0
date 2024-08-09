@@ -34,49 +34,50 @@ List tournaments for the StarCraft 2 videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2ShortTournaments(
     begin_at=[
-        "sit incididunt "
+        "labor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "anim culp"
+        "incididunt "
     ],
     has_bracket=True,
     id_=[
-        1
+        9
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "adipi"
+        "sint"
     ],
     name=[
-        "qui es"
+        "mollit Duis"
     ],
     prizepool=[
-        "eunulla eli"
+        "tempor"
     ],
     serie_id=[
-        7
+        9
     ],
     slug=[
-        "dn__s"
+        "nsn"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,13 +85,13 @@ filter=FilterOverStarcraft2ShortTournaments(
 )
 range=RangeOverStarcraft2ShortTournaments(
     begin_at=[
-        "volu"
+        "incididunt "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "consectetur"
+        "mollit sit co"
     ],
     has_bracket=[
         False
@@ -99,25 +100,25 @@ range=RangeOverStarcraft2ShortTournaments(
         8
     ],
     modified_at=[
-        "Ex"
+        "tempor"
     ],
     name=[
-        "tempor co"
+        "ex Ex"
     ],
     prizepool=[
-        "laboris"
+        "magna"
     ],
     serie_id=[
-        1
+        9
     ],
     slug=[
-        "4-l00c"
+        "nui1sjb1"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2ShortTournaments(
-    name="fugiat",
-    prizepool="sint mag",
-    slug="cz",
+    name="mollit ea",
+    prizepool="proident dolore",
+    slug="2fh161cl8e",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past StarCraft 2 tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2ShortTournaments(
     begin_at=[
-        "sit incididunt "
+        "labor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "anim culp"
+        "incididunt "
     ],
     has_bracket=True,
     id_=[
-        1
+        9
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "adipi"
+        "sint"
     ],
     name=[
-        "qui es"
+        "mollit Duis"
     ],
     prizepool=[
-        "eunulla eli"
+        "tempor"
     ],
     serie_id=[
-        7
+        9
     ],
     slug=[
-        "dn__s"
+        "nsn"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,13 +224,13 @@ filter=FilterOverStarcraft2ShortTournaments(
 )
 range=RangeOverStarcraft2ShortTournaments(
     begin_at=[
-        "volu"
+        "incididunt "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "consectetur"
+        "mollit sit co"
     ],
     has_bracket=[
         False
@@ -237,25 +239,25 @@ range=RangeOverStarcraft2ShortTournaments(
         8
     ],
     modified_at=[
-        "Ex"
+        "tempor"
     ],
     name=[
-        "tempor co"
+        "ex Ex"
     ],
     prizepool=[
-        "laboris"
+        "magna"
     ],
     serie_id=[
-        1
+        9
     ],
     slug=[
-        "4-l00c"
+        "nui1sjb1"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2ShortTournaments(
-    name="fugiat",
-    prizepool="sint mag",
-    slug="cz",
+    name="mollit ea",
+    prizepool="proident dolore",
+    slug="2fh161cl8e",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running StarCraft 2 tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2ShortTournaments(
     begin_at=[
-        "sit incididunt "
+        "labor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "anim culp"
+        "incididunt "
     ],
     has_bracket=True,
     id_=[
-        1
+        9
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "adipi"
+        "sint"
     ],
     name=[
-        "qui es"
+        "mollit Duis"
     ],
     prizepool=[
-        "eunulla eli"
+        "tempor"
     ],
     serie_id=[
-        7
+        9
     ],
     slug=[
-        "dn__s"
+        "nsn"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,13 +363,13 @@ filter=FilterOverStarcraft2ShortTournaments(
 )
 range=RangeOverStarcraft2ShortTournaments(
     begin_at=[
-        "volu"
+        "incididunt "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "consectetur"
+        "mollit sit co"
     ],
     has_bracket=[
         False
@@ -375,25 +378,25 @@ range=RangeOverStarcraft2ShortTournaments(
         8
     ],
     modified_at=[
-        "Ex"
+        "tempor"
     ],
     name=[
-        "tempor co"
+        "ex Ex"
     ],
     prizepool=[
-        "laboris"
+        "magna"
     ],
     serie_id=[
-        1
+        9
     ],
     slug=[
-        "4-l00c"
+        "nui1sjb1"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2ShortTournaments(
-    name="fugiat",
-    prizepool="sint mag",
-    slug="cz",
+    name="mollit ea",
+    prizepool="proident dolore",
+    slug="2fh161cl8e",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming StarCraft 2 tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2ShortTournaments, RangeOverStarcraft2ShortTournaments, SearchOverStarcraft2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2ShortTournaments(
     begin_at=[
-        "sit incididunt "
+        "labor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "anim culp"
+        "incididunt "
     ],
     has_bracket=True,
     id_=[
-        1
+        9
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "adipi"
+        "sint"
     ],
     name=[
-        "qui es"
+        "mollit Duis"
     ],
     prizepool=[
-        "eunulla eli"
+        "tempor"
     ],
     serie_id=[
-        7
+        9
     ],
     slug=[
-        "dn__s"
+        "nsn"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,13 +502,13 @@ filter=FilterOverStarcraft2ShortTournaments(
 )
 range=RangeOverStarcraft2ShortTournaments(
     begin_at=[
-        "volu"
+        "incididunt "
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "consectetur"
+        "mollit sit co"
     ],
     has_bracket=[
         False
@@ -513,25 +517,25 @@ range=RangeOverStarcraft2ShortTournaments(
         8
     ],
     modified_at=[
-        "Ex"
+        "tempor"
     ],
     name=[
-        "tempor co"
+        "ex Ex"
     ],
     prizepool=[
-        "laboris"
+        "magna"
     ],
     serie_id=[
-        1
+        9
     ],
     slug=[
-        "4-l00c"
+        "nui1sjb1"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2ShortTournaments(
-    name="fugiat",
-    prizepool="sint mag",
-    slug="cz",
+    name="mollit ea",
+    prizepool="proident dolore",
+    slug="2fh161cl8e",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.star_craft_2_tournaments.get_starcraft_2_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

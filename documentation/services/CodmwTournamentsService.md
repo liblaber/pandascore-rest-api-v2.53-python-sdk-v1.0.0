@@ -34,40 +34,41 @@ List tournaments for the CODMW videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwShortTournaments(
     begin_at=[
-        "n"
+        "ad tempor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "ad"
+        "Duis esse"
     ],
     has_bracket=False,
     id_=[
-        10
+        2
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "elit qui"
+        "enim esse p"
     ],
     name=[
-        "dolor Ut "
+        "sit mollit"
     ],
     prizepool=[
-        "reprehenderit"
+        "labore offic"
     ],
     serie_id=[
-        5
+        1
     ],
     slug=[
-        "14rd"
+        "p_bnz1"
     ],
     tier=[
         "a"
@@ -76,7 +77,7 @@ filter=FilterOverCodmwShortTournaments(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverCodmwShortTournaments(
 )
 range=RangeOverCodmwShortTournaments(
     begin_at=[
-        "laboris cupida"
+        "non ven"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "Excep"
+        "dolor"
     ],
     has_bracket=[
-        True
+        False
     ],
     id_=[
-        3
+        8
     ],
     modified_at=[
-        "nulla cu"
+        "nostrud labo"
     ],
     name=[
-        "officia est m"
+        "est nisi sun"
     ],
     prizepool=[
-        "nulla"
+        "fugiat el"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "uyx2u_a_t"
+        "ghzvnc"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwShortTournaments(
-    name="in dolor de",
-    prizepool="incididunt dol",
-    slug="q_",
+    name="ipsum ",
+    prizepool="dolore ea",
+    slug="1-543h88_",
     tier="a",
     winner_type="Player"
 )
@@ -172,40 +173,41 @@ List past CODMW tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwShortTournaments(
     begin_at=[
-        "n"
+        "ad tempor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "ad"
+        "Duis esse"
     ],
     has_bracket=False,
     id_=[
-        10
+        2
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "elit qui"
+        "enim esse p"
     ],
     name=[
-        "dolor Ut "
+        "sit mollit"
     ],
     prizepool=[
-        "reprehenderit"
+        "labore offic"
     ],
     serie_id=[
-        5
+        1
     ],
     slug=[
-        "14rd"
+        "p_bnz1"
     ],
     tier=[
         "a"
@@ -214,7 +216,7 @@ filter=FilterOverCodmwShortTournaments(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverCodmwShortTournaments(
 )
 range=RangeOverCodmwShortTournaments(
     begin_at=[
-        "laboris cupida"
+        "non ven"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "Excep"
+        "dolor"
     ],
     has_bracket=[
-        True
+        False
     ],
     id_=[
-        3
+        8
     ],
     modified_at=[
-        "nulla cu"
+        "nostrud labo"
     ],
     name=[
-        "officia est m"
+        "est nisi sun"
     ],
     prizepool=[
-        "nulla"
+        "fugiat el"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "uyx2u_a_t"
+        "ghzvnc"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwShortTournaments(
-    name="in dolor de",
-    prizepool="incididunt dol",
-    slug="q_",
+    name="ipsum ",
+    prizepool="dolore ea",
+    slug="1-543h88_",
     tier="a",
     winner_type="Player"
 )
@@ -310,40 +312,41 @@ List running CODMW tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwShortTournaments(
     begin_at=[
-        "n"
+        "ad tempor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "ad"
+        "Duis esse"
     ],
     has_bracket=False,
     id_=[
-        10
+        2
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "elit qui"
+        "enim esse p"
     ],
     name=[
-        "dolor Ut "
+        "sit mollit"
     ],
     prizepool=[
-        "reprehenderit"
+        "labore offic"
     ],
     serie_id=[
-        5
+        1
     ],
     slug=[
-        "14rd"
+        "p_bnz1"
     ],
     tier=[
         "a"
@@ -352,7 +355,7 @@ filter=FilterOverCodmwShortTournaments(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverCodmwShortTournaments(
 )
 range=RangeOverCodmwShortTournaments(
     begin_at=[
-        "laboris cupida"
+        "non ven"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "Excep"
+        "dolor"
     ],
     has_bracket=[
-        True
+        False
     ],
     id_=[
-        3
+        8
     ],
     modified_at=[
-        "nulla cu"
+        "nostrud labo"
     ],
     name=[
-        "officia est m"
+        "est nisi sun"
     ],
     prizepool=[
-        "nulla"
+        "fugiat el"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "uyx2u_a_t"
+        "ghzvnc"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwShortTournaments(
-    name="in dolor de",
-    prizepool="incididunt dol",
-    slug="q_",
+    name="ipsum ",
+    prizepool="dolore ea",
+    slug="1-543h88_",
     tier="a",
     winner_type="Player"
 )
@@ -448,40 +451,41 @@ List upcoming CODMW tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwShortTournaments, RangeOverCodmwShortTournaments, SearchOverCodmwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwShortTournaments(
     begin_at=[
-        "n"
+        "ad tempor"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "ad"
+        "Duis esse"
     ],
     has_bracket=False,
     id_=[
-        10
+        2
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "elit qui"
+        "enim esse p"
     ],
     name=[
-        "dolor Ut "
+        "sit mollit"
     ],
     prizepool=[
-        "reprehenderit"
+        "labore offic"
     ],
     serie_id=[
-        5
+        1
     ],
     slug=[
-        "14rd"
+        "p_bnz1"
     ],
     tier=[
         "a"
@@ -490,7 +494,7 @@ filter=FilterOverCodmwShortTournaments(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverCodmwShortTournaments(
 )
 range=RangeOverCodmwShortTournaments(
     begin_at=[
-        "laboris cupida"
+        "non ven"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "Excep"
+        "dolor"
     ],
     has_bracket=[
-        True
+        False
     ],
     id_=[
-        3
+        8
     ],
     modified_at=[
-        "nulla cu"
+        "nostrud labo"
     ],
     name=[
-        "officia est m"
+        "est nisi sun"
     ],
     prizepool=[
-        "nulla"
+        "fugiat el"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "uyx2u_a_t"
+        "ghzvnc"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwShortTournaments(
-    name="in dolor de",
-    prizepool="incididunt dol",
-    slug="q_",
+    name="ipsum ",
+    prizepool="dolore ea",
+    slug="1-543h88_",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.codmw_tournaments.get_codmw_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

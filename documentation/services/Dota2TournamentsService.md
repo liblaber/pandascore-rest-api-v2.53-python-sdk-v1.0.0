@@ -34,49 +34,50 @@ List tournaments for the Dota 2 videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2ShortTournaments(
     begin_at=[
-        "aliq"
+        "elit laboris"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     end_at=[
-        "a"
+        "anim sunt"
     ],
     has_bracket=False,
     id_=[
-        9
+        10
     ],
     live_supported=True,
     modified_at=[
-        "i"
+        "lab"
     ],
     name=[
-        "velit"
+        "ea sunt pro"
     ],
     prizepool=[
-        "in dolore cupi"
+        "incidid"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "sminlpoh"
+        "sh2x1_ti7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverDota2ShortTournaments(
 )
 range=RangeOverDota2ShortTournaments(
     begin_at=[
-        "amet ea"
+        "dolor en"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "enim cillum ips"
+        "quis amet an"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        4
     ],
     modified_at=[
-        "si"
+        "in "
     ],
     name=[
-        "ad nostr"
+        "aute qui"
     ],
     prizepool=[
-        "id laborum e"
+        "mollit et"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "wrr2qymw"
+        "i6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2ShortTournaments(
-    name="magna",
-    prizepool="magna",
-    slug="oxs3j6",
+    name="minim tempor de",
+    prizepool="Duis laborum ",
+    slug="8xfo7sds7",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past Dota 2 tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2ShortTournaments(
     begin_at=[
-        "aliq"
+        "elit laboris"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     end_at=[
-        "a"
+        "anim sunt"
     ],
     has_bracket=False,
     id_=[
-        9
+        10
     ],
     live_supported=True,
     modified_at=[
-        "i"
+        "lab"
     ],
     name=[
-        "velit"
+        "ea sunt pro"
     ],
     prizepool=[
-        "in dolore cupi"
+        "incidid"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "sminlpoh"
+        "sh2x1_ti7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverDota2ShortTournaments(
 )
 range=RangeOverDota2ShortTournaments(
     begin_at=[
-        "amet ea"
+        "dolor en"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "enim cillum ips"
+        "quis amet an"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        4
     ],
     modified_at=[
-        "si"
+        "in "
     ],
     name=[
-        "ad nostr"
+        "aute qui"
     ],
     prizepool=[
-        "id laborum e"
+        "mollit et"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "wrr2qymw"
+        "i6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2ShortTournaments(
-    name="magna",
-    prizepool="magna",
-    slug="oxs3j6",
+    name="minim tempor de",
+    prizepool="Duis laborum ",
+    slug="8xfo7sds7",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running Dota 2 tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2ShortTournaments(
     begin_at=[
-        "aliq"
+        "elit laboris"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     end_at=[
-        "a"
+        "anim sunt"
     ],
     has_bracket=False,
     id_=[
-        9
+        10
     ],
     live_supported=True,
     modified_at=[
-        "i"
+        "lab"
     ],
     name=[
-        "velit"
+        "ea sunt pro"
     ],
     prizepool=[
-        "in dolore cupi"
+        "incidid"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "sminlpoh"
+        "sh2x1_ti7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverDota2ShortTournaments(
 )
 range=RangeOverDota2ShortTournaments(
     begin_at=[
-        "amet ea"
+        "dolor en"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "enim cillum ips"
+        "quis amet an"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        4
     ],
     modified_at=[
-        "si"
+        "in "
     ],
     name=[
-        "ad nostr"
+        "aute qui"
     ],
     prizepool=[
-        "id laborum e"
+        "mollit et"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "wrr2qymw"
+        "i6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2ShortTournaments(
-    name="magna",
-    prizepool="magna",
-    slug="oxs3j6",
+    name="minim tempor de",
+    prizepool="Duis laborum ",
+    slug="8xfo7sds7",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming Dota 2 tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2ShortTournaments, RangeOverDota2ShortTournaments, SearchOverDota2ShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2ShortTournaments(
     begin_at=[
-        "aliq"
+        "elit laboris"
     ],
-    detailed_stats=True,
+    detailed_stats=False,
     end_at=[
-        "a"
+        "anim sunt"
     ],
     has_bracket=False,
     id_=[
-        9
+        10
     ],
     live_supported=True,
     modified_at=[
-        "i"
+        "lab"
     ],
     name=[
-        "velit"
+        "ea sunt pro"
     ],
     prizepool=[
-        "in dolore cupi"
+        "incidid"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "sminlpoh"
+        "sh2x1_ti7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        9
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverDota2ShortTournaments(
 )
 range=RangeOverDota2ShortTournaments(
     begin_at=[
-        "amet ea"
+        "dolor en"
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "enim cillum ips"
+        "quis amet an"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        3
+        4
     ],
     modified_at=[
-        "si"
+        "in "
     ],
     name=[
-        "ad nostr"
+        "aute qui"
     ],
     prizepool=[
-        "id laborum e"
+        "mollit et"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "wrr2qymw"
+        "i6"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverDota2ShortTournaments(
-    name="magna",
-    prizepool="magna",
-    slug="oxs3j6",
+    name="minim tempor de",
+    prizepool="Duis laborum ",
+    slug="8xfo7sds7",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.dota2_tournaments.get_dota2_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

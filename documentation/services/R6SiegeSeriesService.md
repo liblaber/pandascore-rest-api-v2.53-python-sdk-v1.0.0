@@ -34,43 +34,44 @@ List series for the Rainbow Six Siege videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeSeries(
     begin_at=[
-        "est deserunt"
+        "Ut"
     ],
     end_at=[
-        "in fugiat"
+        "velit veniam"
     ],
     id_=[
-        5
+        10
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "sint aliqua f"
+        "est minim eu Lo"
     ],
     name=[
-        "fugia"
+        "sedut qui ma"
     ],
     season=[
-        "inproi"
+        "ut sunt culpa"
     ],
     slug=[
-        "1-fbyc"
+        "bv9nvys"
     ],
     videogame_title=[
-        1
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverR6SiegeSeries(
 )
 range=RangeOverR6SiegeSeries(
     begin_at=[
-        "conseq"
+        "repreh"
     ],
     end_at=[
-        "in "
+        "ex"
     ],
     id_=[
-        8
+        9
     ],
     league_id=[
-        1
+        4
     ],
     modified_at=[
-        "r"
+        "elit et anim"
     ],
     name=[
-        "voluptate c"
+        "culpa o"
     ],
     season=[
-        "et eiusmo"
+        "cillum aute ali"
     ],
     slug=[
-        "gtpv1x1ehf"
+        "sqp"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeSeries(
-    name="ipsum esse",
-    season="magna",
-    slug="y7t41",
+    name="irure in",
+    season="ut pariatu",
+    slug="ey3",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past Rainbow Six Siege series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeSeries(
     begin_at=[
-        "est deserunt"
+        "Ut"
     ],
     end_at=[
-        "in fugiat"
+        "velit veniam"
     ],
     id_=[
-        5
+        10
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "sint aliqua f"
+        "est minim eu Lo"
     ],
     name=[
-        "fugia"
+        "sedut qui ma"
     ],
     season=[
-        "inproi"
+        "ut sunt culpa"
     ],
     slug=[
-        "1-fbyc"
+        "bv9nvys"
     ],
     videogame_title=[
-        1
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverR6SiegeSeries(
 )
 range=RangeOverR6SiegeSeries(
     begin_at=[
-        "conseq"
+        "repreh"
     ],
     end_at=[
-        "in "
+        "ex"
     ],
     id_=[
-        8
+        9
     ],
     league_id=[
-        1
+        4
     ],
     modified_at=[
-        "r"
+        "elit et anim"
     ],
     name=[
-        "voluptate c"
+        "culpa o"
     ],
     season=[
-        "et eiusmo"
+        "cillum aute ali"
     ],
     slug=[
-        "gtpv1x1ehf"
+        "sqp"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeSeries(
-    name="ipsum esse",
-    season="magna",
-    slug="y7t41",
+    name="irure in",
+    season="ut pariatu",
+    slug="ey3",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running Rainbow Six Siege series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeSeries(
     begin_at=[
-        "est deserunt"
+        "Ut"
     ],
     end_at=[
-        "in fugiat"
+        "velit veniam"
     ],
     id_=[
-        5
+        10
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "sint aliqua f"
+        "est minim eu Lo"
     ],
     name=[
-        "fugia"
+        "sedut qui ma"
     ],
     season=[
-        "inproi"
+        "ut sunt culpa"
     ],
     slug=[
-        "1-fbyc"
+        "bv9nvys"
     ],
     videogame_title=[
-        1
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverR6SiegeSeries(
 )
 range=RangeOverR6SiegeSeries(
     begin_at=[
-        "conseq"
+        "repreh"
     ],
     end_at=[
-        "in "
+        "ex"
     ],
     id_=[
-        8
+        9
     ],
     league_id=[
-        1
+        4
     ],
     modified_at=[
-        "r"
+        "elit et anim"
     ],
     name=[
-        "voluptate c"
+        "culpa o"
     ],
     season=[
-        "et eiusmo"
+        "cillum aute ali"
     ],
     slug=[
-        "gtpv1x1ehf"
+        "sqp"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeSeries(
-    name="ipsum esse",
-    season="magna",
-    slug="y7t41",
+    name="irure in",
+    season="ut pariatu",
+    slug="ey3",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming Rainbow Six Siege series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeSeries, RangeOverR6SiegeSeries, SearchOverR6SiegeSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeSeries(
     begin_at=[
-        "est deserunt"
+        "Ut"
     ],
     end_at=[
-        "in fugiat"
+        "velit veniam"
     ],
     id_=[
-        5
+        10
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "sint aliqua f"
+        "est minim eu Lo"
     ],
     name=[
-        "fugia"
+        "sedut qui ma"
     ],
     season=[
-        "inproi"
+        "ut sunt culpa"
     ],
     slug=[
-        "1-fbyc"
+        "bv9nvys"
     ],
     videogame_title=[
-        1
+        6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverR6SiegeSeries(
 )
 range=RangeOverR6SiegeSeries(
     begin_at=[
-        "conseq"
+        "repreh"
     ],
     end_at=[
-        "in "
+        "ex"
     ],
     id_=[
-        8
+        9
     ],
     league_id=[
-        1
+        4
     ],
     modified_at=[
-        "r"
+        "elit et anim"
     ],
     name=[
-        "voluptate c"
+        "culpa o"
     ],
     season=[
-        "et eiusmo"
+        "cillum aute ali"
     ],
     slug=[
-        "gtpv1x1ehf"
+        "sqp"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeSeries(
-    name="ipsum esse",
-    season="magna",
-    slug="y7t41",
+    name="irure in",
+    season="ut pariatu",
+    slug="ey3",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.r6_siege_series.get_r6siege_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

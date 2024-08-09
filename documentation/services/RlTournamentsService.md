@@ -34,49 +34,50 @@ List tournaments for the Rocket League videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlShortTournaments(
     begin_at=[
-        "irure amet"
+        "proi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "Duis c"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        8
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "laborum nulla "
+        "ad a"
     ],
     name=[
-        "in sed "
+        "et officia"
     ],
     prizepool=[
-        "aute "
+        "aliqua fugiat"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "lqq7"
+        "l0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverRlShortTournaments(
 )
 range=RangeOverRlShortTournaments(
     begin_at=[
-        "incididun"
+        "ea in"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "sed"
+        "eiusmod"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        3
     ],
     modified_at=[
-        "dolore"
+        "fugiat la"
     ],
     name=[
-        "culpa"
+        "quis sit "
     ],
     prizepool=[
-        "officia "
+        "autelaborum "
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "grgi"
+        "yozf-78_3ou"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverRlShortTournaments(
-    name="doqui",
-    prizepool="voluptate sun",
-    slug="wumy4m_",
+    name="eiusmod anim",
+    prizepool="culpa ani",
+    slug="q",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past Rocket League tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlShortTournaments(
     begin_at=[
-        "irure amet"
+        "proi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "Duis c"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        8
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "laborum nulla "
+        "ad a"
     ],
     name=[
-        "in sed "
+        "et officia"
     ],
     prizepool=[
-        "aute "
+        "aliqua fugiat"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "lqq7"
+        "l0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverRlShortTournaments(
 )
 range=RangeOverRlShortTournaments(
     begin_at=[
-        "incididun"
+        "ea in"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "sed"
+        "eiusmod"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        3
     ],
     modified_at=[
-        "dolore"
+        "fugiat la"
     ],
     name=[
-        "culpa"
+        "quis sit "
     ],
     prizepool=[
-        "officia "
+        "autelaborum "
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "grgi"
+        "yozf-78_3ou"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverRlShortTournaments(
-    name="doqui",
-    prizepool="voluptate sun",
-    slug="wumy4m_",
+    name="eiusmod anim",
+    prizepool="culpa ani",
+    slug="q",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running Rocket League tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlShortTournaments(
     begin_at=[
-        "irure amet"
+        "proi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "Duis c"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        8
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "laborum nulla "
+        "ad a"
     ],
     name=[
-        "in sed "
+        "et officia"
     ],
     prizepool=[
-        "aute "
+        "aliqua fugiat"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "lqq7"
+        "l0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverRlShortTournaments(
 )
 range=RangeOverRlShortTournaments(
     begin_at=[
-        "incididun"
+        "ea in"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "sed"
+        "eiusmod"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        3
     ],
     modified_at=[
-        "dolore"
+        "fugiat la"
     ],
     name=[
-        "culpa"
+        "quis sit "
     ],
     prizepool=[
-        "officia "
+        "autelaborum "
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "grgi"
+        "yozf-78_3ou"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverRlShortTournaments(
-    name="doqui",
-    prizepool="voluptate sun",
-    slug="wumy4m_",
+    name="eiusmod anim",
+    prizepool="culpa ani",
+    slug="q",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming Rocket League tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlShortTournaments, RangeOverRlShortTournaments, SearchOverRlShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlShortTournaments(
     begin_at=[
-        "irure amet"
+        "proi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "Duis c"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        8
     ],
-    live_supported=False,
+    live_supported=True,
     modified_at=[
-        "laborum nulla "
+        "ad a"
     ],
     name=[
-        "in sed "
+        "et officia"
     ],
     prizepool=[
-        "aute "
+        "aliqua fugiat"
     ],
     serie_id=[
-        10
+        8
     ],
     slug=[
-        "lqq7"
+        "l0"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        2
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverRlShortTournaments(
 )
 range=RangeOverRlShortTournaments(
     begin_at=[
-        "incididun"
+        "ea in"
     ],
     detailed_stats=[
         False
     ],
     end_at=[
-        "sed"
+        "eiusmod"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        7
+        3
     ],
     modified_at=[
-        "dolore"
+        "fugiat la"
     ],
     name=[
-        "culpa"
+        "quis sit "
     ],
     prizepool=[
-        "officia "
+        "autelaborum "
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "grgi"
+        "yozf-78_3ou"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverRlShortTournaments(
-    name="doqui",
-    prizepool="voluptate sun",
-    slug="wumy4m_",
+    name="eiusmod anim",
+    prizepool="culpa ani",
+    slug="q",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.rl_tournaments.get_rl_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

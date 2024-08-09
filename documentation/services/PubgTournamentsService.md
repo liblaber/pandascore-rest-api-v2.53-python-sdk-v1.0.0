@@ -34,20 +34,21 @@ List tournaments for the PUBG videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgShortTournaments(
     begin_at=[
-        "au"
+        "velit ad"
     ],
     detailed_stats=True,
     end_at=[
-        "ut proident"
+        "aute"
     ],
     has_bracket=True,
     id_=[
@@ -55,19 +56,19 @@ filter=FilterOverPubgShortTournaments(
     ],
     live_supported=False,
     modified_at=[
-        "dolo"
+        "commodo Duis"
     ],
     name=[
-        "pariat"
+        "ipsum in"
     ],
     prizepool=[
-        "id deseru"
+        "dolor"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "s3viqi"
+        "3yb3sgap"
     ],
     tier=[
         "a"
@@ -76,7 +77,7 @@ filter=FilterOverPubgShortTournaments(
         4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverPubgShortTournaments(
 )
 range=RangeOverPubgShortTournaments(
     begin_at=[
-        "consecte"
+        "exercitat"
     ],
     detailed_stats=[
-        False
-    ],
-    end_at=[
-        "veniam dolor"
-    ],
-    has_bracket=[
         True
     ],
+    end_at=[
+        "eni"
+    ],
+    has_bracket=[
+        False
+    ],
     id_=[
-        10
+        9
     ],
     modified_at=[
-        "aliqua in"
+        "mini"
     ],
     name=[
-        "aute nostrud ni"
+        "non cupidata"
     ],
     prizepool=[
-        "officia"
+        "voluptate"
     ],
     serie_id=[
-        7
+        10
     ],
     slug=[
-        "88"
+        "3u"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgShortTournaments(
-    name="enim mini",
-    prizepool="dolore",
-    slug="1",
+    name="esseproiden",
+    prizepool="proident ",
+    slug="9qflxpoj",
     tier="a",
     winner_type="Player"
 )
@@ -172,20 +173,21 @@ List past PUBG tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgShortTournaments(
     begin_at=[
-        "au"
+        "velit ad"
     ],
     detailed_stats=True,
     end_at=[
-        "ut proident"
+        "aute"
     ],
     has_bracket=True,
     id_=[
@@ -193,19 +195,19 @@ filter=FilterOverPubgShortTournaments(
     ],
     live_supported=False,
     modified_at=[
-        "dolo"
+        "commodo Duis"
     ],
     name=[
-        "pariat"
+        "ipsum in"
     ],
     prizepool=[
-        "id deseru"
+        "dolor"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "s3viqi"
+        "3yb3sgap"
     ],
     tier=[
         "a"
@@ -214,7 +216,7 @@ filter=FilterOverPubgShortTournaments(
         4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverPubgShortTournaments(
 )
 range=RangeOverPubgShortTournaments(
     begin_at=[
-        "consecte"
+        "exercitat"
     ],
     detailed_stats=[
-        False
-    ],
-    end_at=[
-        "veniam dolor"
-    ],
-    has_bracket=[
         True
     ],
+    end_at=[
+        "eni"
+    ],
+    has_bracket=[
+        False
+    ],
     id_=[
-        10
+        9
     ],
     modified_at=[
-        "aliqua in"
+        "mini"
     ],
     name=[
-        "aute nostrud ni"
+        "non cupidata"
     ],
     prizepool=[
-        "officia"
+        "voluptate"
     ],
     serie_id=[
-        7
+        10
     ],
     slug=[
-        "88"
+        "3u"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgShortTournaments(
-    name="enim mini",
-    prizepool="dolore",
-    slug="1",
+    name="esseproiden",
+    prizepool="proident ",
+    slug="9qflxpoj",
     tier="a",
     winner_type="Player"
 )
@@ -310,20 +312,21 @@ List running PUBG tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgShortTournaments(
     begin_at=[
-        "au"
+        "velit ad"
     ],
     detailed_stats=True,
     end_at=[
-        "ut proident"
+        "aute"
     ],
     has_bracket=True,
     id_=[
@@ -331,19 +334,19 @@ filter=FilterOverPubgShortTournaments(
     ],
     live_supported=False,
     modified_at=[
-        "dolo"
+        "commodo Duis"
     ],
     name=[
-        "pariat"
+        "ipsum in"
     ],
     prizepool=[
-        "id deseru"
+        "dolor"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "s3viqi"
+        "3yb3sgap"
     ],
     tier=[
         "a"
@@ -352,7 +355,7 @@ filter=FilterOverPubgShortTournaments(
         4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverPubgShortTournaments(
 )
 range=RangeOverPubgShortTournaments(
     begin_at=[
-        "consecte"
+        "exercitat"
     ],
     detailed_stats=[
-        False
-    ],
-    end_at=[
-        "veniam dolor"
-    ],
-    has_bracket=[
         True
     ],
+    end_at=[
+        "eni"
+    ],
+    has_bracket=[
+        False
+    ],
     id_=[
-        10
+        9
     ],
     modified_at=[
-        "aliqua in"
+        "mini"
     ],
     name=[
-        "aute nostrud ni"
+        "non cupidata"
     ],
     prizepool=[
-        "officia"
+        "voluptate"
     ],
     serie_id=[
-        7
+        10
     ],
     slug=[
-        "88"
+        "3u"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgShortTournaments(
-    name="enim mini",
-    prizepool="dolore",
-    slug="1",
+    name="esseproiden",
+    prizepool="proident ",
+    slug="9qflxpoj",
     tier="a",
     winner_type="Player"
 )
@@ -448,20 +451,21 @@ List upcoming PUBG tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgShortTournaments, RangeOverPubgShortTournaments, SearchOverPubgShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgShortTournaments(
     begin_at=[
-        "au"
+        "velit ad"
     ],
     detailed_stats=True,
     end_at=[
-        "ut proident"
+        "aute"
     ],
     has_bracket=True,
     id_=[
@@ -469,19 +473,19 @@ filter=FilterOverPubgShortTournaments(
     ],
     live_supported=False,
     modified_at=[
-        "dolo"
+        "commodo Duis"
     ],
     name=[
-        "pariat"
+        "ipsum in"
     ],
     prizepool=[
-        "id deseru"
+        "dolor"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "s3viqi"
+        "3yb3sgap"
     ],
     tier=[
         "a"
@@ -490,7 +494,7 @@ filter=FilterOverPubgShortTournaments(
         4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverPubgShortTournaments(
 )
 range=RangeOverPubgShortTournaments(
     begin_at=[
-        "consecte"
+        "exercitat"
     ],
     detailed_stats=[
-        False
-    ],
-    end_at=[
-        "veniam dolor"
-    ],
-    has_bracket=[
         True
     ],
+    end_at=[
+        "eni"
+    ],
+    has_bracket=[
+        False
+    ],
     id_=[
-        10
+        9
     ],
     modified_at=[
-        "aliqua in"
+        "mini"
     ],
     name=[
-        "aute nostrud ni"
+        "non cupidata"
     ],
     prizepool=[
-        "officia"
+        "voluptate"
     ],
     serie_id=[
-        7
+        10
     ],
     slug=[
-        "88"
+        "3u"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgShortTournaments(
-    name="enim mini",
-    prizepool="dolore",
-    slug="1",
+    name="esseproiden",
+    prizepool="proident ",
+    slug="9qflxpoj",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.pubg_tournaments.get_pubg_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -34,77 +34,78 @@ List matches for the Overwatch videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwMatches(
     begin_at=[
-        "nisi o"
+        "Dui"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "ut cupidat"
+        "d"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        7
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut nu"
+        "voluptate dol"
     ],
     name=[
-        "labore"
+        "veniam"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        2
+        6
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "id la"
+        "laboru"
     ],
     serie_id=[
         8
     ],
     slug=[
-        "AxM1CNP"
+        "Bbdi W6S"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        9
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0329546.69"
+        "50504779.61189519999"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverOwMatches(
 )
 range=RangeOverOwMatches(
     begin_at=[
-        "incidid"
+        "r"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "veniam"
+        "incididunt"
     ],
     forfeit=[
         True
     ],
     id_=[
-        5
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aute"
+        "ipsum labo"
     ],
     name=[
-        "voluptate"
+        "inetea "
     ],
     number_of_games=[
-        7
+        1
     ],
     scheduled_at=[
-        "aute n"
+        "consequat"
     ],
     slug=[
-        "Ht8"
+        "epM"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverOwMatches(
     match_type="all_games_played",
-    name="sunt ut",
-    slug="m3sjw21R7a2",
+    name="ex Duis magn",
+    slug="B",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past Overwatch matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwMatches(
     begin_at=[
-        "nisi o"
+        "Dui"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "ut cupidat"
+        "d"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        7
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut nu"
+        "voluptate dol"
     ],
     name=[
-        "labore"
+        "veniam"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        2
+        6
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "id la"
+        "laboru"
     ],
     serie_id=[
         8
     ],
     slug=[
-        "AxM1CNP"
+        "Bbdi W6S"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        9
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0329546.69"
+        "50504779.61189519999"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverOwMatches(
 )
 range=RangeOverOwMatches(
     begin_at=[
-        "incidid"
+        "r"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "veniam"
+        "incididunt"
     ],
     forfeit=[
         True
     ],
     id_=[
-        5
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aute"
+        "ipsum labo"
     ],
     name=[
-        "voluptate"
+        "inetea "
     ],
     number_of_games=[
-        7
+        1
     ],
     scheduled_at=[
-        "aute n"
+        "consequat"
     ],
     slug=[
-        "Ht8"
+        "epM"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverOwMatches(
     match_type="all_games_played",
-    name="sunt ut",
-    slug="m3sjw21R7a2",
+    name="ex Duis magn",
+    slug="B",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running Overwatch matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwMatches(
     begin_at=[
-        "nisi o"
+        "Dui"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "ut cupidat"
+        "d"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        7
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut nu"
+        "voluptate dol"
     ],
     name=[
-        "labore"
+        "veniam"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        2
+        6
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "id la"
+        "laboru"
     ],
     serie_id=[
         8
     ],
     slug=[
-        "AxM1CNP"
+        "Bbdi W6S"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        9
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0329546.69"
+        "50504779.61189519999"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverOwMatches(
 )
 range=RangeOverOwMatches(
     begin_at=[
-        "incidid"
+        "r"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "veniam"
+        "incididunt"
     ],
     forfeit=[
         True
     ],
     id_=[
-        5
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aute"
+        "ipsum labo"
     ],
     name=[
-        "voluptate"
+        "inetea "
     ],
     number_of_games=[
-        7
+        1
     ],
     scheduled_at=[
-        "aute n"
+        "consequat"
     ],
     slug=[
-        "Ht8"
+        "epM"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverOwMatches(
     match_type="all_games_played",
-    name="sunt ut",
-    slug="m3sjw21R7a2",
+    name="ex Duis magn",
+    slug="B",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming Overwatch matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwMatches, RangeOverOwMatches, SearchOverOwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwMatches(
     begin_at=[
-        "nisi o"
+        "Dui"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "ut cupidat"
+        "d"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        7
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut nu"
+        "voluptate dol"
     ],
     name=[
-        "labore"
+        "veniam"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        2
+        6
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
-    running=True,
+    running=False,
     scheduled_at=[
-        "id la"
+        "laboru"
     ],
     serie_id=[
         8
     ],
     slug=[
-        "AxM1CNP"
+        "Bbdi W6S"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        9
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0329546.69"
+        "50504779.61189519999"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverOwMatches(
 )
 range=RangeOverOwMatches(
     begin_at=[
-        "incidid"
+        "r"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "veniam"
+        "incididunt"
     ],
     forfeit=[
         True
     ],
     id_=[
-        5
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aute"
+        "ipsum labo"
     ],
     name=[
-        "voluptate"
+        "inetea "
     ],
     number_of_games=[
-        7
+        1
     ],
     scheduled_at=[
-        "aute n"
+        "consequat"
     ],
     slug=[
-        "Ht8"
+        "epM"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverOwMatches(
     match_type="all_games_played",
-    name="sunt ut",
-    slug="m3sjw21R7a2",
+    name="ex Duis magn",
+    slug="B",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.ow_matches.get_ow_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

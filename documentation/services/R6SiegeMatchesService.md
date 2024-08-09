@@ -34,77 +34,78 @@ List matches for the Rainbow Six Siege videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeMatches(
     begin_at=[
-        "in"
+        "ut proident"
     ],
     detailed_stats=True,
     draw=False,
     end_at=[
-        "conse"
+        "magn"
     ],
-    finished=False,
-    forfeit=False,
-    future=False,
+    finished=True,
+    forfeit=True,
+    future=True,
     id_=[
         3
     ],
     league_id=[
-        4
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "proident repreh"
+        "ani"
     ],
     name=[
-        "irure "
+        "aliquip culpa"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        4
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=False,
+    opponents_filled=True,
+    past=True,
     running=True,
     scheduled_at=[
-        "enim offici"
+        "ad eu consec"
     ],
     serie_id=[
-        4
+        1
     ],
     slug=[
-        "y-R0S1G7Ae"
+        "6A0c8"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        4
     ],
     videogame_version=[
-        "91490764700.14068944977"
+        "266391336.84111"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverR6SiegeMatches(
 )
 range=RangeOverR6SiegeMatches(
     begin_at=[
-        "e"
+        "t"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
-    ],
-    end_at=[
-        "e"
-    ],
-    forfeit=[
         True
     ],
+    end_at=[
+        "dolor"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ad "
+        "mo"
     ],
     name=[
-        "deserunt dol"
+        "commodo"
     ],
     number_of_games=[
-        8
+        1
     ],
     scheduled_at=[
-        "in"
+        "sed"
     ],
     slug=[
-        "J40PU-E6"
+        "SXr_"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        9
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverR6SiegeMatches(
     match_type="all_games_played",
-    name="fugiat qui",
-    slug="YQMpz2yof",
+    name="culpa deserun",
+    slug="rYbtGes",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past Rainbow Six Siege matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeMatches(
     begin_at=[
-        "in"
+        "ut proident"
     ],
     detailed_stats=True,
     draw=False,
     end_at=[
-        "conse"
+        "magn"
     ],
-    finished=False,
-    forfeit=False,
-    future=False,
+    finished=True,
+    forfeit=True,
+    future=True,
     id_=[
         3
     ],
     league_id=[
-        4
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "proident repreh"
+        "ani"
     ],
     name=[
-        "irure "
+        "aliquip culpa"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        4
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=False,
+    opponents_filled=True,
+    past=True,
     running=True,
     scheduled_at=[
-        "enim offici"
+        "ad eu consec"
     ],
     serie_id=[
-        4
+        1
     ],
     slug=[
-        "y-R0S1G7Ae"
+        "6A0c8"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        4
     ],
     videogame_version=[
-        "91490764700.14068944977"
+        "266391336.84111"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverR6SiegeMatches(
 )
 range=RangeOverR6SiegeMatches(
     begin_at=[
-        "e"
+        "t"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
-    ],
-    end_at=[
-        "e"
-    ],
-    forfeit=[
         True
     ],
+    end_at=[
+        "dolor"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ad "
+        "mo"
     ],
     name=[
-        "deserunt dol"
+        "commodo"
     ],
     number_of_games=[
-        8
+        1
     ],
     scheduled_at=[
-        "in"
+        "sed"
     ],
     slug=[
-        "J40PU-E6"
+        "SXr_"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        9
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverR6SiegeMatches(
     match_type="all_games_played",
-    name="fugiat qui",
-    slug="YQMpz2yof",
+    name="culpa deserun",
+    slug="rYbtGes",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running Rainbow Six Siege matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeMatches(
     begin_at=[
-        "in"
+        "ut proident"
     ],
     detailed_stats=True,
     draw=False,
     end_at=[
-        "conse"
+        "magn"
     ],
-    finished=False,
-    forfeit=False,
-    future=False,
+    finished=True,
+    forfeit=True,
+    future=True,
     id_=[
         3
     ],
     league_id=[
-        4
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "proident repreh"
+        "ani"
     ],
     name=[
-        "irure "
+        "aliquip culpa"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        4
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=False,
+    opponents_filled=True,
+    past=True,
     running=True,
     scheduled_at=[
-        "enim offici"
+        "ad eu consec"
     ],
     serie_id=[
-        4
+        1
     ],
     slug=[
-        "y-R0S1G7Ae"
+        "6A0c8"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        4
     ],
     videogame_version=[
-        "91490764700.14068944977"
+        "266391336.84111"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverR6SiegeMatches(
 )
 range=RangeOverR6SiegeMatches(
     begin_at=[
-        "e"
+        "t"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
-    ],
-    end_at=[
-        "e"
-    ],
-    forfeit=[
         True
     ],
+    end_at=[
+        "dolor"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ad "
+        "mo"
     ],
     name=[
-        "deserunt dol"
+        "commodo"
     ],
     number_of_games=[
-        8
+        1
     ],
     scheduled_at=[
-        "in"
+        "sed"
     ],
     slug=[
-        "J40PU-E6"
+        "SXr_"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        9
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverR6SiegeMatches(
     match_type="all_games_played",
-    name="fugiat qui",
-    slug="YQMpz2yof",
+    name="culpa deserun",
+    slug="rYbtGes",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming Rainbow Six Siege matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeMatches, RangeOverR6SiegeMatches, SearchOverR6SiegeMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeMatches(
     begin_at=[
-        "in"
+        "ut proident"
     ],
     detailed_stats=True,
     draw=False,
     end_at=[
-        "conse"
+        "magn"
     ],
-    finished=False,
-    forfeit=False,
-    future=False,
+    finished=True,
+    forfeit=True,
+    future=True,
     id_=[
         3
     ],
     league_id=[
-        4
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "proident repreh"
+        "ani"
     ],
     name=[
-        "irure "
+        "aliquip culpa"
     ],
-    not_started=False,
+    not_started=True,
     number_of_games=[
-        4
+        9
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=False,
+    opponents_filled=True,
+    past=True,
     running=True,
     scheduled_at=[
-        "enim offici"
+        "ad eu consec"
     ],
     serie_id=[
-        4
+        1
     ],
     slug=[
-        "y-R0S1G7Ae"
+        "6A0c8"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        4
     ],
     videogame_version=[
-        "91490764700.14068944977"
+        "266391336.84111"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverR6SiegeMatches(
 )
 range=RangeOverR6SiegeMatches(
     begin_at=[
-        "e"
+        "t"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
-    ],
-    end_at=[
-        "e"
-    ],
-    forfeit=[
         True
     ],
+    end_at=[
+        "dolor"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ad "
+        "mo"
     ],
     name=[
-        "deserunt dol"
+        "commodo"
     ],
     number_of_games=[
-        8
+        1
     ],
     scheduled_at=[
-        "in"
+        "sed"
     ],
     slug=[
-        "J40PU-E6"
+        "SXr_"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        9
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverR6SiegeMatches(
     match_type="all_games_played",
-    name="fugiat qui",
-    slug="YQMpz2yof",
+    name="culpa deserun",
+    slug="rYbtGes",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.r6_siege_matches.get_r6siege_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->
