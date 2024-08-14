@@ -34,43 +34,44 @@ List series for the League of Legends videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLSeries(
     begin_at=[
-        "id Except"
+        "nisi amet"
     ],
     end_at=[
-        "dolore fugiat "
+        "reprehen"
     ],
     id_=[
-        1
-    ],
-    league_id=[
         7
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "nisi "
+        "Ut "
     ],
     name=[
-        "ea labore d"
+        "sintmoll"
     ],
     season=[
-        "voluptate"
+        "ad aliqua in"
     ],
     slug=[
-        "1yr7hs"
+        "1br98fc"
     ],
     videogame_title=[
-        6
+        9
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverLoLSeries(
 )
 range=RangeOverLoLSeries(
     begin_at=[
-        "ut dolore elit"
+        "sint co"
     ],
     end_at=[
-        "Duis ex est"
+        "tempor esse co"
     ],
     id_=[
         7
     ],
     league_id=[
-        8
+        3
     ],
     modified_at=[
-        "sunt null"
+        "E"
     ],
     name=[
-        "sint do sit e"
+        "eliti"
     ],
     season=[
-        "in in dolore no"
+        "labore exercita"
     ],
     slug=[
-        "h9uz8-"
+        "93mxp18t"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLSeries(
-    name="veniam cillu",
-    season="mollit nost",
-    slug="rlq5ktf0t",
+    name="mollit p",
+    season="exerc",
+    slug="wm55",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past League of Legends series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLSeries(
     begin_at=[
-        "id Except"
+        "nisi amet"
     ],
     end_at=[
-        "dolore fugiat "
+        "reprehen"
     ],
     id_=[
-        1
-    ],
-    league_id=[
         7
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "nisi "
+        "Ut "
     ],
     name=[
-        "ea labore d"
+        "sintmoll"
     ],
     season=[
-        "voluptate"
+        "ad aliqua in"
     ],
     slug=[
-        "1yr7hs"
+        "1br98fc"
     ],
     videogame_title=[
-        6
+        9
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverLoLSeries(
 )
 range=RangeOverLoLSeries(
     begin_at=[
-        "ut dolore elit"
+        "sint co"
     ],
     end_at=[
-        "Duis ex est"
+        "tempor esse co"
     ],
     id_=[
         7
     ],
     league_id=[
-        8
+        3
     ],
     modified_at=[
-        "sunt null"
+        "E"
     ],
     name=[
-        "sint do sit e"
+        "eliti"
     ],
     season=[
-        "in in dolore no"
+        "labore exercita"
     ],
     slug=[
-        "h9uz8-"
+        "93mxp18t"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLSeries(
-    name="veniam cillu",
-    season="mollit nost",
-    slug="rlq5ktf0t",
+    name="mollit p",
+    season="exerc",
+    slug="wm55",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running League of Legends series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLSeries(
     begin_at=[
-        "id Except"
+        "nisi amet"
     ],
     end_at=[
-        "dolore fugiat "
+        "reprehen"
     ],
     id_=[
-        1
-    ],
-    league_id=[
         7
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "nisi "
+        "Ut "
     ],
     name=[
-        "ea labore d"
+        "sintmoll"
     ],
     season=[
-        "voluptate"
+        "ad aliqua in"
     ],
     slug=[
-        "1yr7hs"
+        "1br98fc"
     ],
     videogame_title=[
-        6
+        9
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverLoLSeries(
 )
 range=RangeOverLoLSeries(
     begin_at=[
-        "ut dolore elit"
+        "sint co"
     ],
     end_at=[
-        "Duis ex est"
+        "tempor esse co"
     ],
     id_=[
         7
     ],
     league_id=[
-        8
+        3
     ],
     modified_at=[
-        "sunt null"
+        "E"
     ],
     name=[
-        "sint do sit e"
+        "eliti"
     ],
     season=[
-        "in in dolore no"
+        "labore exercita"
     ],
     slug=[
-        "h9uz8-"
+        "93mxp18t"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLSeries(
-    name="veniam cillu",
-    season="mollit nost",
-    slug="rlq5ktf0t",
+    name="mollit p",
+    season="exerc",
+    slug="wm55",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming League of Legends series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLSeries, RangeOverLoLSeries, SearchOverLoLSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLSeries(
     begin_at=[
-        "id Except"
+        "nisi amet"
     ],
     end_at=[
-        "dolore fugiat "
+        "reprehen"
     ],
     id_=[
-        1
-    ],
-    league_id=[
         7
     ],
+    league_id=[
+        2
+    ],
     modified_at=[
-        "nisi "
+        "Ut "
     ],
     name=[
-        "ea labore d"
+        "sintmoll"
     ],
     season=[
-        "voluptate"
+        "ad aliqua in"
     ],
     slug=[
-        "1yr7hs"
+        "1br98fc"
     ],
     videogame_title=[
-        6
+        9
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverLoLSeries(
 )
 range=RangeOverLoLSeries(
     begin_at=[
-        "ut dolore elit"
+        "sint co"
     ],
     end_at=[
-        "Duis ex est"
+        "tempor esse co"
     ],
     id_=[
         7
     ],
     league_id=[
-        8
+        3
     ],
     modified_at=[
-        "sunt null"
+        "E"
     ],
     name=[
-        "sint do sit e"
+        "eliti"
     ],
     season=[
-        "in in dolore no"
+        "labore exercita"
     ],
     slug=[
-        "h9uz8-"
+        "93mxp18t"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLSeries(
-    name="veniam cillu",
-    season="mollit nost",
-    slug="rlq5ktf0t",
+    name="mollit p",
+    season="exerc",
+    slug="wm55",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.lo_l_series.get_lol_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

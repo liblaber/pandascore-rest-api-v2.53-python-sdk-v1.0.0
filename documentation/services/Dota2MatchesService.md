@@ -34,77 +34,78 @@ List matches for the Dota 2 videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Matches(
     begin_at=[
-        "exercita"
+        "voluptate"
     ],
     detailed_stats=False,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat con"
+        "laborum exerci"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        2
     ],
     league_id=[
-        2
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "c"
+        "q"
     ],
     name=[
-        "consectetu"
+        "in occaecat"
     ],
     not_started=True,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "cons"
+        "sed Lorem"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "KkWSQF"
+        "l1K2WGjRGmW"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        5
+        10
     ],
     videogame_version=[
-        "2814994544.670513.63045297199"
+        "44537.153947.67145"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,7 +113,7 @@ filter=FilterOverDota2Matches(
 )
 range=RangeOverDota2Matches(
     begin_at=[
-        "mollit an"
+        "enim cupid"
     ],
     detailed_stats=[
         False
@@ -121,40 +122,40 @@ range=RangeOverDota2Matches(
         False
     ],
     end_at=[
-        "Ut enim"
+        "et "
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "sed"
+        "mollit labori"
     ],
     name=[
-        "amet eu"
+        "non enim"
     ],
     number_of_games=[
-        5
+        1
     ],
     scheduled_at=[
-        "mollit nisi en"
+        "anim tempor"
     ],
     slug=[
-        "aC7 VRN8vMK"
+        "StboFnI"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverDota2Matches(
     match_type="all_games_played",
-    name="ex ei",
-    slug="KS-Pbe-j",
+    name="officia",
+    slug="R ",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past Dota 2 matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Matches(
     begin_at=[
-        "exercita"
+        "voluptate"
     ],
     detailed_stats=False,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat con"
+        "laborum exerci"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        2
     ],
     league_id=[
-        2
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "c"
+        "q"
     ],
     name=[
-        "consectetu"
+        "in occaecat"
     ],
     not_started=True,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "cons"
+        "sed Lorem"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "KkWSQF"
+        "l1K2WGjRGmW"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        5
+        10
     ],
     videogame_version=[
-        "2814994544.670513.63045297199"
+        "44537.153947.67145"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,7 +289,7 @@ filter=FilterOverDota2Matches(
 )
 range=RangeOverDota2Matches(
     begin_at=[
-        "mollit an"
+        "enim cupid"
     ],
     detailed_stats=[
         False
@@ -296,40 +298,40 @@ range=RangeOverDota2Matches(
         False
     ],
     end_at=[
-        "Ut enim"
+        "et "
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "sed"
+        "mollit labori"
     ],
     name=[
-        "amet eu"
+        "non enim"
     ],
     number_of_games=[
-        5
+        1
     ],
     scheduled_at=[
-        "mollit nisi en"
+        "anim tempor"
     ],
     slug=[
-        "aC7 VRN8vMK"
+        "StboFnI"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverDota2Matches(
     match_type="all_games_played",
-    name="ex ei",
-    slug="KS-Pbe-j",
+    name="officia",
+    slug="R ",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running Dota 2 matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Matches(
     begin_at=[
-        "exercita"
+        "voluptate"
     ],
     detailed_stats=False,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat con"
+        "laborum exerci"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        2
     ],
     league_id=[
-        2
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "c"
+        "q"
     ],
     name=[
-        "consectetu"
+        "in occaecat"
     ],
     not_started=True,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "cons"
+        "sed Lorem"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "KkWSQF"
+        "l1K2WGjRGmW"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        5
+        10
     ],
     videogame_version=[
-        "2814994544.670513.63045297199"
+        "44537.153947.67145"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,7 +465,7 @@ filter=FilterOverDota2Matches(
 )
 range=RangeOverDota2Matches(
     begin_at=[
-        "mollit an"
+        "enim cupid"
     ],
     detailed_stats=[
         False
@@ -471,40 +474,40 @@ range=RangeOverDota2Matches(
         False
     ],
     end_at=[
-        "Ut enim"
+        "et "
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "sed"
+        "mollit labori"
     ],
     name=[
-        "amet eu"
+        "non enim"
     ],
     number_of_games=[
-        5
+        1
     ],
     scheduled_at=[
-        "mollit nisi en"
+        "anim tempor"
     ],
     slug=[
-        "aC7 VRN8vMK"
+        "StboFnI"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverDota2Matches(
     match_type="all_games_played",
-    name="ex ei",
-    slug="KS-Pbe-j",
+    name="officia",
+    slug="R ",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming Dota 2 matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverDota2Matches, RangeOverDota2Matches, SearchOverDota2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverDota2Matches(
     begin_at=[
-        "exercita"
+        "voluptate"
     ],
     detailed_stats=False,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat con"
+        "laborum exerci"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        2
     ],
     league_id=[
-        2
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "c"
+        "q"
     ],
     name=[
-        "consectetu"
+        "in occaecat"
     ],
     not_started=True,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "cons"
+        "sed Lorem"
     ],
     serie_id=[
         2
     ],
     slug=[
-        "KkWSQF"
+        "l1K2WGjRGmW"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        5
+        10
     ],
     videogame_version=[
-        "2814994544.670513.63045297199"
+        "44537.153947.67145"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,7 +641,7 @@ filter=FilterOverDota2Matches(
 )
 range=RangeOverDota2Matches(
     begin_at=[
-        "mollit an"
+        "enim cupid"
     ],
     detailed_stats=[
         False
@@ -646,40 +650,40 @@ range=RangeOverDota2Matches(
         False
     ],
     end_at=[
-        "Ut enim"
+        "et "
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        5
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "sed"
+        "mollit labori"
     ],
     name=[
-        "amet eu"
+        "non enim"
     ],
     number_of_games=[
-        5
+        1
     ],
     scheduled_at=[
-        "mollit nisi en"
+        "anim tempor"
     ],
     slug=[
-        "aC7 VRN8vMK"
+        "StboFnI"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverDota2Matches(
     match_type="all_games_played",
-    name="ex ei",
-    slug="KS-Pbe-j",
+    name="officia",
+    slug="R ",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.dota2_matches.get_dota2_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

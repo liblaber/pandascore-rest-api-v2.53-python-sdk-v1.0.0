@@ -33,11 +33,12 @@ List videogames
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 page=1
 
@@ -69,12 +70,13 @@ Get a single videogame by ID or by slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models.videogame_id_or_slug import VideogameId
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models.videogame_id_or_slug import VideogameId
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 videogame_id_or_slug=1
 
@@ -109,13 +111,14 @@ List leagues for a given videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLeagues, RangeOverLeagues, SearchOverLeagues
-from pandascore.models.videogame_id_or_slug import VideogameId
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLeagues, RangeOverLeagues, SearchOverLeagues
+from pandascore_client.models.videogame_id_or_slug import VideogameId
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 videogame_id_or_slug=1
 filter=FilterOverLeagues(
@@ -123,42 +126,42 @@ filter=FilterOverLeagues(
         7
     ],
     modified_at=[
-        "ut cillum eu"
+        "offici"
     ],
     name=[
-        "ad offici"
+        "ad ut"
     ],
     slug=[
-        "w"
+        "p_"
     ],
     url=[
-        "sunt eiusmod "
+        "esse aliqu"
     ]
 )
 range=RangeOverLeagues(
     id_=[
-        6
+        10
     ],
     modified_at=[
-        "inci"
+        "ut nulla"
     ],
     name=[
-        "quis "
+        "ea mol"
     ],
     slug=[
-        "jt4vj"
+        "pmjvmw-84d"
     ],
     url=[
-        "Duisdo culpa ni"
+        "ea aliquip"
     ]
 )
 sort=[
     ""
 ]
 search=SearchOverLeagues(
-    name="veniam",
-    slug="7xkee40if",
-    url="Excepteur ea"
+    name="Duis dolo",
+    slug="-teig",
+    url="adipisicing"
 )
 page=1
 
@@ -201,45 +204,46 @@ List series for the given videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverSeries, RangeOverSeries, SearchOverSeries
-from pandascore.models.videogame_id_or_slug import VideogameId
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverSeries, RangeOverSeries, SearchOverSeries
+from pandascore_client.models.videogame_id_or_slug import VideogameId
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 videogame_id_or_slug=1
 filter=FilterOverSeries(
     begin_at=[
-        "aute Exc"
+        "sunt cillum dol"
     ],
     end_at=[
-        "occaecat ut"
+        "dolor"
     ],
     id_=[
-        1
+        5
     ],
     league_id=[
-        5
+        7
     ],
     modified_at=[
-        "ut"
+        "deserunt"
     ],
     name=[
-        "non D"
+        "laboris"
     ],
     season=[
-        "idlaboris iru"
+        "proident"
     ],
     slug=[
-        "sshkoy8r"
+        "_9"
     ],
     videogame_title=[
-        5
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -250,31 +254,31 @@ filter=FilterOverSeries(
 )
 range=RangeOverSeries(
     begin_at=[
-        "cillum"
+        "sint c"
     ],
     end_at=[
-        "eiusmo"
+        "ex dolore tempo"
     ],
     id_=[
-        4
+        6
     ],
     league_id=[
-        5
+        6
     ],
     modified_at=[
-        "proident Ex"
+        "lab"
     ],
     name=[
-        "Lorem a"
+        "animea labore e"
     ],
     season=[
-        "deserunt i"
+        "ipsum i"
     ],
     slug=[
-        "yyk8h"
+        "8"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,9 +291,9 @@ sort=[
     ""
 ]
 search=SearchOverSeries(
-    name="ad amet",
-    season="Lorem",
-    slug="1xa",
+    name="fugia",
+    season="aute al",
+    slug="cc3u_",
     winner_type="Player"
 )
 page=1
@@ -329,12 +333,13 @@ List available titles for a given videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models.videogame_id_or_slug import VideogameId
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models.videogame_id_or_slug import VideogameId
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 videogame_id_or_slug=1
 page=1
@@ -374,51 +379,52 @@ List tournaments of the given videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverShortTournaments, RangeOverShortTournaments, SearchOverShortTournaments
-from pandascore.models.videogame_id_or_slug import VideogameId
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverShortTournaments, RangeOverShortTournaments, SearchOverShortTournaments
+from pandascore_client.models.videogame_id_or_slug import VideogameId
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 videogame_id_or_slug=1
 filter=FilterOverShortTournaments(
     begin_at=[
-        "qui"
+        "pariat"
     ],
     detailed_stats=True,
     end_at=[
-        "mollit"
+        "eli"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        5
+        4
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "laborum"
+        "cillu"
     ],
     name=[
-        "estlaboris e"
+        "Excepteur do"
     ],
     prizepool=[
-        "labore"
+        "in ut veniam "
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "bw"
+        "z160_"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        10
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -426,40 +432,40 @@ filter=FilterOverShortTournaments(
 )
 range=RangeOverShortTournaments(
     begin_at=[
-        "do proident ve"
+        "et"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "adipisicin"
+        "commo"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        2
+        1
     ],
     modified_at=[
-        "of"
+        "nul"
     ],
     name=[
-        "occaec"
+        "enim "
     ],
     prizepool=[
-        "labori"
+        "qui ull"
     ],
     serie_id=[
-        9
+        3
     ],
     slug=[
-        "jifeh"
+        "vyokv"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -469,9 +475,9 @@ sort=[
     ""
 ]
 search=SearchOverShortTournaments(
-    name="in amet",
-    prizepool="qui tempor",
-    slug="g",
+    name="sunt minim",
+    prizepool="utid magna es",
+    slug="50l9n",
     tier="a",
     winner_type="Player"
 )
@@ -512,12 +518,13 @@ List available versions for a given videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models.videogame_id_or_slug import VideogameId
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models.videogame_id_or_slug import VideogameId
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 videogame_id_or_slug=1
 page=1
@@ -530,3 +537,5 @@ result = sdk.videogames.get_videogames_videogame_id_or_slug_versions(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -34,77 +34,78 @@ List matches for the COD MW videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwMatches(
     begin_at=[
-        "aute do"
+        "min"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "dolore occaeca"
+        "re"
     ],
-    finished=False,
+    finished=True,
     forfeit=True,
-    future=True,
+    future=False,
     id_=[
-        8
+        3
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "consectetur"
+        "dolore Excepte"
     ],
     name=[
-        "irure "
+        "ut laborum labo"
     ],
     not_started=True,
     number_of_games=[
-        3
-    ],
-    opponent_id=[
-        7
-    ],
-    opponents_filled=True,
-    past=False,
-    running=True,
-    scheduled_at=[
-        "Ex"
-    ],
-    serie_id=[
         1
     ],
+    opponent_id=[
+        10
+    ],
+    opponents_filled=True,
+    past=True,
+    running=False,
+    scheduled_at=[
+        "in eiu"
+    ],
+    serie_id=[
+        9
+    ],
     slug=[
-        "nyGgsi"
+        "FyZHzUQlMqf"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        5
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        3
+        9
     ],
     videogame_version=[
-        "9206043.379237680"
+        "49265.58843243.7069641"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,7 +113,7 @@ filter=FilterOverCodmwMatches(
 )
 range=RangeOverCodmwMatches(
     begin_at=[
-        "et pariat"
+        "sunt pari"
     ],
     detailed_stats=[
         True
@@ -121,40 +122,40 @@ range=RangeOverCodmwMatches(
         True
     ],
     end_at=[
-        "commo"
+        "et mollit"
     ],
     forfeit=[
         True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "te"
+        "consequat au"
     ],
     name=[
-        "sint repreh"
+        "animirure c"
     ],
     number_of_games=[
-        0
+        7
     ],
     scheduled_at=[
-        "officia anim"
+        "exercitation U"
     ],
     slug=[
-        "hKOBGa4"
+        "b"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverCodmwMatches(
     match_type="all_games_played",
-    name="irure incid",
-    slug="1byxpI4",
+    name="culpa ad do Du",
+    slug="QnETMGeSVO4",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past CODMW matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwMatches(
     begin_at=[
-        "aute do"
+        "min"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "dolore occaeca"
+        "re"
     ],
-    finished=False,
+    finished=True,
     forfeit=True,
-    future=True,
+    future=False,
     id_=[
-        8
+        3
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "consectetur"
+        "dolore Excepte"
     ],
     name=[
-        "irure "
+        "ut laborum labo"
     ],
     not_started=True,
     number_of_games=[
-        3
-    ],
-    opponent_id=[
-        7
-    ],
-    opponents_filled=True,
-    past=False,
-    running=True,
-    scheduled_at=[
-        "Ex"
-    ],
-    serie_id=[
         1
     ],
+    opponent_id=[
+        10
+    ],
+    opponents_filled=True,
+    past=True,
+    running=False,
+    scheduled_at=[
+        "in eiu"
+    ],
+    serie_id=[
+        9
+    ],
     slug=[
-        "nyGgsi"
+        "FyZHzUQlMqf"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        5
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        3
+        9
     ],
     videogame_version=[
-        "9206043.379237680"
+        "49265.58843243.7069641"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,7 +289,7 @@ filter=FilterOverCodmwMatches(
 )
 range=RangeOverCodmwMatches(
     begin_at=[
-        "et pariat"
+        "sunt pari"
     ],
     detailed_stats=[
         True
@@ -296,40 +298,40 @@ range=RangeOverCodmwMatches(
         True
     ],
     end_at=[
-        "commo"
+        "et mollit"
     ],
     forfeit=[
         True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "te"
+        "consequat au"
     ],
     name=[
-        "sint repreh"
+        "animirure c"
     ],
     number_of_games=[
-        0
+        7
     ],
     scheduled_at=[
-        "officia anim"
+        "exercitation U"
     ],
     slug=[
-        "hKOBGa4"
+        "b"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverCodmwMatches(
     match_type="all_games_played",
-    name="irure incid",
-    slug="1byxpI4",
+    name="culpa ad do Du",
+    slug="QnETMGeSVO4",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running CODMW matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwMatches(
     begin_at=[
-        "aute do"
+        "min"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "dolore occaeca"
+        "re"
     ],
-    finished=False,
+    finished=True,
     forfeit=True,
-    future=True,
+    future=False,
     id_=[
-        8
+        3
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "consectetur"
+        "dolore Excepte"
     ],
     name=[
-        "irure "
+        "ut laborum labo"
     ],
     not_started=True,
     number_of_games=[
-        3
-    ],
-    opponent_id=[
-        7
-    ],
-    opponents_filled=True,
-    past=False,
-    running=True,
-    scheduled_at=[
-        "Ex"
-    ],
-    serie_id=[
         1
     ],
+    opponent_id=[
+        10
+    ],
+    opponents_filled=True,
+    past=True,
+    running=False,
+    scheduled_at=[
+        "in eiu"
+    ],
+    serie_id=[
+        9
+    ],
     slug=[
-        "nyGgsi"
+        "FyZHzUQlMqf"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        5
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        3
+        9
     ],
     videogame_version=[
-        "9206043.379237680"
+        "49265.58843243.7069641"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,7 +465,7 @@ filter=FilterOverCodmwMatches(
 )
 range=RangeOverCodmwMatches(
     begin_at=[
-        "et pariat"
+        "sunt pari"
     ],
     detailed_stats=[
         True
@@ -471,40 +474,40 @@ range=RangeOverCodmwMatches(
         True
     ],
     end_at=[
-        "commo"
+        "et mollit"
     ],
     forfeit=[
         True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "te"
+        "consequat au"
     ],
     name=[
-        "sint repreh"
+        "animirure c"
     ],
     number_of_games=[
-        0
+        7
     ],
     scheduled_at=[
-        "officia anim"
+        "exercitation U"
     ],
     slug=[
-        "hKOBGa4"
+        "b"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverCodmwMatches(
     match_type="all_games_played",
-    name="irure incid",
-    slug="1byxpI4",
+    name="culpa ad do Du",
+    slug="QnETMGeSVO4",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming CODMW matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwMatches, RangeOverCodmwMatches, SearchOverCodmwMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwMatches(
     begin_at=[
-        "aute do"
+        "min"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "dolore occaeca"
+        "re"
     ],
-    finished=False,
+    finished=True,
     forfeit=True,
-    future=True,
+    future=False,
     id_=[
-        8
+        3
     ],
     league_id=[
-        4
+        5
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "consectetur"
+        "dolore Excepte"
     ],
     name=[
-        "irure "
+        "ut laborum labo"
     ],
     not_started=True,
     number_of_games=[
-        3
-    ],
-    opponent_id=[
-        7
-    ],
-    opponents_filled=True,
-    past=False,
-    running=True,
-    scheduled_at=[
-        "Ex"
-    ],
-    serie_id=[
         1
     ],
+    opponent_id=[
+        10
+    ],
+    opponents_filled=True,
+    past=True,
+    running=False,
+    scheduled_at=[
+        "in eiu"
+    ],
+    serie_id=[
+        9
+    ],
     slug=[
-        "nyGgsi"
+        "FyZHzUQlMqf"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        5
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        3
+        9
     ],
     videogame_version=[
-        "9206043.379237680"
+        "49265.58843243.7069641"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,7 +641,7 @@ filter=FilterOverCodmwMatches(
 )
 range=RangeOverCodmwMatches(
     begin_at=[
-        "et pariat"
+        "sunt pari"
     ],
     detailed_stats=[
         True
@@ -646,40 +650,40 @@ range=RangeOverCodmwMatches(
         True
     ],
     end_at=[
-        "commo"
+        "et mollit"
     ],
     forfeit=[
         True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "te"
+        "consequat au"
     ],
     name=[
-        "sint repreh"
+        "animirure c"
     ],
     number_of_games=[
-        0
+        7
     ],
     scheduled_at=[
-        "officia anim"
+        "exercitation U"
     ],
     slug=[
-        "hKOBGa4"
+        "b"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverCodmwMatches(
     match_type="all_games_played",
-    name="irure incid",
-    slug="1byxpI4",
+    name="culpa ad do Du",
+    slug="QnETMGeSVO4",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.codmw_matches.get_codmw_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

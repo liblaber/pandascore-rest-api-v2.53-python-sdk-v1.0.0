@@ -34,49 +34,50 @@ List tournaments for the League of Legends videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLShortTournaments(
     begin_at=[
-        "nisi fu"
+        "Excep"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "et m"
+        "fugiat"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "cill"
+        "culpa"
     ],
     name=[
-        "cupida"
+        "Lorem nulla "
     ],
     prizepool=[
-        "magna lab"
+        "elit i"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "-8p9m"
+        "p3_tn7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverLoLShortTournaments(
 )
 range=RangeOverLoLShortTournaments(
     begin_at=[
-        "eli"
+        "amet ullamco"
     ],
     detailed_stats=[
-        True
-    ],
-    end_at=[
-        "f"
-    ],
-    has_bracket=[
         False
     ],
+    end_at=[
+        "cupidatat"
+    ],
+    has_bracket=[
+        True
+    ],
     id_=[
-        3
+        10
     ],
     modified_at=[
-        "sint dese"
+        "irure"
     ],
     name=[
-        "pariatur"
+        "eiusmod "
     ],
     prizepool=[
-        "amet ea"
+        "id culp"
     ],
     serie_id=[
-        3
+        10
     ],
     slug=[
-        "70sw6le8ke"
+        "8dyh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLShortTournaments(
-    name="culpa aute",
-    prizepool="ametculpa Lorem",
-    slug="kxd-k6ts",
+    name="sed p",
+    prizepool="laboris ut c",
+    slug="pbrmjq9u2_",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past League of Legends tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLShortTournaments(
     begin_at=[
-        "nisi fu"
+        "Excep"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "et m"
+        "fugiat"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "cill"
+        "culpa"
     ],
     name=[
-        "cupida"
+        "Lorem nulla "
     ],
     prizepool=[
-        "magna lab"
+        "elit i"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "-8p9m"
+        "p3_tn7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverLoLShortTournaments(
 )
 range=RangeOverLoLShortTournaments(
     begin_at=[
-        "eli"
+        "amet ullamco"
     ],
     detailed_stats=[
-        True
-    ],
-    end_at=[
-        "f"
-    ],
-    has_bracket=[
         False
     ],
+    end_at=[
+        "cupidatat"
+    ],
+    has_bracket=[
+        True
+    ],
     id_=[
-        3
+        10
     ],
     modified_at=[
-        "sint dese"
+        "irure"
     ],
     name=[
-        "pariatur"
+        "eiusmod "
     ],
     prizepool=[
-        "amet ea"
+        "id culp"
     ],
     serie_id=[
-        3
+        10
     ],
     slug=[
-        "70sw6le8ke"
+        "8dyh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLShortTournaments(
-    name="culpa aute",
-    prizepool="ametculpa Lorem",
-    slug="kxd-k6ts",
+    name="sed p",
+    prizepool="laboris ut c",
+    slug="pbrmjq9u2_",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running League of Legends tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLShortTournaments(
     begin_at=[
-        "nisi fu"
+        "Excep"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "et m"
+        "fugiat"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "cill"
+        "culpa"
     ],
     name=[
-        "cupida"
+        "Lorem nulla "
     ],
     prizepool=[
-        "magna lab"
+        "elit i"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "-8p9m"
+        "p3_tn7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverLoLShortTournaments(
 )
 range=RangeOverLoLShortTournaments(
     begin_at=[
-        "eli"
+        "amet ullamco"
     ],
     detailed_stats=[
-        True
-    ],
-    end_at=[
-        "f"
-    ],
-    has_bracket=[
         False
     ],
+    end_at=[
+        "cupidatat"
+    ],
+    has_bracket=[
+        True
+    ],
     id_=[
-        3
+        10
     ],
     modified_at=[
-        "sint dese"
+        "irure"
     ],
     name=[
-        "pariatur"
+        "eiusmod "
     ],
     prizepool=[
-        "amet ea"
+        "id culp"
     ],
     serie_id=[
-        3
+        10
     ],
     slug=[
-        "70sw6le8ke"
+        "8dyh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLShortTournaments(
-    name="culpa aute",
-    prizepool="ametculpa Lorem",
-    slug="kxd-k6ts",
+    name="sed p",
+    prizepool="laboris ut c",
+    slug="pbrmjq9u2_",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming League of Legends tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLShortTournaments, RangeOverLoLShortTournaments, SearchOverLoLShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLShortTournaments(
     begin_at=[
-        "nisi fu"
+        "Excep"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "et m"
+        "fugiat"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "cill"
+        "culpa"
     ],
     name=[
-        "cupida"
+        "Lorem nulla "
     ],
     prizepool=[
-        "magna lab"
+        "elit i"
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "-8p9m"
+        "p3_tn7"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverLoLShortTournaments(
 )
 range=RangeOverLoLShortTournaments(
     begin_at=[
-        "eli"
+        "amet ullamco"
     ],
     detailed_stats=[
-        True
-    ],
-    end_at=[
-        "f"
-    ],
-    has_bracket=[
         False
     ],
+    end_at=[
+        "cupidatat"
+    ],
+    has_bracket=[
+        True
+    ],
     id_=[
-        3
+        10
     ],
     modified_at=[
-        "sint dese"
+        "irure"
     ],
     name=[
-        "pariatur"
+        "eiusmod "
     ],
     prizepool=[
-        "amet ea"
+        "id culp"
     ],
     serie_id=[
-        3
+        10
     ],
     slug=[
-        "70sw6le8ke"
+        "8dyh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverLoLShortTournaments(
-    name="culpa aute",
-    prizepool="ametculpa Lorem",
-    slug="kxd-k6ts",
+    name="sed p",
+    prizepool="laboris ut c",
+    slug="pbrmjq9u2_",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.lo_l_tournaments.get_lol_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

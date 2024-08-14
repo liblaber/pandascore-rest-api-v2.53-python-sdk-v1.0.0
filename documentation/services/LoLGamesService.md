@@ -30,14 +30,15 @@ Get a single League of Legends game by ID
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 
-result = sdk.lo_l_games.get_lol_games_lol_game_id(lol_game_id=9)
+result = sdk.lo_l_games.get_lol_games_lol_game_id(lol_game_id=8)
 
 print(result)
 ```
@@ -64,16 +65,17 @@ List events for a given League of Legends game
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 page=1
 
 result = sdk.lo_l_games.get_lol_games_lol_game_id_events(
-    lol_game_id=6,
+    lol_game_id=2,
     page=page,
     per_page=50
 )
@@ -103,16 +105,17 @@ List frames for a given League of Legends game
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 page=1
 
 result = sdk.lo_l_games.get_lol_games_lol_game_id_frames(
-    lol_game_id=10,
+    lol_game_id=5,
     page=page,
     per_page=50
 )
@@ -146,36 +149,37 @@ List games for a given League of Legends match
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLGames, RangeOverLoLGames, SearchOverLoLGames
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLGames, RangeOverLoLGames, SearchOverLoLGames
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 filter=FilterOverLoLGames(
     begin_at=[
-        "qui"
+        "eiusmod "
     ],
     complete=False,
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "e"
+        "veniam"
     ],
     finished=True,
     forfeit=True,
     id_=[
-        9
-    ],
-    length=[
         5
     ],
-    match_id=[
+    length=[
         4
     ],
+    match_id=[
+        7
+    ],
     position=[
-        3
+        6
     ],
     status=[
         "finished"
@@ -186,34 +190,34 @@ filter=FilterOverLoLGames(
 )
 range=RangeOverLoLGames(
     begin_at=[
-        "s"
+        "velit l"
     ],
     complete=[
         False
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "ut c"
+        "consequat sin"
     ],
     finished=[
-        True
+        False
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        4
+        5
     ],
     length=[
-        2
+        3
     ],
     match_id=[
-        5
+        7
     ],
     position=[
-        5
+        2
     ],
     status=[
         "finished"
@@ -270,36 +274,37 @@ List finished games for a given League of Legends team
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLTeamLastGames, RangeOverLoLTeamLastGames, SearchOverLoLTeamLastGames
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLTeamLastGames, RangeOverLoLTeamLastGames, SearchOverLoLTeamLastGames
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-team_id_or_slug=7
+team_id_or_slug=10
 filter=FilterOverLoLTeamLastGames(
     begin_at=[
-        "velit cons"
+        "ut cillum Exc"
     ],
     complete=False,
     detailed_stats=False,
     end_at=[
-        "do veli"
+        "cillum id nul"
     ],
-    finished=True,
-    forfeit=False,
+    finished=False,
+    forfeit=True,
     id_=[
-        5
+        6
     ],
     length=[
-        8
+        7
     ],
     match_id=[
-        8
+        1
     ],
     position=[
-        3
+        8
     ],
     status=[
         "finished"
@@ -310,34 +315,34 @@ filter=FilterOverLoLTeamLastGames(
 )
 range=RangeOverLoLTeamLastGames(
     begin_at=[
-        "e"
+        "el"
     ],
     complete=[
-        True
+        False
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "laboris nulla"
+        "labor"
     ],
     finished=[
         True
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        10
+        6
     ],
     length=[
-        8
+        9
     ],
     match_id=[
-        5
+        7
     ],
     position=[
-        7
+        4
     ],
     status=[
         "finished"
@@ -367,3 +372,5 @@ result = sdk.lo_l_games.get_lol_teams_team_id_or_slug_games(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

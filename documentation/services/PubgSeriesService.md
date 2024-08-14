@@ -34,43 +34,44 @@ List series for the PUBG videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgSeries(
     begin_at=[
-        "exercitation"
+        "ex"
     ],
     end_at=[
-        "fug"
+        "Lorem "
     ],
     id_=[
-        4
+        5
     ],
     league_id=[
-        4
+        5
     ],
     modified_at=[
-        "n"
+        "do"
     ],
     name=[
-        "aliqua vol"
+        "nisi culpa"
     ],
     season=[
-        "culpa lab"
+        "ut ea i"
     ],
     slug=[
-        "1gd"
+        "ohs"
     ],
     videogame_title=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverPubgSeries(
 )
 range=RangeOverPubgSeries(
     begin_at=[
-        "dolore i"
+        "c"
     ],
     end_at=[
-        "do m"
+        "amet elit et i"
     ],
     id_=[
-        9
+        2
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "nu"
+        "fugiat id"
     ],
     name=[
-        "dolore e"
+        "in enim "
     ],
     season=[
-        "fugiat"
+        "occaecat n"
     ],
     slug=[
-        "zsnj8x7"
+        "z7v95uzd6"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgSeries(
-    name="qui commod",
-    season="proiden",
-    slug="7",
+    name="nostrud ipsu",
+    season="velit",
+    slug="gu",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past PUBG series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgSeries(
     begin_at=[
-        "exercitation"
+        "ex"
     ],
     end_at=[
-        "fug"
+        "Lorem "
     ],
     id_=[
-        4
+        5
     ],
     league_id=[
-        4
+        5
     ],
     modified_at=[
-        "n"
+        "do"
     ],
     name=[
-        "aliqua vol"
+        "nisi culpa"
     ],
     season=[
-        "culpa lab"
+        "ut ea i"
     ],
     slug=[
-        "1gd"
+        "ohs"
     ],
     videogame_title=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverPubgSeries(
 )
 range=RangeOverPubgSeries(
     begin_at=[
-        "dolore i"
+        "c"
     ],
     end_at=[
-        "do m"
+        "amet elit et i"
     ],
     id_=[
-        9
+        2
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "nu"
+        "fugiat id"
     ],
     name=[
-        "dolore e"
+        "in enim "
     ],
     season=[
-        "fugiat"
+        "occaecat n"
     ],
     slug=[
-        "zsnj8x7"
+        "z7v95uzd6"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgSeries(
-    name="qui commod",
-    season="proiden",
-    slug="7",
+    name="nostrud ipsu",
+    season="velit",
+    slug="gu",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running PUBG series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgSeries(
     begin_at=[
-        "exercitation"
+        "ex"
     ],
     end_at=[
-        "fug"
+        "Lorem "
     ],
     id_=[
-        4
+        5
     ],
     league_id=[
-        4
+        5
     ],
     modified_at=[
-        "n"
+        "do"
     ],
     name=[
-        "aliqua vol"
+        "nisi culpa"
     ],
     season=[
-        "culpa lab"
+        "ut ea i"
     ],
     slug=[
-        "1gd"
+        "ohs"
     ],
     videogame_title=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverPubgSeries(
 )
 range=RangeOverPubgSeries(
     begin_at=[
-        "dolore i"
+        "c"
     ],
     end_at=[
-        "do m"
+        "amet elit et i"
     ],
     id_=[
-        9
+        2
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "nu"
+        "fugiat id"
     ],
     name=[
-        "dolore e"
+        "in enim "
     ],
     season=[
-        "fugiat"
+        "occaecat n"
     ],
     slug=[
-        "zsnj8x7"
+        "z7v95uzd6"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgSeries(
-    name="qui commod",
-    season="proiden",
-    slug="7",
+    name="nostrud ipsu",
+    season="velit",
+    slug="gu",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming PUBG series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgSeries, RangeOverPubgSeries, SearchOverPubgSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgSeries(
     begin_at=[
-        "exercitation"
+        "ex"
     ],
     end_at=[
-        "fug"
+        "Lorem "
     ],
     id_=[
-        4
+        5
     ],
     league_id=[
-        4
+        5
     ],
     modified_at=[
-        "n"
+        "do"
     ],
     name=[
-        "aliqua vol"
+        "nisi culpa"
     ],
     season=[
-        "culpa lab"
+        "ut ea i"
     ],
     slug=[
-        "1gd"
+        "ohs"
     ],
     videogame_title=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverPubgSeries(
 )
 range=RangeOverPubgSeries(
     begin_at=[
-        "dolore i"
+        "c"
     ],
     end_at=[
-        "do m"
+        "amet elit et i"
     ],
     id_=[
-        9
+        2
     ],
     league_id=[
-        9
+        4
     ],
     modified_at=[
-        "nu"
+        "fugiat id"
     ],
     name=[
-        "dolore e"
+        "in enim "
     ],
     season=[
-        "fugiat"
+        "occaecat n"
     ],
     slug=[
-        "zsnj8x7"
+        "z7v95uzd6"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverPubgSeries(
-    name="qui commod",
-    season="proiden",
-    slug="7",
+    name="nostrud ipsu",
+    season="velit",
+    slug="gu",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.pubg_series.get_pubg_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

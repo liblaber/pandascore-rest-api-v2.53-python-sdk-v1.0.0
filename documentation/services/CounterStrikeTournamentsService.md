@@ -34,49 +34,50 @@ List tournaments for the Counter-Strike videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoShortTournaments(
     begin_at=[
-        "commodo"
+        "ad"
     ],
     detailed_stats=False,
     end_at=[
-        "deserunt cill"
+        "do cupidatat a"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Lorem"
+        "fugiat aliqua t"
     ],
     name=[
-        "sint ad vol"
+        "nisioccaecat"
     ],
     prizepool=[
-        "ea consequat "
+        "et la"
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "laiwl7lcb9"
+        "by"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        8
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverCsgoShortTournaments(
 )
 range=RangeOverCsgoShortTournaments(
     begin_at=[
-        "enim eiusmod"
+        "ma"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "incid"
+        "n"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        2
-    ],
-    modified_at=[
-        "labo"
-    ],
-    name=[
-        "adipisicing e"
-    ],
-    prizepool=[
-        "enim nulla esse"
-    ],
-    serie_id=[
         6
     ],
+    modified_at=[
+        "ad exe"
+    ],
+    name=[
+        "ullamco a"
+    ],
+    prizepool=[
+        "qui pr"
+    ],
+    serie_id=[
+        2
+    ],
     slug=[
-        "a98eej9b1"
+        "yst"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoShortTournaments(
-    name="irure volup",
-    prizepool="tempor mag",
-    slug="906nbl9ncj7",
+    name="tempor repr",
+    prizepool="nostrud ullamc",
+    slug="5hi",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past Counter-Strike tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoShortTournaments(
     begin_at=[
-        "commodo"
+        "ad"
     ],
     detailed_stats=False,
     end_at=[
-        "deserunt cill"
+        "do cupidatat a"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Lorem"
+        "fugiat aliqua t"
     ],
     name=[
-        "sint ad vol"
+        "nisioccaecat"
     ],
     prizepool=[
-        "ea consequat "
+        "et la"
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "laiwl7lcb9"
+        "by"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        8
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverCsgoShortTournaments(
 )
 range=RangeOverCsgoShortTournaments(
     begin_at=[
-        "enim eiusmod"
+        "ma"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "incid"
+        "n"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        2
-    ],
-    modified_at=[
-        "labo"
-    ],
-    name=[
-        "adipisicing e"
-    ],
-    prizepool=[
-        "enim nulla esse"
-    ],
-    serie_id=[
         6
     ],
+    modified_at=[
+        "ad exe"
+    ],
+    name=[
+        "ullamco a"
+    ],
+    prizepool=[
+        "qui pr"
+    ],
+    serie_id=[
+        2
+    ],
     slug=[
-        "a98eej9b1"
+        "yst"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoShortTournaments(
-    name="irure volup",
-    prizepool="tempor mag",
-    slug="906nbl9ncj7",
+    name="tempor repr",
+    prizepool="nostrud ullamc",
+    slug="5hi",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running Counter-Strike tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoShortTournaments(
     begin_at=[
-        "commodo"
+        "ad"
     ],
     detailed_stats=False,
     end_at=[
-        "deserunt cill"
+        "do cupidatat a"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Lorem"
+        "fugiat aliqua t"
     ],
     name=[
-        "sint ad vol"
+        "nisioccaecat"
     ],
     prizepool=[
-        "ea consequat "
+        "et la"
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "laiwl7lcb9"
+        "by"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        8
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverCsgoShortTournaments(
 )
 range=RangeOverCsgoShortTournaments(
     begin_at=[
-        "enim eiusmod"
+        "ma"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "incid"
+        "n"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        2
-    ],
-    modified_at=[
-        "labo"
-    ],
-    name=[
-        "adipisicing e"
-    ],
-    prizepool=[
-        "enim nulla esse"
-    ],
-    serie_id=[
         6
     ],
+    modified_at=[
+        "ad exe"
+    ],
+    name=[
+        "ullamco a"
+    ],
+    prizepool=[
+        "qui pr"
+    ],
+    serie_id=[
+        2
+    ],
     slug=[
-        "a98eej9b1"
+        "yst"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoShortTournaments(
-    name="irure volup",
-    prizepool="tempor mag",
-    slug="906nbl9ncj7",
+    name="tempor repr",
+    prizepool="nostrud ullamc",
+    slug="5hi",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming Counter-Strike tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoShortTournaments, RangeOverCsgoShortTournaments, SearchOverCsgoShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoShortTournaments(
     begin_at=[
-        "commodo"
+        "ad"
     ],
     detailed_stats=False,
     end_at=[
-        "deserunt cill"
+        "do cupidatat a"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        6
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Lorem"
+        "fugiat aliqua t"
     ],
     name=[
-        "sint ad vol"
+        "nisioccaecat"
     ],
     prizepool=[
-        "ea consequat "
+        "et la"
     ],
     serie_id=[
-        6
+        1
     ],
     slug=[
-        "laiwl7lcb9"
+        "by"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        8
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverCsgoShortTournaments(
 )
 range=RangeOverCsgoShortTournaments(
     begin_at=[
-        "enim eiusmod"
+        "ma"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "incid"
+        "n"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        2
-    ],
-    modified_at=[
-        "labo"
-    ],
-    name=[
-        "adipisicing e"
-    ],
-    prizepool=[
-        "enim nulla esse"
-    ],
-    serie_id=[
         6
     ],
+    modified_at=[
+        "ad exe"
+    ],
+    name=[
+        "ullamco a"
+    ],
+    prizepool=[
+        "qui pr"
+    ],
+    serie_id=[
+        2
+    ],
     slug=[
-        "a98eej9b1"
+        "yst"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoShortTournaments(
-    name="irure volup",
-    prizepool="tempor mag",
-    slug="906nbl9ncj7",
+    name="tempor repr",
+    prizepool="nostrud ullamc",
+    slug="5hi",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.counter_strike_tournaments.get_csgo_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

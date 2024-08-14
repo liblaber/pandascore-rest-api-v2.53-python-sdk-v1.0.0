@@ -33,13 +33,14 @@ Get the aggregated statistics for all players in a Valorant match
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.valorant_stats.get_valorant_matches_match_id_or_slug_players_stats(match_id_or_slug=match_id_or_slug)
 
@@ -67,14 +68,15 @@ Get the aggregated team statistics for a Valorant match
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
-team_id_or_slug=7
+match_id_or_slug=5
+team_id_or_slug=10
 
 result = sdk.valorant_stats.get_valorant_matches_match_id_or_slug_teams_team_id_or_slug_stats(
     match_id_or_slug=match_id_or_slug,
@@ -107,14 +109,15 @@ Get a Valorant player stats by ID or slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
-videogame_version="4.2759130"
+player_id_or_slug=9
+videogame_version="5.4970743709"
 
 result = sdk.valorant_stats.get_valorant_players_player_id_or_slug_stats(
     player_id_or_slug=player_id_or_slug,
@@ -148,15 +151,16 @@ Get the aggregated player statistics for a Valorant series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-player_id_or_slug=4
-videogame_version="4.2759130"
+serie_id_or_slug=10
+player_id_or_slug=9
+videogame_version="5.4970743709"
 
 result = sdk.valorant_stats.get_valorant_series_serie_id_or_slug_players_player_id_or_slug_stats(
     serie_id_or_slug=serie_id_or_slug,
@@ -189,15 +193,16 @@ Get the aggregated team statistics for a Valorant series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-team_id_or_slug=7
-videogame_version="4.2759130"
+serie_id_or_slug=10
+team_id_or_slug=10
+videogame_version="5.4970743709"
 
 result = sdk.valorant_stats.get_valorant_series_serie_id_or_slug_teams_team_id_or_slug_stats(
     serie_id_or_slug=serie_id_or_slug,
@@ -231,14 +236,15 @@ Get a Valorant team stats by ID or slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-team_id_or_slug=7
-videogame_version="4.2759130"
+team_id_or_slug=10
+videogame_version="5.4970743709"
 
 result = sdk.valorant_stats.get_valorant_teams_team_id_or_slug_stats(
     team_id_or_slug=team_id_or_slug,
@@ -272,15 +278,16 @@ Get the aggregated player statistics for a Valorant tournament
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-tournament_id_or_slug=7
-player_id_or_slug=4
-videogame_version="4.2759130"
+tournament_id_or_slug=2
+player_id_or_slug=9
+videogame_version="5.4970743709"
 
 result = sdk.valorant_stats.get_valorant_tournaments_tournament_id_or_slug_players_player_id_or_slug_stats(
     tournament_id_or_slug=tournament_id_or_slug,
@@ -313,15 +320,16 @@ Get the aggregated team statistics for a Valorant tournament
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-tournament_id_or_slug=7
-team_id_or_slug=7
-videogame_version="4.2759130"
+tournament_id_or_slug=2
+team_id_or_slug=10
+videogame_version="5.4970743709"
 
 result = sdk.valorant_stats.get_valorant_tournaments_tournament_id_or_slug_teams_team_id_or_slug_stats(
     tournament_id_or_slug=tournament_id_or_slug,
@@ -331,3 +339,5 @@ result = sdk.valorant_stats.get_valorant_tournaments_tournament_id_or_slug_teams
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

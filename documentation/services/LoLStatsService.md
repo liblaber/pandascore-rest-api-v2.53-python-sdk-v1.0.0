@@ -33,13 +33,14 @@ Get detailed statistics of League-of-Legends players for the given match
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.lo_l_stats.get_lol_matches_match_id_or_slug_players_stats(match_id_or_slug=match_id_or_slug)
 
@@ -71,19 +72,20 @@ Get detailed statistics of a given League-of-Legends player
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
-videogame_version="4.2759130"
+player_id_or_slug=9
+videogame_version="5.4970743709"
 
 result = sdk.lo_l_stats.get_lol_players_player_id_or_slug_stats(
     player_id_or_slug=player_id_or_slug,
-    games_count=1,
+    games_count=4,
     side="blue",
     videogame_version=videogame_version,
     from_="2017-07-21",
@@ -117,21 +119,22 @@ Get detailed statistics of a given League-of-Legends player for the given serie
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-player_id_or_slug=4
-videogame_version="4.2759130"
+serie_id_or_slug=10
+player_id_or_slug=9
+videogame_version="5.4970743709"
 
 result = sdk.lo_l_stats.get_lol_series_serie_id_or_slug_players_player_id_or_slug_stats(
     serie_id_or_slug=serie_id_or_slug,
     player_id_or_slug=player_id_or_slug,
-    games_count=7,
+    games_count=2,
     side="blue",
     videogame_version=videogame_version
 )
@@ -164,15 +167,16 @@ Get detailed statistics of the LoL teams for the given series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-videogame_version="4.2759130"
+serie_id_or_slug=10
+videogame_version="5.4970743709"
 page=1
 
 result = sdk.lo_l_stats.get_lol_series_serie_id_or_slug_teams_stats(
@@ -211,21 +215,22 @@ Get detailed statistics of a given League-of-Legends team for the given serie
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-serie_id_or_slug=3
-team_id_or_slug=7
-videogame_version="4.2759130"
+serie_id_or_slug=10
+team_id_or_slug=10
+videogame_version="5.4970743709"
 
 result = sdk.lo_l_stats.get_lol_series_serie_id_or_slug_teams_team_id_or_slug_stats(
     serie_id_or_slug=serie_id_or_slug,
     team_id_or_slug=team_id_or_slug,
-    games_count=6,
+    games_count=7,
     side="blue",
     videogame_version=videogame_version
 )
@@ -258,19 +263,20 @@ Get detailed statistics of a given League-of-Legends team
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-team_id_or_slug=7
-videogame_version="4.2759130"
+team_id_or_slug=10
+videogame_version="5.4970743709"
 
 result = sdk.lo_l_stats.get_lol_teams_team_id_or_slug_stats(
     team_id_or_slug=team_id_or_slug,
-    games_count=7,
+    games_count=8,
     side="blue",
     videogame_version=videogame_version,
     from_="2017-07-21",
@@ -304,21 +310,22 @@ Get detailed statistics of a given League-of-Legends player for the given tourna
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-tournament_id_or_slug=7
-player_id_or_slug=4
-videogame_version="4.2759130"
+tournament_id_or_slug=2
+player_id_or_slug=9
+videogame_version="5.4970743709"
 
 result = sdk.lo_l_stats.get_lol_tournaments_tournament_id_or_slug_players_player_id_or_slug_stats(
     tournament_id_or_slug=tournament_id_or_slug,
     player_id_or_slug=player_id_or_slug,
-    games_count=2,
+    games_count=8,
     side="blue",
     videogame_version=videogame_version
 )
@@ -350,24 +357,27 @@ Get detailed statistics of a given League-of-Legends team for the given tourname
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import GetLolPlayersPlayerIdOrSlugStatsSide
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import GetLolPlayersPlayerIdOrSlugStatsSide
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-tournament_id_or_slug=7
-team_id_or_slug=7
-videogame_version="4.2759130"
+tournament_id_or_slug=2
+team_id_or_slug=10
+videogame_version="5.4970743709"
 
 result = sdk.lo_l_stats.get_lol_tournaments_tournament_id_or_slug_teams_team_id_or_slug_stats(
     tournament_id_or_slug=tournament_id_or_slug,
     team_id_or_slug=team_id_or_slug,
-    games_count=0,
+    games_count=9,
     side="blue",
     videogame_version=videogame_version
 )
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

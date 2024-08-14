@@ -34,43 +34,44 @@ List series for the EA Sports FC videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaSeries(
     begin_at=[
-        "consequa"
+        "pariat"
     ],
     end_at=[
-        "ma"
+        "n"
     ],
     id_=[
         7
     ],
     league_id=[
-        2
+        3
     ],
     modified_at=[
-        "occae"
+        "elit "
     ],
     name=[
-        "adipisicing ve"
+        "commo"
     ],
     season=[
-        "nostrud ea in "
+        "cillum a"
     ],
     slug=[
-        "-lgfva814_8"
+        "mj-4az6h8u"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverFifaSeries(
 )
 range=RangeOverFifaSeries(
     begin_at=[
-        "amet e"
+        "qui nu"
     ],
     end_at=[
-        "Lo"
+        "nulla elit "
     ],
     id_=[
         6
     ],
     league_id=[
-        6
+        8
     ],
     modified_at=[
-        "eli"
+        "qui consequat"
     ],
     name=[
-        "nisi "
+        "nulla"
     ],
     season=[
-        "exercitation m"
+        "occaecat enim"
     ],
     slug=[
-        "0ue"
+        "dw"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaSeries(
-    name="in culpa ni",
-    season="dolore",
-    slug="r6go-",
+    name="sed do",
+    season="cillum d",
+    slug="ou",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past EA Sports FC series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaSeries(
     begin_at=[
-        "consequa"
+        "pariat"
     ],
     end_at=[
-        "ma"
+        "n"
     ],
     id_=[
         7
     ],
     league_id=[
-        2
+        3
     ],
     modified_at=[
-        "occae"
+        "elit "
     ],
     name=[
-        "adipisicing ve"
+        "commo"
     ],
     season=[
-        "nostrud ea in "
+        "cillum a"
     ],
     slug=[
-        "-lgfva814_8"
+        "mj-4az6h8u"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverFifaSeries(
 )
 range=RangeOverFifaSeries(
     begin_at=[
-        "amet e"
+        "qui nu"
     ],
     end_at=[
-        "Lo"
+        "nulla elit "
     ],
     id_=[
         6
     ],
     league_id=[
-        6
+        8
     ],
     modified_at=[
-        "eli"
+        "qui consequat"
     ],
     name=[
-        "nisi "
+        "nulla"
     ],
     season=[
-        "exercitation m"
+        "occaecat enim"
     ],
     slug=[
-        "0ue"
+        "dw"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaSeries(
-    name="in culpa ni",
-    season="dolore",
-    slug="r6go-",
+    name="sed do",
+    season="cillum d",
+    slug="ou",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running EA Sports FC series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaSeries(
     begin_at=[
-        "consequa"
+        "pariat"
     ],
     end_at=[
-        "ma"
+        "n"
     ],
     id_=[
         7
     ],
     league_id=[
-        2
+        3
     ],
     modified_at=[
-        "occae"
+        "elit "
     ],
     name=[
-        "adipisicing ve"
+        "commo"
     ],
     season=[
-        "nostrud ea in "
+        "cillum a"
     ],
     slug=[
-        "-lgfva814_8"
+        "mj-4az6h8u"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverFifaSeries(
 )
 range=RangeOverFifaSeries(
     begin_at=[
-        "amet e"
+        "qui nu"
     ],
     end_at=[
-        "Lo"
+        "nulla elit "
     ],
     id_=[
         6
     ],
     league_id=[
-        6
+        8
     ],
     modified_at=[
-        "eli"
+        "qui consequat"
     ],
     name=[
-        "nisi "
+        "nulla"
     ],
     season=[
-        "exercitation m"
+        "occaecat enim"
     ],
     slug=[
-        "0ue"
+        "dw"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaSeries(
-    name="in culpa ni",
-    season="dolore",
-    slug="r6go-",
+    name="sed do",
+    season="cillum d",
+    slug="ou",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming EA Sports FC series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverFifaSeries, RangeOverFifaSeries, SearchOverFifaSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverFifaSeries(
     begin_at=[
-        "consequa"
+        "pariat"
     ],
     end_at=[
-        "ma"
+        "n"
     ],
     id_=[
         7
     ],
     league_id=[
-        2
+        3
     ],
     modified_at=[
-        "occae"
+        "elit "
     ],
     name=[
-        "adipisicing ve"
+        "commo"
     ],
     season=[
-        "nostrud ea in "
+        "cillum a"
     ],
     slug=[
-        "-lgfva814_8"
+        "mj-4az6h8u"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverFifaSeries(
 )
 range=RangeOverFifaSeries(
     begin_at=[
-        "amet e"
+        "qui nu"
     ],
     end_at=[
-        "Lo"
+        "nulla elit "
     ],
     id_=[
         6
     ],
     league_id=[
-        6
+        8
     ],
     modified_at=[
-        "eli"
+        "qui consequat"
     ],
     name=[
-        "nisi "
+        "nulla"
     ],
     season=[
-        "exercitation m"
+        "occaecat enim"
     ],
     slug=[
-        "0ue"
+        "dw"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverFifaSeries(
-    name="in culpa ni",
-    season="dolore",
-    slug="r6go-",
+    name="sed do",
+    season="cillum d",
+    slug="ou",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.ea_sports_fc_series.get_fifa_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

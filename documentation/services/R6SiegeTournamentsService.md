@@ -34,49 +34,50 @@ List tournaments for the Rainbow Six Siege videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeShortTournaments(
     begin_at=[
-        "culpa ni"
+        "dolore esse"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "mollit"
+        "aliquip"
     ],
     has_bracket=False,
     id_=[
-        4
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Duis non"
+        "aliqua fu"
     ],
     name=[
-        "dolore ma"
+        "quisullamc"
     ],
     prizepool=[
-        "in magna incid"
+        "nulla"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "q8b14z-0a"
+        "8"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverR6SiegeShortTournaments(
 )
 range=RangeOverR6SiegeShortTournaments(
     begin_at=[
-        "non"
+        "veniam "
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "repre"
+        "adipis"
     ],
     has_bracket=[
-        False
+        True
     ],
     id_=[
         4
     ],
     modified_at=[
-        "Ut cup"
+        "dolore eli"
     ],
     name=[
-        "essede"
+        "exercitat"
     ],
     prizepool=[
-        "ut eu proiden"
+        "indolor eiu"
     ],
     serie_id=[
-        2
+        9
     ],
     slug=[
-        "s"
+        "owgd"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeShortTournaments(
-    name="amet velit ",
-    prizepool="occaecat e",
-    slug="nmy1ez",
+    name="ullam",
+    prizepool="incididun",
+    slug="6ix7vd2l-ow",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past Rainbow Six Siege tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeShortTournaments(
     begin_at=[
-        "culpa ni"
+        "dolore esse"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "mollit"
+        "aliquip"
     ],
     has_bracket=False,
     id_=[
-        4
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Duis non"
+        "aliqua fu"
     ],
     name=[
-        "dolore ma"
+        "quisullamc"
     ],
     prizepool=[
-        "in magna incid"
+        "nulla"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "q8b14z-0a"
+        "8"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverR6SiegeShortTournaments(
 )
 range=RangeOverR6SiegeShortTournaments(
     begin_at=[
-        "non"
+        "veniam "
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "repre"
+        "adipis"
     ],
     has_bracket=[
-        False
+        True
     ],
     id_=[
         4
     ],
     modified_at=[
-        "Ut cup"
+        "dolore eli"
     ],
     name=[
-        "essede"
+        "exercitat"
     ],
     prizepool=[
-        "ut eu proiden"
+        "indolor eiu"
     ],
     serie_id=[
-        2
+        9
     ],
     slug=[
-        "s"
+        "owgd"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeShortTournaments(
-    name="amet velit ",
-    prizepool="occaecat e",
-    slug="nmy1ez",
+    name="ullam",
+    prizepool="incididun",
+    slug="6ix7vd2l-ow",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running Rainbow Six Siege tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeShortTournaments(
     begin_at=[
-        "culpa ni"
+        "dolore esse"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "mollit"
+        "aliquip"
     ],
     has_bracket=False,
     id_=[
-        4
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Duis non"
+        "aliqua fu"
     ],
     name=[
-        "dolore ma"
+        "quisullamc"
     ],
     prizepool=[
-        "in magna incid"
+        "nulla"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "q8b14z-0a"
+        "8"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverR6SiegeShortTournaments(
 )
 range=RangeOverR6SiegeShortTournaments(
     begin_at=[
-        "non"
+        "veniam "
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "repre"
+        "adipis"
     ],
     has_bracket=[
-        False
+        True
     ],
     id_=[
         4
     ],
     modified_at=[
-        "Ut cup"
+        "dolore eli"
     ],
     name=[
-        "essede"
+        "exercitat"
     ],
     prizepool=[
-        "ut eu proiden"
+        "indolor eiu"
     ],
     serie_id=[
-        2
+        9
     ],
     slug=[
-        "s"
+        "owgd"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeShortTournaments(
-    name="amet velit ",
-    prizepool="occaecat e",
-    slug="nmy1ez",
+    name="ullam",
+    prizepool="incididun",
+    slug="6ix7vd2l-ow",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming Rainbow Six Siege tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverR6SiegeShortTournaments, RangeOverR6SiegeShortTournaments, SearchOverR6SiegeShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverR6SiegeShortTournaments(
     begin_at=[
-        "culpa ni"
+        "dolore esse"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     end_at=[
-        "mollit"
+        "aliquip"
     ],
     has_bracket=False,
     id_=[
-        4
+        10
     ],
     live_supported=True,
     modified_at=[
-        "Duis non"
+        "aliqua fu"
     ],
     name=[
-        "dolore ma"
+        "quisullamc"
     ],
     prizepool=[
-        "in magna incid"
+        "nulla"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "q8b14z-0a"
+        "8"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverR6SiegeShortTournaments(
 )
 range=RangeOverR6SiegeShortTournaments(
     begin_at=[
-        "non"
+        "veniam "
     ],
     detailed_stats=[
         True
     ],
     end_at=[
-        "repre"
+        "adipis"
     ],
     has_bracket=[
-        False
+        True
     ],
     id_=[
         4
     ],
     modified_at=[
-        "Ut cup"
+        "dolore eli"
     ],
     name=[
-        "essede"
+        "exercitat"
     ],
     prizepool=[
-        "ut eu proiden"
+        "indolor eiu"
     ],
     serie_id=[
-        2
+        9
     ],
     slug=[
-        "s"
+        "owgd"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverR6SiegeShortTournaments(
-    name="amet velit ",
-    prizepool="occaecat e",
-    slug="nmy1ez",
+    name="ullam",
+    prizepool="incididun",
+    slug="6ix7vd2l-ow",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.r6_siege_tournaments.get_r6siege_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

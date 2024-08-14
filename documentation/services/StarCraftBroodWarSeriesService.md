@@ -34,43 +34,44 @@ List series for the StarCraft Brood War videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarSeries(
     begin_at=[
-        "Duis q"
+        "D"
     ],
     end_at=[
-        "ex c"
+        "e"
     ],
     id_=[
-        1
+        9
     ],
     league_id=[
-        3
+        6
     ],
     modified_at=[
-        "occaecat"
+        "a"
     ],
     name=[
-        "adipisicing id "
+        "laborum offi"
     ],
     season=[
-        "nostrud aliq"
+        "dolor"
     ],
     slug=[
-        "v"
+        "s4shus"
     ],
     videogame_title=[
-        3
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverStarcraftBroodWarSeries(
 )
 range=RangeOverStarcraftBroodWarSeries(
     begin_at=[
-        "esse "
+        "dolor"
     ],
     end_at=[
-        "voluptate des"
+        "ut volu"
     ],
     id_=[
-        1
+        7
     ],
     league_id=[
-        8
+        6
     ],
     modified_at=[
-        "sunt esse"
+        "enim in l"
     ],
     name=[
-        "officia in ad "
+        "Ut Lorem"
     ],
     season=[
-        "enimin aliq"
+        "exadipisicing v"
     ],
     slug=[
-        "7s28hjgdg"
+        "exz4jb3a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarSeries(
-    name="dolore",
-    season="occaecat",
-    slug="ai",
+    name="nostrud labo",
+    season="occaecat do ",
+    slug="k",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past StarCraft Brood War series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarSeries(
     begin_at=[
-        "Duis q"
+        "D"
     ],
     end_at=[
-        "ex c"
+        "e"
     ],
     id_=[
-        1
+        9
     ],
     league_id=[
-        3
+        6
     ],
     modified_at=[
-        "occaecat"
+        "a"
     ],
     name=[
-        "adipisicing id "
+        "laborum offi"
     ],
     season=[
-        "nostrud aliq"
+        "dolor"
     ],
     slug=[
-        "v"
+        "s4shus"
     ],
     videogame_title=[
-        3
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverStarcraftBroodWarSeries(
 )
 range=RangeOverStarcraftBroodWarSeries(
     begin_at=[
-        "esse "
+        "dolor"
     ],
     end_at=[
-        "voluptate des"
+        "ut volu"
     ],
     id_=[
-        1
+        7
     ],
     league_id=[
-        8
+        6
     ],
     modified_at=[
-        "sunt esse"
+        "enim in l"
     ],
     name=[
-        "officia in ad "
+        "Ut Lorem"
     ],
     season=[
-        "enimin aliq"
+        "exadipisicing v"
     ],
     slug=[
-        "7s28hjgdg"
+        "exz4jb3a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarSeries(
-    name="dolore",
-    season="occaecat",
-    slug="ai",
+    name="nostrud labo",
+    season="occaecat do ",
+    slug="k",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running StarCraft Brood War series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarSeries(
     begin_at=[
-        "Duis q"
+        "D"
     ],
     end_at=[
-        "ex c"
+        "e"
     ],
     id_=[
-        1
+        9
     ],
     league_id=[
-        3
+        6
     ],
     modified_at=[
-        "occaecat"
+        "a"
     ],
     name=[
-        "adipisicing id "
+        "laborum offi"
     ],
     season=[
-        "nostrud aliq"
+        "dolor"
     ],
     slug=[
-        "v"
+        "s4shus"
     ],
     videogame_title=[
-        3
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverStarcraftBroodWarSeries(
 )
 range=RangeOverStarcraftBroodWarSeries(
     begin_at=[
-        "esse "
+        "dolor"
     ],
     end_at=[
-        "voluptate des"
+        "ut volu"
     ],
     id_=[
-        1
+        7
     ],
     league_id=[
-        8
+        6
     ],
     modified_at=[
-        "sunt esse"
+        "enim in l"
     ],
     name=[
-        "officia in ad "
+        "Ut Lorem"
     ],
     season=[
-        "enimin aliq"
+        "exadipisicing v"
     ],
     slug=[
-        "7s28hjgdg"
+        "exz4jb3a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarSeries(
-    name="dolore",
-    season="occaecat",
-    slug="ai",
+    name="nostrud labo",
+    season="occaecat do ",
+    slug="k",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming StarCraft Brood War series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarSeries, RangeOverStarcraftBroodWarSeries, SearchOverStarcraftBroodWarSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarSeries(
     begin_at=[
-        "Duis q"
+        "D"
     ],
     end_at=[
-        "ex c"
+        "e"
     ],
     id_=[
-        1
+        9
     ],
     league_id=[
-        3
+        6
     ],
     modified_at=[
-        "occaecat"
+        "a"
     ],
     name=[
-        "adipisicing id "
+        "laborum offi"
     ],
     season=[
-        "nostrud aliq"
+        "dolor"
     ],
     slug=[
-        "v"
+        "s4shus"
     ],
     videogame_title=[
-        3
+        10
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverStarcraftBroodWarSeries(
 )
 range=RangeOverStarcraftBroodWarSeries(
     begin_at=[
-        "esse "
+        "dolor"
     ],
     end_at=[
-        "voluptate des"
+        "ut volu"
     ],
     id_=[
-        1
+        7
     ],
     league_id=[
-        8
+        6
     ],
     modified_at=[
-        "sunt esse"
+        "enim in l"
     ],
     name=[
-        "officia in ad "
+        "Ut Lorem"
     ],
     season=[
-        "enimin aliq"
+        "exadipisicing v"
     ],
     slug=[
-        "7s28hjgdg"
+        "exz4jb3a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraftBroodWarSeries(
-    name="dolore",
-    season="occaecat",
-    slug="ai",
+    name="nostrud labo",
+    season="occaecat do ",
+    slug="k",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.star_craft_brood_war_series.get_starcraft_brood_war_series_upcoming
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

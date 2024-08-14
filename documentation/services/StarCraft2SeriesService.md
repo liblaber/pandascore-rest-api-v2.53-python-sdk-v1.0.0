@@ -34,43 +34,44 @@ List series for the StarCraft 2 videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Series(
     begin_at=[
-        "occaec"
+        "id commodo dolo"
     ],
     end_at=[
-        "exercitation"
+        "id labore"
     ],
     id_=[
-        1
+        5
     ],
     league_id=[
         1
     ],
     modified_at=[
-        "fugia"
+        "laboris Exce"
     ],
     name=[
-        "utproident"
+        "utdeserunt c"
     ],
     season=[
-        "in sint"
+        "labore"
     ],
     slug=[
-        "61yalkjc"
+        "ci"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverStarcraft2Series(
 )
 range=RangeOverStarcraft2Series(
     begin_at=[
-        "id aliqua"
+        "in des"
     ],
     end_at=[
-        "nisi ad dolore "
+        "cup"
     ],
     id_=[
-        7
+        5
     ],
     league_id=[
-        1
+        10
     ],
     modified_at=[
-        "irure"
+        "nostru"
     ],
     name=[
-        "minim sint"
+        "aliquip"
     ],
     season=[
-        "deseru"
+        "do consecte"
     ],
     slug=[
-        "0-6uko32j"
+        "4nb7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2Series(
-    name="id labore ",
-    season="aute si",
-    slug="u5sc",
+    name="occae",
+    season="esse id rep",
+    slug="l3b",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past StarCraft 2 series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Series(
     begin_at=[
-        "occaec"
+        "id commodo dolo"
     ],
     end_at=[
-        "exercitation"
+        "id labore"
     ],
     id_=[
-        1
+        5
     ],
     league_id=[
         1
     ],
     modified_at=[
-        "fugia"
+        "laboris Exce"
     ],
     name=[
-        "utproident"
+        "utdeserunt c"
     ],
     season=[
-        "in sint"
+        "labore"
     ],
     slug=[
-        "61yalkjc"
+        "ci"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverStarcraft2Series(
 )
 range=RangeOverStarcraft2Series(
     begin_at=[
-        "id aliqua"
+        "in des"
     ],
     end_at=[
-        "nisi ad dolore "
+        "cup"
     ],
     id_=[
-        7
+        5
     ],
     league_id=[
-        1
+        10
     ],
     modified_at=[
-        "irure"
+        "nostru"
     ],
     name=[
-        "minim sint"
+        "aliquip"
     ],
     season=[
-        "deseru"
+        "do consecte"
     ],
     slug=[
-        "0-6uko32j"
+        "4nb7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2Series(
-    name="id labore ",
-    season="aute si",
-    slug="u5sc",
+    name="occae",
+    season="esse id rep",
+    slug="l3b",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running StarCraft 2 series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Series(
     begin_at=[
-        "occaec"
+        "id commodo dolo"
     ],
     end_at=[
-        "exercitation"
+        "id labore"
     ],
     id_=[
-        1
+        5
     ],
     league_id=[
         1
     ],
     modified_at=[
-        "fugia"
+        "laboris Exce"
     ],
     name=[
-        "utproident"
+        "utdeserunt c"
     ],
     season=[
-        "in sint"
+        "labore"
     ],
     slug=[
-        "61yalkjc"
+        "ci"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverStarcraft2Series(
 )
 range=RangeOverStarcraft2Series(
     begin_at=[
-        "id aliqua"
+        "in des"
     ],
     end_at=[
-        "nisi ad dolore "
+        "cup"
     ],
     id_=[
-        7
+        5
     ],
     league_id=[
-        1
+        10
     ],
     modified_at=[
-        "irure"
+        "nostru"
     ],
     name=[
-        "minim sint"
+        "aliquip"
     ],
     season=[
-        "deseru"
+        "do consecte"
     ],
     slug=[
-        "0-6uko32j"
+        "4nb7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2Series(
-    name="id labore ",
-    season="aute si",
-    slug="u5sc",
+    name="occae",
+    season="esse id rep",
+    slug="l3b",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming StarCraft 2 series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Series, RangeOverStarcraft2Series, SearchOverStarcraft2Series
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Series(
     begin_at=[
-        "occaec"
+        "id commodo dolo"
     ],
     end_at=[
-        "exercitation"
+        "id labore"
     ],
     id_=[
-        1
+        5
     ],
     league_id=[
         1
     ],
     modified_at=[
-        "fugia"
+        "laboris Exce"
     ],
     name=[
-        "utproident"
+        "utdeserunt c"
     ],
     season=[
-        "in sint"
+        "labore"
     ],
     slug=[
-        "61yalkjc"
+        "ci"
     ],
     videogame_title=[
-        7
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverStarcraft2Series(
 )
 range=RangeOverStarcraft2Series(
     begin_at=[
-        "id aliqua"
+        "in des"
     ],
     end_at=[
-        "nisi ad dolore "
+        "cup"
     ],
     id_=[
-        7
+        5
     ],
     league_id=[
-        1
+        10
     ],
     modified_at=[
-        "irure"
+        "nostru"
     ],
     name=[
-        "minim sint"
+        "aliquip"
     ],
     season=[
-        "deseru"
+        "do consecte"
     ],
     slug=[
-        "0-6uko32j"
+        "4nb7"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverStarcraft2Series(
-    name="id labore ",
-    season="aute si",
-    slug="u5sc",
+    name="occae",
+    season="esse id rep",
+    slug="l3b",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.star_craft_2_series.get_starcraft_2_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

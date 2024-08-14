@@ -34,43 +34,44 @@ List series for the Rocket League videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlSeries(
     begin_at=[
-        "dolore"
+        "Du"
     ],
     end_at=[
-        "of"
+        "p"
     ],
     id_=[
         2
     ],
     league_id=[
-        5
+        3
     ],
     modified_at=[
-        "eiusmod"
+        "anim nisi n"
     ],
     name=[
-        "eiusmod"
+        "aliquip"
     ],
     season=[
-        "labore ex"
+        "voluptate"
     ],
     slug=[
-        "kw-jbm1vmo"
+        "ap-k3fd"
     ],
     videogame_title=[
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverRlSeries(
 )
 range=RangeOverRlSeries(
     begin_at=[
-        "Duis anim p"
+        "cul"
     ],
     end_at=[
-        "ipsu"
+        "adipisicing nos"
     ],
     id_=[
-        7
+        1
     ],
     league_id=[
-        2
+        10
     ],
     modified_at=[
-        "elit Duis in"
+        "Duis ex fugiat"
     ],
     name=[
-        "cupidatat"
+        "aliquip occaeca"
     ],
     season=[
-        "enim id com"
+        "aute "
     ],
     slug=[
-        "s44cu66"
+        "bcurr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverRlSeries(
-    name="irure com",
-    season="deseru",
-    slug="sb4enl",
+    name="nulla lab",
+    season="elit ci",
+    slug="81xnq-",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past Rocket League series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlSeries(
     begin_at=[
-        "dolore"
+        "Du"
     ],
     end_at=[
-        "of"
+        "p"
     ],
     id_=[
         2
     ],
     league_id=[
-        5
+        3
     ],
     modified_at=[
-        "eiusmod"
+        "anim nisi n"
     ],
     name=[
-        "eiusmod"
+        "aliquip"
     ],
     season=[
-        "labore ex"
+        "voluptate"
     ],
     slug=[
-        "kw-jbm1vmo"
+        "ap-k3fd"
     ],
     videogame_title=[
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverRlSeries(
 )
 range=RangeOverRlSeries(
     begin_at=[
-        "Duis anim p"
+        "cul"
     ],
     end_at=[
-        "ipsu"
+        "adipisicing nos"
     ],
     id_=[
-        7
+        1
     ],
     league_id=[
-        2
+        10
     ],
     modified_at=[
-        "elit Duis in"
+        "Duis ex fugiat"
     ],
     name=[
-        "cupidatat"
+        "aliquip occaeca"
     ],
     season=[
-        "enim id com"
+        "aute "
     ],
     slug=[
-        "s44cu66"
+        "bcurr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverRlSeries(
-    name="irure com",
-    season="deseru",
-    slug="sb4enl",
+    name="nulla lab",
+    season="elit ci",
+    slug="81xnq-",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running Rocket League series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlSeries(
     begin_at=[
-        "dolore"
+        "Du"
     ],
     end_at=[
-        "of"
+        "p"
     ],
     id_=[
         2
     ],
     league_id=[
-        5
+        3
     ],
     modified_at=[
-        "eiusmod"
+        "anim nisi n"
     ],
     name=[
-        "eiusmod"
+        "aliquip"
     ],
     season=[
-        "labore ex"
+        "voluptate"
     ],
     slug=[
-        "kw-jbm1vmo"
+        "ap-k3fd"
     ],
     videogame_title=[
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverRlSeries(
 )
 range=RangeOverRlSeries(
     begin_at=[
-        "Duis anim p"
+        "cul"
     ],
     end_at=[
-        "ipsu"
+        "adipisicing nos"
     ],
     id_=[
-        7
+        1
     ],
     league_id=[
-        2
+        10
     ],
     modified_at=[
-        "elit Duis in"
+        "Duis ex fugiat"
     ],
     name=[
-        "cupidatat"
+        "aliquip occaeca"
     ],
     season=[
-        "enim id com"
+        "aute "
     ],
     slug=[
-        "s44cu66"
+        "bcurr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverRlSeries(
-    name="irure com",
-    season="deseru",
-    slug="sb4enl",
+    name="nulla lab",
+    season="elit ci",
+    slug="81xnq-",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming Rocket League series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverRlSeries, RangeOverRlSeries, SearchOverRlSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverRlSeries(
     begin_at=[
-        "dolore"
+        "Du"
     ],
     end_at=[
-        "of"
+        "p"
     ],
     id_=[
         2
     ],
     league_id=[
-        5
+        3
     ],
     modified_at=[
-        "eiusmod"
+        "anim nisi n"
     ],
     name=[
-        "eiusmod"
+        "aliquip"
     ],
     season=[
-        "labore ex"
+        "voluptate"
     ],
     slug=[
-        "kw-jbm1vmo"
+        "ap-k3fd"
     ],
     videogame_title=[
         6
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverRlSeries(
 )
 range=RangeOverRlSeries(
     begin_at=[
-        "Duis anim p"
+        "cul"
     ],
     end_at=[
-        "ipsu"
+        "adipisicing nos"
     ],
     id_=[
-        7
+        1
     ],
     league_id=[
-        2
+        10
     ],
     modified_at=[
-        "elit Duis in"
+        "Duis ex fugiat"
     ],
     name=[
-        "cupidatat"
+        "aliquip occaeca"
     ],
     season=[
-        "enim id com"
+        "aute "
     ],
     slug=[
-        "s44cu66"
+        "bcurr"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverRlSeries(
-    name="irure com",
-    season="deseru",
-    slug="sb4enl",
+    name="nulla lab",
+    season="elit ci",
+    slug="81xnq-",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.rl_series.get_rl_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

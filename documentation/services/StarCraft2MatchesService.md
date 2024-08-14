@@ -34,27 +34,28 @@ List matches for the StarCraft 2 videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Matches(
     begin_at=[
-        "in et cupidatat"
+        "dol"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "q"
+        "repr"
     ],
-    finished=True,
-    forfeit=True,
-    future=True,
+    finished=False,
+    forfeit=False,
+    future=False,
     id_=[
-        4
+        5
     ],
     league_id=[
         8
@@ -63,48 +64,48 @@ filter=FilterOverStarcraft2Matches(
         "all_games_played"
     ],
     modified_at=[
-        "e"
+        "aliquip dolore "
     ],
     name=[
-        "consequ"
+        "sint i"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
     running=True,
     scheduled_at=[
-        "nostru"
+        "adipisicin"
     ],
     serie_id=[
         7
     ],
     slug=[
-        "Qh1a6aVgHP"
+        "blK8WjKK"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        5
     ],
     videogame_version=[
-        "96293702.1127"
+        "002743.84027555632.65809687197"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverStarcraft2Matches(
 )
 range=RangeOverStarcraft2Matches(
     begin_at=[
-        "Ut"
+        "sit"
     ],
     detailed_stats=[
-        False
-    ],
-    draw=[
-        False
-    ],
-    end_at=[
-        "adipisicing mi"
-    ],
-    forfeit=[
         True
     ],
+    draw=[
+        True
+    ],
+    end_at=[
+        "nostrud magna m"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        4
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "Ut"
+        "ve"
     ],
     name=[
-        "non dolore cup"
+        "inesse dolor "
     ],
     number_of_games=[
-        9
+        2
     ],
     scheduled_at=[
-        "mollit ad"
+        "ullam"
     ],
     slug=[
-        "pv3p"
+        "QFi 0L"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverStarcraft2Matches(
     match_type="all_games_played",
-    name="non labore ",
-    slug="Hc",
+    name="esse am",
+    slug="5x5wgZT_",
     status="canceled",
     winner_type="Player"
 )
@@ -209,27 +210,28 @@ List past StarCraft 2 matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Matches(
     begin_at=[
-        "in et cupidatat"
+        "dol"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "q"
+        "repr"
     ],
-    finished=True,
-    forfeit=True,
-    future=True,
+    finished=False,
+    forfeit=False,
+    future=False,
     id_=[
-        4
+        5
     ],
     league_id=[
         8
@@ -238,48 +240,48 @@ filter=FilterOverStarcraft2Matches(
         "all_games_played"
     ],
     modified_at=[
-        "e"
+        "aliquip dolore "
     ],
     name=[
-        "consequ"
+        "sint i"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
     running=True,
     scheduled_at=[
-        "nostru"
+        "adipisicin"
     ],
     serie_id=[
         7
     ],
     slug=[
-        "Qh1a6aVgHP"
+        "blK8WjKK"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        5
     ],
     videogame_version=[
-        "96293702.1127"
+        "002743.84027555632.65809687197"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverStarcraft2Matches(
 )
 range=RangeOverStarcraft2Matches(
     begin_at=[
-        "Ut"
+        "sit"
     ],
     detailed_stats=[
-        False
-    ],
-    draw=[
-        False
-    ],
-    end_at=[
-        "adipisicing mi"
-    ],
-    forfeit=[
         True
     ],
+    draw=[
+        True
+    ],
+    end_at=[
+        "nostrud magna m"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        4
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "Ut"
+        "ve"
     ],
     name=[
-        "non dolore cup"
+        "inesse dolor "
     ],
     number_of_games=[
-        9
+        2
     ],
     scheduled_at=[
-        "mollit ad"
+        "ullam"
     ],
     slug=[
-        "pv3p"
+        "QFi 0L"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverStarcraft2Matches(
     match_type="all_games_played",
-    name="non labore ",
-    slug="Hc",
+    name="esse am",
+    slug="5x5wgZT_",
     status="canceled",
     winner_type="Player"
 )
@@ -384,27 +386,28 @@ List running StarCraft 2 matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Matches(
     begin_at=[
-        "in et cupidatat"
+        "dol"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "q"
+        "repr"
     ],
-    finished=True,
-    forfeit=True,
-    future=True,
+    finished=False,
+    forfeit=False,
+    future=False,
     id_=[
-        4
+        5
     ],
     league_id=[
         8
@@ -413,48 +416,48 @@ filter=FilterOverStarcraft2Matches(
         "all_games_played"
     ],
     modified_at=[
-        "e"
+        "aliquip dolore "
     ],
     name=[
-        "consequ"
+        "sint i"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
     running=True,
     scheduled_at=[
-        "nostru"
+        "adipisicin"
     ],
     serie_id=[
         7
     ],
     slug=[
-        "Qh1a6aVgHP"
+        "blK8WjKK"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        5
     ],
     videogame_version=[
-        "96293702.1127"
+        "002743.84027555632.65809687197"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverStarcraft2Matches(
 )
 range=RangeOverStarcraft2Matches(
     begin_at=[
-        "Ut"
+        "sit"
     ],
     detailed_stats=[
-        False
-    ],
-    draw=[
-        False
-    ],
-    end_at=[
-        "adipisicing mi"
-    ],
-    forfeit=[
         True
     ],
+    draw=[
+        True
+    ],
+    end_at=[
+        "nostrud magna m"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        4
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "Ut"
+        "ve"
     ],
     name=[
-        "non dolore cup"
+        "inesse dolor "
     ],
     number_of_games=[
-        9
+        2
     ],
     scheduled_at=[
-        "mollit ad"
+        "ullam"
     ],
     slug=[
-        "pv3p"
+        "QFi 0L"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverStarcraft2Matches(
     match_type="all_games_played",
-    name="non labore ",
-    slug="Hc",
+    name="esse am",
+    slug="5x5wgZT_",
     status="canceled",
     winner_type="Player"
 )
@@ -559,27 +562,28 @@ List upcoming StarCraft 2 matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraft2Matches, RangeOverStarcraft2Matches, SearchOverStarcraft2Matches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraft2Matches(
     begin_at=[
-        "in et cupidatat"
+        "dol"
     ],
-    detailed_stats=False,
-    draw=True,
+    detailed_stats=True,
+    draw=False,
     end_at=[
-        "q"
+        "repr"
     ],
-    finished=True,
-    forfeit=True,
-    future=True,
+    finished=False,
+    forfeit=False,
+    future=False,
     id_=[
-        4
+        5
     ],
     league_id=[
         8
@@ -588,48 +592,48 @@ filter=FilterOverStarcraft2Matches(
         "all_games_played"
     ],
     modified_at=[
-        "e"
+        "aliquip dolore "
     ],
     name=[
-        "consequ"
+        "sint i"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        6
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
+    opponents_filled=True,
     past=True,
     running=True,
     scheduled_at=[
-        "nostru"
+        "adipisicin"
     ],
     serie_id=[
         7
     ],
     slug=[
-        "Qh1a6aVgHP"
+        "blK8WjKK"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        1
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        5
     ],
     videogame_version=[
-        "96293702.1127"
+        "002743.84027555632.65809687197"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverStarcraft2Matches(
 )
 range=RangeOverStarcraft2Matches(
     begin_at=[
-        "Ut"
+        "sit"
     ],
     detailed_stats=[
-        False
-    ],
-    draw=[
-        False
-    ],
-    end_at=[
-        "adipisicing mi"
-    ],
-    forfeit=[
         True
     ],
+    draw=[
+        True
+    ],
+    end_at=[
+        "nostrud magna m"
+    ],
+    forfeit=[
+        False
+    ],
     id_=[
-        4
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "Ut"
+        "ve"
     ],
     name=[
-        "non dolore cup"
+        "inesse dolor "
     ],
     number_of_games=[
-        9
+        2
     ],
     scheduled_at=[
-        "mollit ad"
+        "ullam"
     ],
     slug=[
-        "pv3p"
+        "QFi 0L"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        7
+        4
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverStarcraft2Matches(
     match_type="all_games_played",
-    name="non labore ",
-    slug="Hc",
+    name="esse am",
+    slug="5x5wgZT_",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.star_craft_2_matches.get_starcraft_2_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

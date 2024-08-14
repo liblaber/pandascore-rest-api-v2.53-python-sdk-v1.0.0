@@ -34,43 +34,44 @@ List series for the CODMW videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwSeries(
     begin_at=[
-        "dolore sunt"
+        "aliquip minim d"
     ],
     end_at=[
-        "si"
+        "aute ad ea"
     ],
     id_=[
-        8
+        3
     ],
     league_id=[
-        10
+        6
     ],
     modified_at=[
-        "ut "
+        "quis offi"
     ],
     name=[
-        "nondolor i"
+        "labor"
     ],
     season=[
-        "dolor elit "
+        "veniam qui cons"
     ],
     slug=[
-        "edglj"
+        "hizoyph83_0"
     ],
     videogame_title=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverCodmwSeries(
 )
 range=RangeOverCodmwSeries(
     begin_at=[
-        "cupidatat"
+        "aliq"
     ],
     end_at=[
-        "ad dolore c"
+        "est dolore eu"
     ],
     id_=[
-        4
+        10
     ],
     league_id=[
-        8
+        7
     ],
     modified_at=[
-        "pa"
+        "dolor pro"
     ],
     name=[
-        "ex reprehenderi"
+        "anim ex eli"
     ],
     season=[
-        "laboris i"
+        "pariatur "
     ],
     slug=[
-        "fh4569ay"
+        "ic16v7gnnll"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwSeries(
-    name="mollit in e",
-    season="proident ",
-    slug="ypw1vr",
+    name="qui ul",
+    season="esse ullam",
+    slug="c7",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past CODMW series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwSeries(
     begin_at=[
-        "dolore sunt"
+        "aliquip minim d"
     ],
     end_at=[
-        "si"
+        "aute ad ea"
     ],
     id_=[
-        8
+        3
     ],
     league_id=[
-        10
+        6
     ],
     modified_at=[
-        "ut "
+        "quis offi"
     ],
     name=[
-        "nondolor i"
+        "labor"
     ],
     season=[
-        "dolor elit "
+        "veniam qui cons"
     ],
     slug=[
-        "edglj"
+        "hizoyph83_0"
     ],
     videogame_title=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverCodmwSeries(
 )
 range=RangeOverCodmwSeries(
     begin_at=[
-        "cupidatat"
+        "aliq"
     ],
     end_at=[
-        "ad dolore c"
+        "est dolore eu"
     ],
     id_=[
-        4
+        10
     ],
     league_id=[
-        8
+        7
     ],
     modified_at=[
-        "pa"
+        "dolor pro"
     ],
     name=[
-        "ex reprehenderi"
+        "anim ex eli"
     ],
     season=[
-        "laboris i"
+        "pariatur "
     ],
     slug=[
-        "fh4569ay"
+        "ic16v7gnnll"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwSeries(
-    name="mollit in e",
-    season="proident ",
-    slug="ypw1vr",
+    name="qui ul",
+    season="esse ullam",
+    slug="c7",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running CODMW series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwSeries(
     begin_at=[
-        "dolore sunt"
+        "aliquip minim d"
     ],
     end_at=[
-        "si"
+        "aute ad ea"
     ],
     id_=[
-        8
+        3
     ],
     league_id=[
-        10
+        6
     ],
     modified_at=[
-        "ut "
+        "quis offi"
     ],
     name=[
-        "nondolor i"
+        "labor"
     ],
     season=[
-        "dolor elit "
+        "veniam qui cons"
     ],
     slug=[
-        "edglj"
+        "hizoyph83_0"
     ],
     videogame_title=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverCodmwSeries(
 )
 range=RangeOverCodmwSeries(
     begin_at=[
-        "cupidatat"
+        "aliq"
     ],
     end_at=[
-        "ad dolore c"
+        "est dolore eu"
     ],
     id_=[
-        4
+        10
     ],
     league_id=[
-        8
+        7
     ],
     modified_at=[
-        "pa"
+        "dolor pro"
     ],
     name=[
-        "ex reprehenderi"
+        "anim ex eli"
     ],
     season=[
-        "laboris i"
+        "pariatur "
     ],
     slug=[
-        "fh4569ay"
+        "ic16v7gnnll"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwSeries(
-    name="mollit in e",
-    season="proident ",
-    slug="ypw1vr",
+    name="qui ul",
+    season="esse ullam",
+    slug="c7",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming CODMW series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCodmwSeries, RangeOverCodmwSeries, SearchOverCodmwSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCodmwSeries(
     begin_at=[
-        "dolore sunt"
+        "aliquip minim d"
     ],
     end_at=[
-        "si"
+        "aute ad ea"
     ],
     id_=[
-        8
+        3
     ],
     league_id=[
-        10
+        6
     ],
     modified_at=[
-        "ut "
+        "quis offi"
     ],
     name=[
-        "nondolor i"
+        "labor"
     ],
     season=[
-        "dolor elit "
+        "veniam qui cons"
     ],
     slug=[
-        "edglj"
+        "hizoyph83_0"
     ],
     videogame_title=[
-        7
+        1
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverCodmwSeries(
 )
 range=RangeOverCodmwSeries(
     begin_at=[
-        "cupidatat"
+        "aliq"
     ],
     end_at=[
-        "ad dolore c"
+        "est dolore eu"
     ],
     id_=[
-        4
+        10
     ],
     league_id=[
-        8
+        7
     ],
     modified_at=[
-        "pa"
+        "dolor pro"
     ],
     name=[
-        "ex reprehenderi"
+        "anim ex eli"
     ],
     season=[
-        "laboris i"
+        "pariatur "
     ],
     slug=[
-        "fh4569ay"
+        "ic16v7gnnll"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverCodmwSeries(
-    name="mollit in e",
-    season="proident ",
-    slug="ypw1vr",
+    name="qui ul",
+    season="esse ullam",
+    slug="c7",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.codmw_series.get_codmw_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

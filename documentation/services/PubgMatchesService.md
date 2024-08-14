@@ -34,27 +34,28 @@ List matches for the PUBG videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgMatches(
     begin_at=[
-        "ad eiusmod"
+        "aute eiusmod "
     ],
-    detailed_stats=True,
-    draw=True,
+    detailed_stats=False,
+    draw=False,
     end_at=[
-        "nostrud"
+        "ullamco labor"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        2
+        9
     ],
     league_id=[
         2
@@ -63,48 +64,48 @@ filter=FilterOverPubgMatches(
         "all_games_played"
     ],
     modified_at=[
-        "ut e"
+        "nisi irure culp"
     ],
     name=[
-        "veniam "
+        "aute "
     ],
     not_started=False,
     number_of_games=[
         10
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
-    past=False,
+    past=True,
     running=True,
     scheduled_at=[
-        "proid"
+        "null"
     ],
     serie_id=[
-        6
+        4
     ],
     slug=[
-        "8"
+        "1wzZ5GZv"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        7
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "618949.08012520"
+        "036.43414"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,40 +113,40 @@ filter=FilterOverPubgMatches(
 )
 range=RangeOverPubgMatches(
     begin_at=[
-        "Duis n"
+        "ut cillum in "
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "anim Excepte"
+        "anim"
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "deserunt volupt"
+        "in ut min"
     ],
     name=[
-        "sint D"
+        "eu in"
     ],
     number_of_games=[
-        8
+        10
     ],
     scheduled_at=[
-        "do officia"
+        "in "
     ],
     slug=[
-        "vYFt"
+        "FDoevNsA"
     ],
     status=[
         "canceled"
@@ -154,7 +155,7 @@ range=RangeOverPubgMatches(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverPubgMatches(
     match_type="all_games_played",
-    name="sit ut",
-    slug="hmSL2",
+    name="adipisic",
+    slug="H",
     status="canceled",
     winner_type="Player"
 )
@@ -209,27 +210,28 @@ List past PUBG matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgMatches(
     begin_at=[
-        "ad eiusmod"
+        "aute eiusmod "
     ],
-    detailed_stats=True,
-    draw=True,
+    detailed_stats=False,
+    draw=False,
     end_at=[
-        "nostrud"
+        "ullamco labor"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        2
+        9
     ],
     league_id=[
         2
@@ -238,48 +240,48 @@ filter=FilterOverPubgMatches(
         "all_games_played"
     ],
     modified_at=[
-        "ut e"
+        "nisi irure culp"
     ],
     name=[
-        "veniam "
+        "aute "
     ],
     not_started=False,
     number_of_games=[
         10
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
-    past=False,
+    past=True,
     running=True,
     scheduled_at=[
-        "proid"
+        "null"
     ],
     serie_id=[
-        6
+        4
     ],
     slug=[
-        "8"
+        "1wzZ5GZv"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        7
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "618949.08012520"
+        "036.43414"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,40 +289,40 @@ filter=FilterOverPubgMatches(
 )
 range=RangeOverPubgMatches(
     begin_at=[
-        "Duis n"
+        "ut cillum in "
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "anim Excepte"
+        "anim"
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "deserunt volupt"
+        "in ut min"
     ],
     name=[
-        "sint D"
+        "eu in"
     ],
     number_of_games=[
-        8
+        10
     ],
     scheduled_at=[
-        "do officia"
+        "in "
     ],
     slug=[
-        "vYFt"
+        "FDoevNsA"
     ],
     status=[
         "canceled"
@@ -329,7 +331,7 @@ range=RangeOverPubgMatches(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverPubgMatches(
     match_type="all_games_played",
-    name="sit ut",
-    slug="hmSL2",
+    name="adipisic",
+    slug="H",
     status="canceled",
     winner_type="Player"
 )
@@ -384,27 +386,28 @@ List running PUBG matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgMatches(
     begin_at=[
-        "ad eiusmod"
+        "aute eiusmod "
     ],
-    detailed_stats=True,
-    draw=True,
+    detailed_stats=False,
+    draw=False,
     end_at=[
-        "nostrud"
+        "ullamco labor"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        2
+        9
     ],
     league_id=[
         2
@@ -413,48 +416,48 @@ filter=FilterOverPubgMatches(
         "all_games_played"
     ],
     modified_at=[
-        "ut e"
+        "nisi irure culp"
     ],
     name=[
-        "veniam "
+        "aute "
     ],
     not_started=False,
     number_of_games=[
         10
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
-    past=False,
+    past=True,
     running=True,
     scheduled_at=[
-        "proid"
+        "null"
     ],
     serie_id=[
-        6
+        4
     ],
     slug=[
-        "8"
+        "1wzZ5GZv"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        7
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "618949.08012520"
+        "036.43414"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,40 +465,40 @@ filter=FilterOverPubgMatches(
 )
 range=RangeOverPubgMatches(
     begin_at=[
-        "Duis n"
+        "ut cillum in "
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "anim Excepte"
+        "anim"
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "deserunt volupt"
+        "in ut min"
     ],
     name=[
-        "sint D"
+        "eu in"
     ],
     number_of_games=[
-        8
+        10
     ],
     scheduled_at=[
-        "do officia"
+        "in "
     ],
     slug=[
-        "vYFt"
+        "FDoevNsA"
     ],
     status=[
         "canceled"
@@ -504,7 +507,7 @@ range=RangeOverPubgMatches(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverPubgMatches(
     match_type="all_games_played",
-    name="sit ut",
-    slug="hmSL2",
+    name="adipisic",
+    slug="H",
     status="canceled",
     winner_type="Player"
 )
@@ -559,27 +562,28 @@ List upcoming PUBG matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPubgMatches, RangeOverPubgMatches, SearchOverPubgMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPubgMatches(
     begin_at=[
-        "ad eiusmod"
+        "aute eiusmod "
     ],
-    detailed_stats=True,
-    draw=True,
+    detailed_stats=False,
+    draw=False,
     end_at=[
-        "nostrud"
+        "ullamco labor"
     ],
     finished=True,
     forfeit=False,
     future=False,
     id_=[
-        2
+        9
     ],
     league_id=[
         2
@@ -588,48 +592,48 @@ filter=FilterOverPubgMatches(
         "all_games_played"
     ],
     modified_at=[
-        "ut e"
+        "nisi irure culp"
     ],
     name=[
-        "veniam "
+        "aute "
     ],
     not_started=False,
     number_of_games=[
         10
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
-    past=False,
+    past=True,
     running=True,
     scheduled_at=[
-        "proid"
+        "null"
     ],
     serie_id=[
-        6
+        4
     ],
     slug=[
-        "8"
+        "1wzZ5GZv"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        7
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "618949.08012520"
+        "036.43414"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,40 +641,40 @@ filter=FilterOverPubgMatches(
 )
 range=RangeOverPubgMatches(
     begin_at=[
-        "Duis n"
+        "ut cillum in "
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "anim Excepte"
+        "anim"
     ],
     forfeit=[
-        False
+        True
     ],
     id_=[
-        7
+        2
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "deserunt volupt"
+        "in ut min"
     ],
     name=[
-        "sint D"
+        "eu in"
     ],
     number_of_games=[
-        8
+        10
     ],
     scheduled_at=[
-        "do officia"
+        "in "
     ],
     slug=[
-        "vYFt"
+        "FDoevNsA"
     ],
     status=[
         "canceled"
@@ -679,7 +683,7 @@ range=RangeOverPubgMatches(
         5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverPubgMatches(
     match_type="all_games_played",
-    name="sit ut",
-    slug="hmSL2",
+    name="adipisic",
+    slug="H",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.pubg_matches.get_pubg_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

@@ -34,77 +34,78 @@ List matches for the StarCraft Brood War videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarMatches(
     begin_at=[
-        "quis pariatur"
+        "eu exe"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "mollit Lorem"
+        "irure lab"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        10
+        7
     ],
     league_id=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ull"
+        "exercita"
     ],
     name=[
-        "ea aliqua fug"
+        "Lorem "
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        5
+        0
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "volupt"
+        "sed culpa la"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "xf"
+        "UDtH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        9
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        7
     ],
     videogame_version=[
-        "9241.35718719411.5439860285"
+        "36795.89.22961879"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverStarcraftBroodWarMatches(
 )
 range=RangeOverStarcraftBroodWarMatches(
     begin_at=[
-        "eu q"
+        "Duis incididu"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         False
     ],
     end_at=[
-        "nu"
+        "ex do cupi"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        4
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aliq"
+        "aliqu"
     ],
     name=[
-        "incididunt"
+        "in no"
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "consectetu"
+        "elit nisi"
     ],
     slug=[
-        "zbHMXhEaC39"
+        "EZr49Ap-"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverStarcraftBroodWarMatches(
     match_type="all_games_played",
-    name="ea venia",
-    slug="vpENLXh",
+    name="dolor ut enim",
+    slug="KpN_Jh",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past StarCraft Brood War matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarMatches(
     begin_at=[
-        "quis pariatur"
+        "eu exe"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "mollit Lorem"
+        "irure lab"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        10
+        7
     ],
     league_id=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ull"
+        "exercita"
     ],
     name=[
-        "ea aliqua fug"
+        "Lorem "
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        5
+        0
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "volupt"
+        "sed culpa la"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "xf"
+        "UDtH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        9
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        7
     ],
     videogame_version=[
-        "9241.35718719411.5439860285"
+        "36795.89.22961879"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverStarcraftBroodWarMatches(
 )
 range=RangeOverStarcraftBroodWarMatches(
     begin_at=[
-        "eu q"
+        "Duis incididu"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         False
     ],
     end_at=[
-        "nu"
+        "ex do cupi"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        4
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aliq"
+        "aliqu"
     ],
     name=[
-        "incididunt"
+        "in no"
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "consectetu"
+        "elit nisi"
     ],
     slug=[
-        "zbHMXhEaC39"
+        "EZr49Ap-"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverStarcraftBroodWarMatches(
     match_type="all_games_played",
-    name="ea venia",
-    slug="vpENLXh",
+    name="dolor ut enim",
+    slug="KpN_Jh",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running StarCraft Brood War matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarMatches(
     begin_at=[
-        "quis pariatur"
+        "eu exe"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "mollit Lorem"
+        "irure lab"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        10
+        7
     ],
     league_id=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ull"
+        "exercita"
     ],
     name=[
-        "ea aliqua fug"
+        "Lorem "
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        5
+        0
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "volupt"
+        "sed culpa la"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "xf"
+        "UDtH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        9
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        7
     ],
     videogame_version=[
-        "9241.35718719411.5439860285"
+        "36795.89.22961879"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverStarcraftBroodWarMatches(
 )
 range=RangeOverStarcraftBroodWarMatches(
     begin_at=[
-        "eu q"
+        "Duis incididu"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         False
     ],
     end_at=[
-        "nu"
+        "ex do cupi"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        4
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aliq"
+        "aliqu"
     ],
     name=[
-        "incididunt"
+        "in no"
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "consectetu"
+        "elit nisi"
     ],
     slug=[
-        "zbHMXhEaC39"
+        "EZr49Ap-"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverStarcraftBroodWarMatches(
     match_type="all_games_played",
-    name="ea venia",
-    slug="vpENLXh",
+    name="dolor ut enim",
+    slug="KpN_Jh",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming StarCraft Brood War matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverStarcraftBroodWarMatches, RangeOverStarcraftBroodWarMatches, SearchOverStarcraftBroodWarMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverStarcraftBroodWarMatches(
     begin_at=[
-        "quis pariatur"
+        "eu exe"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "mollit Lorem"
+        "irure lab"
     ],
-    finished=False,
-    forfeit=True,
-    future=True,
+    finished=True,
+    forfeit=False,
+    future=False,
     id_=[
-        10
+        7
     ],
     league_id=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ull"
+        "exercita"
     ],
     name=[
-        "ea aliqua fug"
+        "Lorem "
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        5
+        0
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
-    past=False,
-    running=True,
+    past=True,
+    running=False,
     scheduled_at=[
-        "volupt"
+        "sed culpa la"
     ],
     serie_id=[
-        4
+        3
     ],
     slug=[
-        "xf"
+        "UDtH"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        9
     ],
     unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        8
+        7
     ],
     videogame_version=[
-        "9241.35718719411.5439860285"
+        "36795.89.22961879"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverStarcraftBroodWarMatches(
 )
 range=RangeOverStarcraftBroodWarMatches(
     begin_at=[
-        "eu q"
+        "Duis incididu"
     ],
     detailed_stats=[
-        False
+        True
     ],
     draw=[
         False
     ],
     end_at=[
-        "nu"
+        "ex do cupi"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        4
+        6
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "aliq"
+        "aliqu"
     ],
     name=[
-        "incididunt"
+        "in no"
     ],
     number_of_games=[
-        10
+        0
     ],
     scheduled_at=[
-        "consectetu"
+        "elit nisi"
     ],
     slug=[
-        "zbHMXhEaC39"
+        "EZr49Ap-"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        1
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverStarcraftBroodWarMatches(
     match_type="all_games_played",
-    name="ea venia",
-    slug="vpENLXh",
+    name="dolor ut enim",
+    slug="KpN_Jh",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.star_craft_brood_war_matches.get_starcraft_brood_war_matches_upcomi
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

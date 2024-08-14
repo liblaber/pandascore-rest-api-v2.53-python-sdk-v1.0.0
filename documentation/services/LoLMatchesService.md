@@ -35,77 +35,78 @@ List matches for the League of Legends videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLMatches(
     begin_at=[
-        "mollit eius"
+        "nisi e"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=True,
     end_at=[
-        "in"
+        "deserun"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        2
+        6
     ],
     league_id=[
-        9
+        10
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "dolore qui"
+        "laborum "
     ],
     name=[
-        "reprehende"
+        "sint velit"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        3
+        0
     ],
     opponent_id=[
-        7
-    ],
-    opponents_filled=False,
-    past=True,
-    running=False,
-    scheduled_at=[
-        "laboris"
-    ],
-    serie_id=[
         10
     ],
+    opponents_filled=False,
+    past=False,
+    running=True,
+    scheduled_at=[
+        "Duis Lorem"
+    ],
+    serie_id=[
+        1
+    ],
     slug=[
-        "5"
+        "rki"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        6
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        9
     ],
     videogame_version=[
-        "66321.10142736130"
+        "076677.94865001934.580355685"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -113,49 +114,49 @@ filter=FilterOverLoLMatches(
 )
 range=RangeOverLoLMatches(
     begin_at=[
-        "repr"
+        "occaecat"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "exercitation "
+        "velit est"
     ],
     forfeit=[
         False
     ],
     id_=[
-        7
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut commodo L"
+        "labori"
     ],
     name=[
-        "pariat"
+        "cillum"
     ],
     number_of_games=[
         6
     ],
     scheduled_at=[
-        "ipsum ut quis"
+        "ad dolor qu"
     ],
     slug=[
-        "3ftB_XqVVmz"
+        "XMb"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -166,8 +167,8 @@ sort=[
 ]
 search=SearchOverLoLMatches(
     match_type="all_games_played",
-    name="velit ex ",
-    slug="ULtATnKF66N",
+    name="etocc",
+    slug="WYcNZudjm l",
     status="canceled",
     winner_type="Player"
 )
@@ -210,77 +211,78 @@ List past League of Legends matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLMatches(
     begin_at=[
-        "mollit eius"
+        "nisi e"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=True,
     end_at=[
-        "in"
+        "deserun"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        2
+        6
     ],
     league_id=[
-        9
+        10
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "dolore qui"
+        "laborum "
     ],
     name=[
-        "reprehende"
+        "sint velit"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        3
+        0
     ],
     opponent_id=[
-        7
-    ],
-    opponents_filled=False,
-    past=True,
-    running=False,
-    scheduled_at=[
-        "laboris"
-    ],
-    serie_id=[
         10
     ],
+    opponents_filled=False,
+    past=False,
+    running=True,
+    scheduled_at=[
+        "Duis Lorem"
+    ],
+    serie_id=[
+        1
+    ],
     slug=[
-        "5"
+        "rki"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        6
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        9
     ],
     videogame_version=[
-        "66321.10142736130"
+        "076677.94865001934.580355685"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -288,49 +290,49 @@ filter=FilterOverLoLMatches(
 )
 range=RangeOverLoLMatches(
     begin_at=[
-        "repr"
+        "occaecat"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "exercitation "
+        "velit est"
     ],
     forfeit=[
         False
     ],
     id_=[
-        7
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut commodo L"
+        "labori"
     ],
     name=[
-        "pariat"
+        "cillum"
     ],
     number_of_games=[
         6
     ],
     scheduled_at=[
-        "ipsum ut quis"
+        "ad dolor qu"
     ],
     slug=[
-        "3ftB_XqVVmz"
+        "XMb"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -341,8 +343,8 @@ sort=[
 ]
 search=SearchOverLoLMatches(
     match_type="all_games_played",
-    name="velit ex ",
-    slug="ULtATnKF66N",
+    name="etocc",
+    slug="WYcNZudjm l",
     status="canceled",
     winner_type="Player"
 )
@@ -385,77 +387,78 @@ List running League of Legends matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLMatches(
     begin_at=[
-        "mollit eius"
+        "nisi e"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=True,
     end_at=[
-        "in"
+        "deserun"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        2
+        6
     ],
     league_id=[
-        9
+        10
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "dolore qui"
+        "laborum "
     ],
     name=[
-        "reprehende"
+        "sint velit"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        3
+        0
     ],
     opponent_id=[
-        7
-    ],
-    opponents_filled=False,
-    past=True,
-    running=False,
-    scheduled_at=[
-        "laboris"
-    ],
-    serie_id=[
         10
     ],
+    opponents_filled=False,
+    past=False,
+    running=True,
+    scheduled_at=[
+        "Duis Lorem"
+    ],
+    serie_id=[
+        1
+    ],
     slug=[
-        "5"
+        "rki"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        6
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        9
     ],
     videogame_version=[
-        "66321.10142736130"
+        "076677.94865001934.580355685"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -463,49 +466,49 @@ filter=FilterOverLoLMatches(
 )
 range=RangeOverLoLMatches(
     begin_at=[
-        "repr"
+        "occaecat"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "exercitation "
+        "velit est"
     ],
     forfeit=[
         False
     ],
     id_=[
-        7
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut commodo L"
+        "labori"
     ],
     name=[
-        "pariat"
+        "cillum"
     ],
     number_of_games=[
         6
     ],
     scheduled_at=[
-        "ipsum ut quis"
+        "ad dolor qu"
     ],
     slug=[
-        "3ftB_XqVVmz"
+        "XMb"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -516,8 +519,8 @@ sort=[
 ]
 search=SearchOverLoLMatches(
     match_type="all_games_played",
-    name="velit ex ",
-    slug="ULtATnKF66N",
+    name="etocc",
+    slug="WYcNZudjm l",
     status="canceled",
     winner_type="Player"
 )
@@ -560,77 +563,78 @@ List upcoming League of Legends matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLoLMatches, RangeOverLoLMatches, SearchOverLoLMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLoLMatches(
     begin_at=[
-        "mollit eius"
+        "nisi e"
     ],
-    detailed_stats=False,
+    detailed_stats=True,
     draw=True,
     end_at=[
-        "in"
+        "deserun"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=False,
     id_=[
-        2
+        6
     ],
     league_id=[
-        9
+        10
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "dolore qui"
+        "laborum "
     ],
     name=[
-        "reprehende"
+        "sint velit"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        3
+        0
     ],
     opponent_id=[
-        7
-    ],
-    opponents_filled=False,
-    past=True,
-    running=False,
-    scheduled_at=[
-        "laboris"
-    ],
-    serie_id=[
         10
     ],
+    opponents_filled=False,
+    past=False,
+    running=True,
+    scheduled_at=[
+        "Duis Lorem"
+    ],
+    serie_id=[
+        1
+    ],
     slug=[
-        "5"
+        "rki"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        6
     ],
     unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        9
     ],
     videogame_version=[
-        "66321.10142736130"
+        "076677.94865001934.580355685"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -638,49 +642,49 @@ filter=FilterOverLoLMatches(
 )
 range=RangeOverLoLMatches(
     begin_at=[
-        "repr"
+        "occaecat"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        False
+        True
     ],
     end_at=[
-        "exercitation "
+        "velit est"
     ],
     forfeit=[
         False
     ],
     id_=[
-        7
+        3
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut commodo L"
+        "labori"
     ],
     name=[
-        "pariat"
+        "cillum"
     ],
     number_of_games=[
         6
     ],
     scheduled_at=[
-        "ipsum ut quis"
+        "ad dolor qu"
     ],
     slug=[
-        "3ftB_XqVVmz"
+        "XMb"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        3
+        2
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -691,8 +695,8 @@ sort=[
 ]
 search=SearchOverLoLMatches(
     match_type="all_games_played",
-    name="velit ex ",
-    slug="ULtATnKF66N",
+    name="etocc",
+    slug="WYcNZudjm l",
     status="canceled",
     winner_type="Player"
 )
@@ -730,15 +734,18 @@ Get a single League of Legends match by ID or slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-match_id_or_slug=8
+match_id_or_slug=5
 
 result = sdk.lo_l_matches.get_lol_matches_match_id_or_slug(match_id_or_slug=match_id_or_slug)
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

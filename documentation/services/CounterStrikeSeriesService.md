@@ -34,43 +34,44 @@ List series for the Counter-Strike videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoSeries(
     begin_at=[
-        "d"
+        "consectet"
     ],
     end_at=[
-        "off"
+        "ut Ut dolo"
     ],
     id_=[
-        6
+        10
     ],
     league_id=[
-        1
+        3
     ],
     modified_at=[
-        "do"
+        "do commodo in "
     ],
     name=[
-        "velit tempor "
+        "ut sed mag"
     ],
     season=[
-        "dolore sunt i"
+        "deserunt no"
     ],
     slug=[
-        "mt6dhnc62zi"
+        "xn5ho"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -81,31 +82,31 @@ filter=FilterOverCsgoSeries(
 )
 range=RangeOverCsgoSeries(
     begin_at=[
-        "occaecat d"
+        "ipsum tempo"
     ],
     end_at=[
-        "aute Ut in"
+        "ad "
     ],
     id_=[
-        4
+        9
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "magna ex"
+        "mini"
     ],
     name=[
-        "aliquip Ut elit"
+        "quis "
     ],
     season=[
-        "sintconsectetu"
+        "est ea aliqu"
     ],
     slug=[
-        "a6k"
+        "v9v6xpow"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -118,9 +119,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoSeries(
-    name="quis aute la",
-    season="exercita",
-    slug="0i8i",
+    name="in mollit offic",
+    season="nostrud elit",
+    slug="n-l-8j",
     winner_type="Player"
 )
 page=1
@@ -162,43 +163,44 @@ List past Counter-Strike series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoSeries(
     begin_at=[
-        "d"
+        "consectet"
     ],
     end_at=[
-        "off"
+        "ut Ut dolo"
     ],
     id_=[
-        6
+        10
     ],
     league_id=[
-        1
+        3
     ],
     modified_at=[
-        "do"
+        "do commodo in "
     ],
     name=[
-        "velit tempor "
+        "ut sed mag"
     ],
     season=[
-        "dolore sunt i"
+        "deserunt no"
     ],
     slug=[
-        "mt6dhnc62zi"
+        "xn5ho"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -209,31 +211,31 @@ filter=FilterOverCsgoSeries(
 )
 range=RangeOverCsgoSeries(
     begin_at=[
-        "occaecat d"
+        "ipsum tempo"
     ],
     end_at=[
-        "aute Ut in"
+        "ad "
     ],
     id_=[
-        4
+        9
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "magna ex"
+        "mini"
     ],
     name=[
-        "aliquip Ut elit"
+        "quis "
     ],
     season=[
-        "sintconsectetu"
+        "est ea aliqu"
     ],
     slug=[
-        "a6k"
+        "v9v6xpow"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -246,9 +248,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoSeries(
-    name="quis aute la",
-    season="exercita",
-    slug="0i8i",
+    name="in mollit offic",
+    season="nostrud elit",
+    slug="n-l-8j",
     winner_type="Player"
 )
 page=1
@@ -290,43 +292,44 @@ List running Counter-Strike series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoSeries(
     begin_at=[
-        "d"
+        "consectet"
     ],
     end_at=[
-        "off"
+        "ut Ut dolo"
     ],
     id_=[
-        6
+        10
     ],
     league_id=[
-        1
+        3
     ],
     modified_at=[
-        "do"
+        "do commodo in "
     ],
     name=[
-        "velit tempor "
+        "ut sed mag"
     ],
     season=[
-        "dolore sunt i"
+        "deserunt no"
     ],
     slug=[
-        "mt6dhnc62zi"
+        "xn5ho"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -337,31 +340,31 @@ filter=FilterOverCsgoSeries(
 )
 range=RangeOverCsgoSeries(
     begin_at=[
-        "occaecat d"
+        "ipsum tempo"
     ],
     end_at=[
-        "aute Ut in"
+        "ad "
     ],
     id_=[
-        4
+        9
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "magna ex"
+        "mini"
     ],
     name=[
-        "aliquip Ut elit"
+        "quis "
     ],
     season=[
-        "sintconsectetu"
+        "est ea aliqu"
     ],
     slug=[
-        "a6k"
+        "v9v6xpow"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -374,9 +377,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoSeries(
-    name="quis aute la",
-    season="exercita",
-    slug="0i8i",
+    name="in mollit offic",
+    season="nostrud elit",
+    slug="n-l-8j",
     winner_type="Player"
 )
 page=1
@@ -418,43 +421,44 @@ List upcoming Counter-Strike series
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverCsgoSeries, RangeOverCsgoSeries, SearchOverCsgoSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverCsgoSeries(
     begin_at=[
-        "d"
+        "consectet"
     ],
     end_at=[
-        "off"
+        "ut Ut dolo"
     ],
     id_=[
-        6
+        10
     ],
     league_id=[
-        1
+        3
     ],
     modified_at=[
-        "do"
+        "do commodo in "
     ],
     name=[
-        "velit tempor "
+        "ut sed mag"
     ],
     season=[
-        "dolore sunt i"
+        "deserunt no"
     ],
     slug=[
-        "mt6dhnc62zi"
+        "xn5ho"
     ],
     videogame_title=[
-        1
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -465,31 +469,31 @@ filter=FilterOverCsgoSeries(
 )
 range=RangeOverCsgoSeries(
     begin_at=[
-        "occaecat d"
+        "ipsum tempo"
     ],
     end_at=[
-        "aute Ut in"
+        "ad "
     ],
     id_=[
-        4
+        9
     ],
     league_id=[
-        5
+        10
     ],
     modified_at=[
-        "magna ex"
+        "mini"
     ],
     name=[
-        "aliquip Ut elit"
+        "quis "
     ],
     season=[
-        "sintconsectetu"
+        "est ea aliqu"
     ],
     slug=[
-        "a6k"
+        "v9v6xpow"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -502,9 +506,9 @@ sort=[
     ""
 ]
 search=SearchOverCsgoSeries(
-    name="quis aute la",
-    season="exercita",
-    slug="0i8i",
+    name="in mollit offic",
+    season="nostrud elit",
+    slug="n-l-8j",
     winner_type="Player"
 )
 page=1
@@ -520,3 +524,5 @@ result = sdk.counter_strike_series.get_csgo_series_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

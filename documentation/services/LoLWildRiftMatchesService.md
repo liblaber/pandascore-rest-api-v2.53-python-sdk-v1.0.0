@@ -34,77 +34,78 @@ List matches for the LoL Wild Rift videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftMatches(
     begin_at=[
-        "sit dol"
+        "velit irure"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat id "
+        "ani"
     ],
     finished=False,
-    forfeit=True,
-    future=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut consequa"
+        "aliquip"
     ],
     name=[
-        "sint u"
+        "velit Except"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        0
+        2
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
     running=True,
     scheduled_at=[
-        "aliquip"
+        "aliqua ulla"
     ],
     serie_id=[
-        1
+        5
     ],
     slug=[
-        "qUOA7MvT6YZ"
+        "REqPO"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        4
+        8
     ],
     videogame_version=[
-        "38165.26035"
+        "156.75188480.912455326"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverLolWildRiftMatches(
 )
 range=RangeOverLolWildRiftMatches(
     begin_at=[
-        "d"
+        "qui laboris"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "dolore"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "occaecat commo"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "d"
+        "ullamco ex do"
     ],
     name=[
-        "esse tempo"
+        "dolore "
     ],
     number_of_games=[
-        7
+        6
     ],
     scheduled_at=[
-        "cup"
+        "amet "
     ],
     slug=[
-        "2QD9Sdox"
+        "SWMMt"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverLolWildRiftMatches(
     match_type="all_games_played",
-    name="incididunt in",
-    slug="R6Hpmg5AJR",
+    name="nostrud",
+    slug="P-",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past LoL Wild Rift matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftMatches(
     begin_at=[
-        "sit dol"
+        "velit irure"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat id "
+        "ani"
     ],
     finished=False,
-    forfeit=True,
-    future=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut consequa"
+        "aliquip"
     ],
     name=[
-        "sint u"
+        "velit Except"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        0
+        2
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
     running=True,
     scheduled_at=[
-        "aliquip"
+        "aliqua ulla"
     ],
     serie_id=[
-        1
+        5
     ],
     slug=[
-        "qUOA7MvT6YZ"
+        "REqPO"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        4
+        8
     ],
     videogame_version=[
-        "38165.26035"
+        "156.75188480.912455326"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverLolWildRiftMatches(
 )
 range=RangeOverLolWildRiftMatches(
     begin_at=[
-        "d"
+        "qui laboris"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "dolore"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "occaecat commo"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "d"
+        "ullamco ex do"
     ],
     name=[
-        "esse tempo"
+        "dolore "
     ],
     number_of_games=[
-        7
+        6
     ],
     scheduled_at=[
-        "cup"
+        "amet "
     ],
     slug=[
-        "2QD9Sdox"
+        "SWMMt"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverLolWildRiftMatches(
     match_type="all_games_played",
-    name="incididunt in",
-    slug="R6Hpmg5AJR",
+    name="nostrud",
+    slug="P-",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running LoL Wild Rift matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftMatches(
     begin_at=[
-        "sit dol"
+        "velit irure"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat id "
+        "ani"
     ],
     finished=False,
-    forfeit=True,
-    future=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut consequa"
+        "aliquip"
     ],
     name=[
-        "sint u"
+        "velit Except"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        0
+        2
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
     running=True,
     scheduled_at=[
-        "aliquip"
+        "aliqua ulla"
     ],
     serie_id=[
-        1
+        5
     ],
     slug=[
-        "qUOA7MvT6YZ"
+        "REqPO"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        4
+        8
     ],
     videogame_version=[
-        "38165.26035"
+        "156.75188480.912455326"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverLolWildRiftMatches(
 )
 range=RangeOverLolWildRiftMatches(
     begin_at=[
-        "d"
+        "qui laboris"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "dolore"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "occaecat commo"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "d"
+        "ullamco ex do"
     ],
     name=[
-        "esse tempo"
+        "dolore "
     ],
     number_of_games=[
-        7
+        6
     ],
     scheduled_at=[
-        "cup"
+        "amet "
     ],
     slug=[
-        "2QD9Sdox"
+        "SWMMt"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverLolWildRiftMatches(
     match_type="all_games_played",
-    name="incididunt in",
-    slug="R6Hpmg5AJR",
+    name="nostrud",
+    slug="P-",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming LoL Wild Rift matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLolWildRiftMatches, RangeOverLolWildRiftMatches, SearchOverLolWildRiftMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverLolWildRiftMatches(
     begin_at=[
-        "sit dol"
+        "velit irure"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "occaecat id "
+        "ani"
     ],
     finished=False,
-    forfeit=True,
-    future=True,
+    forfeit=False,
+    future=False,
     id_=[
-        5
+        10
     ],
     league_id=[
-        7
+        4
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "ut consequa"
+        "aliquip"
     ],
     name=[
-        "sint u"
+        "velit Except"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        0
+        2
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=False,
     past=True,
     running=True,
     scheduled_at=[
-        "aliquip"
+        "aliqua ulla"
     ],
     serie_id=[
-        1
+        5
     ],
     slug=[
-        "qUOA7MvT6YZ"
+        "REqPO"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        10
+        4
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        4
+        8
     ],
     videogame_version=[
-        "38165.26035"
+        "156.75188480.912455326"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverLolWildRiftMatches(
 )
 range=RangeOverLolWildRiftMatches(
     begin_at=[
-        "d"
+        "qui laboris"
     ],
     detailed_stats=[
         True
     ],
     draw=[
-        True
-    ],
-    end_at=[
-        "dolore"
-    ],
-    forfeit=[
         False
     ],
+    end_at=[
+        "occaecat commo"
+    ],
+    forfeit=[
+        True
+    ],
     id_=[
-        6
+        1
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "d"
+        "ullamco ex do"
     ],
     name=[
-        "esse tempo"
+        "dolore "
     ],
     number_of_games=[
-        7
+        6
     ],
     scheduled_at=[
-        "cup"
+        "amet "
     ],
     slug=[
-        "2QD9Sdox"
+        "SWMMt"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        5
+        8
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverLolWildRiftMatches(
     match_type="all_games_played",
-    name="incididunt in",
-    slug="R6Hpmg5AJR",
+    name="nostrud",
+    slug="P-",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.lo_l_wild_rift_matches.get_lol_wild_rift_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

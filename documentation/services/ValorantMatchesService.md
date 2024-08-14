@@ -34,77 +34,78 @@ List matches for the Valorant videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantMatches(
     begin_at=[
-        "aute amet"
+        "dolor"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "proident ulla"
+        "ex"
     ],
     finished=True,
-    forfeit=False,
-    future=False,
+    forfeit=True,
+    future=True,
     id_=[
-        1
+        9
     ],
     league_id=[
-        2
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "el"
+        "dolor velit"
     ],
     name=[
-        "sed consectetu"
+        "minim"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        7
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
     past=False,
     running=False,
     scheduled_at=[
-        "consectetu"
+        "repre"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "BoG3NK"
+        "P"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "0755.7301095"
+        "848.5017114648.16441010106"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -112,49 +113,49 @@ filter=FilterOverValorantMatches(
 )
 range=RangeOverValorantMatches(
     begin_at=[
-        "a"
+        "off"
     ],
     detailed_stats=[
         False
     ],
     draw=[
-        True
+        False
     ],
     end_at=[
-        "volupta"
+        "f"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "non"
+        "adipisicin"
     ],
     name=[
-        "Duis reprehende"
+        "elit dolore in"
     ],
     number_of_games=[
-        1
+        4
     ],
     scheduled_at=[
-        "anim non "
+        "sunt s"
     ],
     slug=[
-        "naaDjb"
+        "PUIjB6P_Y"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -165,8 +166,8 @@ sort=[
 ]
 search=SearchOverValorantMatches(
     match_type="all_games_played",
-    name="consequat",
-    slug="aL1K",
+    name="laboris ",
+    slug="vBwZ20H7NVH",
     status="canceled",
     winner_type="Player"
 )
@@ -209,77 +210,78 @@ List past Valorant matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantMatches(
     begin_at=[
-        "aute amet"
+        "dolor"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "proident ulla"
+        "ex"
     ],
     finished=True,
-    forfeit=False,
-    future=False,
+    forfeit=True,
+    future=True,
     id_=[
-        1
+        9
     ],
     league_id=[
-        2
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "el"
+        "dolor velit"
     ],
     name=[
-        "sed consectetu"
+        "minim"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        7
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
     past=False,
     running=False,
     scheduled_at=[
-        "consectetu"
+        "repre"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "BoG3NK"
+        "P"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "0755.7301095"
+        "848.5017114648.16441010106"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -287,49 +289,49 @@ filter=FilterOverValorantMatches(
 )
 range=RangeOverValorantMatches(
     begin_at=[
-        "a"
+        "off"
     ],
     detailed_stats=[
         False
     ],
     draw=[
-        True
+        False
     ],
     end_at=[
-        "volupta"
+        "f"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "non"
+        "adipisicin"
     ],
     name=[
-        "Duis reprehende"
+        "elit dolore in"
     ],
     number_of_games=[
-        1
+        4
     ],
     scheduled_at=[
-        "anim non "
+        "sunt s"
     ],
     slug=[
-        "naaDjb"
+        "PUIjB6P_Y"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -340,8 +342,8 @@ sort=[
 ]
 search=SearchOverValorantMatches(
     match_type="all_games_played",
-    name="consequat",
-    slug="aL1K",
+    name="laboris ",
+    slug="vBwZ20H7NVH",
     status="canceled",
     winner_type="Player"
 )
@@ -384,77 +386,78 @@ List running Valorant matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantMatches(
     begin_at=[
-        "aute amet"
+        "dolor"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "proident ulla"
+        "ex"
     ],
     finished=True,
-    forfeit=False,
-    future=False,
+    forfeit=True,
+    future=True,
     id_=[
-        1
+        9
     ],
     league_id=[
-        2
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "el"
+        "dolor velit"
     ],
     name=[
-        "sed consectetu"
+        "minim"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        7
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
     past=False,
     running=False,
     scheduled_at=[
-        "consectetu"
+        "repre"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "BoG3NK"
+        "P"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "0755.7301095"
+        "848.5017114648.16441010106"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -462,49 +465,49 @@ filter=FilterOverValorantMatches(
 )
 range=RangeOverValorantMatches(
     begin_at=[
-        "a"
+        "off"
     ],
     detailed_stats=[
         False
     ],
     draw=[
-        True
+        False
     ],
     end_at=[
-        "volupta"
+        "f"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "non"
+        "adipisicin"
     ],
     name=[
-        "Duis reprehende"
+        "elit dolore in"
     ],
     number_of_games=[
-        1
+        4
     ],
     scheduled_at=[
-        "anim non "
+        "sunt s"
     ],
     slug=[
-        "naaDjb"
+        "PUIjB6P_Y"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -515,8 +518,8 @@ sort=[
 ]
 search=SearchOverValorantMatches(
     match_type="all_games_played",
-    name="consequat",
-    slug="aL1K",
+    name="laboris ",
+    slug="vBwZ20H7NVH",
     status="canceled",
     winner_type="Player"
 )
@@ -559,77 +562,78 @@ List upcoming Valorant matches
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverValorantMatches, RangeOverValorantMatches, SearchOverValorantMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverValorantMatches(
     begin_at=[
-        "aute amet"
+        "dolor"
     ],
     detailed_stats=True,
-    draw=False,
+    draw=True,
     end_at=[
-        "proident ulla"
+        "ex"
     ],
     finished=True,
-    forfeit=False,
-    future=False,
+    forfeit=True,
+    future=True,
     id_=[
-        1
+        9
     ],
     league_id=[
-        2
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "el"
+        "dolor velit"
     ],
     name=[
-        "sed consectetu"
+        "minim"
     ],
-    not_started=True,
+    not_started=False,
     number_of_games=[
-        7
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
     opponents_filled=True,
     past=False,
     running=False,
     scheduled_at=[
-        "consectetu"
+        "repre"
     ],
     serie_id=[
-        3
+        1
     ],
     slug=[
-        "BoG3NK"
+        "P"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
-    unscheduled=False,
+    unscheduled=True,
     videogame=[
         1
     ],
     videogame_title=[
-        7
+        5
     ],
     videogame_version=[
-        "0755.7301095"
+        "848.5017114648.16441010106"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -637,49 +641,49 @@ filter=FilterOverValorantMatches(
 )
 range=RangeOverValorantMatches(
     begin_at=[
-        "a"
+        "off"
     ],
     detailed_stats=[
         False
     ],
     draw=[
-        True
+        False
     ],
     end_at=[
-        "volupta"
+        "f"
     ],
     forfeit=[
-        True
+        False
     ],
     id_=[
-        5
+        8
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "non"
+        "adipisicin"
     ],
     name=[
-        "Duis reprehende"
+        "elit dolore in"
     ],
     number_of_games=[
-        1
+        4
     ],
     scheduled_at=[
-        "anim non "
+        "sunt s"
     ],
     slug=[
-        "naaDjb"
+        "PUIjB6P_Y"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        4
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -690,8 +694,8 @@ sort=[
 ]
 search=SearchOverValorantMatches(
     match_type="all_games_played",
-    name="consequat",
-    slug="aL1K",
+    name="laboris ",
+    slug="vBwZ20H7NVH",
     status="canceled",
     winner_type="Player"
 )
@@ -708,3 +712,5 @@ result = sdk.valorant_matches.get_valorant_matches_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

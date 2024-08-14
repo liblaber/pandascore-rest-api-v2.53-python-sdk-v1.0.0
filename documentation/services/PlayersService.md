@@ -36,44 +36,45 @@ List players
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverPlayers, RangeOverPlayers, SearchOverPlayers
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverPlayers, RangeOverPlayers, SearchOverPlayers
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverPlayers(
     active=True,
     birthday=[
-        "dolor i"
+        "adipisicin"
     ],
     first_name=[
-        "Duissunt"
+        "culpa"
     ],
     id_=[
-        2
+        6
     ],
     last_name=[
-        "Duisex"
+        "consec"
     ],
     modified_at=[
-        "labori"
+        "ea"
     ],
     name=[
-        "esse tempor"
+        "cupidat"
     ],
     nationality=[
-        "esse sit"
+        "nostrud"
     ],
     role=[
-        "ea et a"
+        "ipsum anim"
     ],
     slug=[
-        "c-x4c8"
+        "90dzb1"
     ],
     team_id=[
-        6
+        3
     ],
     videogame_id=[
         1
@@ -81,44 +82,44 @@ filter=FilterOverPlayers(
 )
 range=RangeOverPlayers(
     birthday=[
-        "irure sed Ut ul"
+        "irure "
     ],
     first_name=[
-        "utsit nos"
+        "tempor"
     ],
     id_=[
-        2
+        1
     ],
     last_name=[
-        "sunt cu"
+        "enim officia no"
     ],
     modified_at=[
-        "laboris e"
+        "aliqua s"
     ],
     name=[
-        "eu quis s"
+        "enim ipsum i"
     ],
     nationality=[
-        "aliqua"
+        "dodolore ve"
     ],
     role=[
-        "commod"
+        "volupta"
     ],
     slug=[
-        "vtsh0"
+        "tnv0"
     ]
 )
 sort=[
     ""
 ]
 search=SearchOverPlayers(
-    birthday="pariatur ame",
-    first_name="enim ullamco ir",
-    last_name="anim officia ",
-    name="enim ",
-    nationality="pariatur",
-    role="reprehenderit",
-    slug="4w8nq8778ly"
+    birthday="minim dolor qui",
+    first_name="enim sint proid",
+    last_name="exercitatio",
+    name="et sed proiden",
+    nationality="elit sit",
+    role="magna ",
+    slug="5ts"
 )
 page=1
 
@@ -154,13 +155,14 @@ Get a single player by ID or by slug
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
+from pandascore_client import PandascoreClient, Environment
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
+player_id_or_slug=9
 
 result = sdk.players.get_players_player_id_or_slug(player_id_or_slug=player_id_or_slug)
 
@@ -193,55 +195,56 @@ List leagues for the given player. Only leagues from the player's current videog
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverLeagues, RangeOverLeagues, SearchOverLeagues
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverLeagues, RangeOverLeagues, SearchOverLeagues
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
+player_id_or_slug=9
 filter=FilterOverLeagues(
     id_=[
         7
     ],
     modified_at=[
-        "ut cillum eu"
+        "offici"
     ],
     name=[
-        "ad offici"
+        "ad ut"
     ],
     slug=[
-        "w"
+        "p_"
     ],
     url=[
-        "sunt eiusmod "
+        "esse aliqu"
     ]
 )
 range=RangeOverLeagues(
     id_=[
-        6
+        10
     ],
     modified_at=[
-        "inci"
+        "ut nulla"
     ],
     name=[
-        "quis "
+        "ea mol"
     ],
     slug=[
-        "jt4vj"
+        "pmjvmw-84d"
     ],
     url=[
-        "Duisdo culpa ni"
+        "ea aliquip"
     ]
 )
 sort=[
     ""
 ]
 search=SearchOverLeagues(
-    name="veniam",
-    slug="7xkee40if",
-    url="Excepteur ea"
+    name="Duis dolo",
+    slug="-teig",
+    url="adipisicing"
 )
 page=1
 
@@ -284,78 +287,79 @@ List matches for the given player. Only matches from the player's current videog
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverMatches, RangeOverMatches, SearchOverMatches
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
+player_id_or_slug=9
 filter=FilterOverMatches(
     begin_at=[
-        "esse enim in"
+        "ani"
     ],
     detailed_stats=False,
     draw=False,
     end_at=[
-        "fugiat offic"
+        "ad ut com"
     ],
-    finished=True,
-    forfeit=True,
+    finished=False,
+    forfeit=False,
     future=True,
     id_=[
-        1
+        3
     ],
     league_id=[
-        5
+        9
     ],
     match_type=[
         "all_games_played"
     ],
     modified_at=[
-        "occa"
+        "aute sit"
     ],
     name=[
-        "non sed"
+        "exercitation te"
     ],
     not_started=False,
     number_of_games=[
-        9
+        8
     ],
     opponent_id=[
-        7
+        10
     ],
-    opponents_filled=False,
-    past=True,
+    opponents_filled=True,
+    past=False,
     running=True,
     scheduled_at=[
-        "es"
+        "esse aute n"
     ],
     serie_id=[
-        4
+        10
     ],
     slug=[
-        "ZBBpq-e"
+        "HiGqjR9"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        2
+        3
     ],
-    unscheduled=True,
+    unscheduled=False,
     videogame=[
         1
     ],
     videogame_title=[
-        10
+        6
     ],
     videogame_version=[
-        "0065.71"
+        "1125897835.45"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -363,7 +367,7 @@ filter=FilterOverMatches(
 )
 range=RangeOverMatches(
     begin_at=[
-        "sed occ"
+        "al"
     ],
     detailed_stats=[
         False
@@ -372,7 +376,7 @@ range=RangeOverMatches(
         False
     ],
     end_at=[
-        "aliq"
+        "do d"
     ],
     forfeit=[
         False
@@ -384,28 +388,28 @@ range=RangeOverMatches(
         "all_games_played"
     ],
     modified_at=[
-        "proident culpa"
+        "dolore ve"
     ],
     name=[
-        "in ad"
+        "dolore "
     ],
     number_of_games=[
-        1
+        10
     ],
     scheduled_at=[
-        "oc"
+        "nisi sed aut"
     ],
     slug=[
-        "8-ymAu4"
+        "bAjOZ"
     ],
     status=[
         "canceled"
     ],
     tournament_id=[
-        8
+        3
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -416,8 +420,8 @@ sort=[
 ]
 search=SearchOverMatches(
     match_type="all_games_played",
-    name="Excepteu",
-    slug="Ld3hli",
+    name="nulla veniam ",
+    slug="WfL1ZPQ",
     status="canceled",
     winner_type="Player"
 )
@@ -462,44 +466,45 @@ List series for the given player. Only series from the player's current videogam
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverSeries, RangeOverSeries, SearchOverSeries
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverSeries, RangeOverSeries, SearchOverSeries
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
+player_id_or_slug=9
 filter=FilterOverSeries(
     begin_at=[
-        "aute Exc"
+        "sunt cillum dol"
     ],
     end_at=[
-        "occaecat ut"
+        "dolor"
     ],
     id_=[
-        1
+        5
     ],
     league_id=[
-        5
+        7
     ],
     modified_at=[
-        "ut"
+        "deserunt"
     ],
     name=[
-        "non D"
+        "laboris"
     ],
     season=[
-        "idlaboris iru"
+        "proident"
     ],
     slug=[
-        "sshkoy8r"
+        "_9"
     ],
     videogame_title=[
-        5
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -510,31 +515,31 @@ filter=FilterOverSeries(
 )
 range=RangeOverSeries(
     begin_at=[
-        "cillum"
+        "sint c"
     ],
     end_at=[
-        "eiusmo"
+        "ex dolore tempo"
     ],
     id_=[
-        4
+        6
     ],
     league_id=[
-        5
+        6
     ],
     modified_at=[
-        "proident Ex"
+        "lab"
     ],
     name=[
-        "Lorem a"
+        "animea labore e"
     ],
     season=[
-        "deserunt i"
+        "ipsum i"
     ],
     slug=[
-        "yyk8h"
+        "8"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -547,9 +552,9 @@ sort=[
     ""
 ]
 search=SearchOverSeries(
-    name="ad amet",
-    season="Lorem",
-    slug="1xa",
+    name="fugia",
+    season="aute al",
+    slug="cc3u_",
     winner_type="Player"
 )
 page=1
@@ -593,50 +598,51 @@ List tournaments for the given player. Only tournaments from the player's curren
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverShortTournaments, RangeOverShortTournaments, SearchOverShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverShortTournaments, RangeOverShortTournaments, SearchOverShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
-player_id_or_slug=4
+player_id_or_slug=9
 filter=FilterOverShortTournaments(
     begin_at=[
-        "qui"
+        "pariat"
     ],
     detailed_stats=True,
     end_at=[
-        "mollit"
+        "eli"
     ],
-    has_bracket=True,
+    has_bracket=False,
     id_=[
-        5
+        4
     ],
-    live_supported=True,
+    live_supported=False,
     modified_at=[
-        "laborum"
+        "cillu"
     ],
     name=[
-        "estlaboris e"
+        "Excepteur do"
     ],
     prizepool=[
-        "labore"
+        "in ut veniam "
     ],
     serie_id=[
-        2
+        10
     ],
     slug=[
-        "bw"
+        "z160_"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        10
+        5
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -644,40 +650,40 @@ filter=FilterOverShortTournaments(
 )
 range=RangeOverShortTournaments(
     begin_at=[
-        "do proident ve"
+        "et"
     ],
     detailed_stats=[
-        False
+        True
     ],
     end_at=[
-        "adipisicin"
+        "commo"
     ],
     has_bracket=[
         False
     ],
     id_=[
-        2
+        1
     ],
     modified_at=[
-        "of"
+        "nul"
     ],
     name=[
-        "occaec"
+        "enim "
     ],
     prizepool=[
-        "labori"
+        "qui ull"
     ],
     serie_id=[
-        9
+        3
     ],
     slug=[
-        "jifeh"
+        "vyokv"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -687,9 +693,9 @@ sort=[
     ""
 ]
 search=SearchOverShortTournaments(
-    name="in amet",
-    prizepool="qui tempor",
-    slug="g",
+    name="sunt minim",
+    prizepool="utid magna es",
+    slug="50l9n",
     tier="a",
     winner_type="Player"
 )
@@ -707,3 +713,5 @@ result = sdk.players.get_players_player_id_or_slug_tournaments(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->

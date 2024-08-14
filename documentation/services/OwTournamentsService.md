@@ -34,49 +34,50 @@ List tournaments for the Overwatch videogame
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwShortTournaments(
     begin_at=[
-        "voluptate"
+        "nulla adipi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "non "
     ],
-    has_bracket=False,
+    has_bracket=True,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "non deserunt"
+        "nostrud"
     ],
     name=[
-        "Lorem"
+        "Excepteur "
     ],
     prizepool=[
-        "nostrud ipsum l"
+        "ut in conse"
     ],
     serie_id=[
-        1
+        6
     ],
     slug=[
-        "3hkwl9xeu"
+        "whv5t1by8yq"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        4
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -84,40 +85,40 @@ filter=FilterOverOwShortTournaments(
 )
 range=RangeOverOwShortTournaments(
     begin_at=[
-        "paria"
+        "e"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "ullamco d"
+        "est"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        5
+        3
     ],
     modified_at=[
-        "i"
+        "cupidatat "
     ],
     name=[
-        "culpa ut"
+        "ullamco null"
     ],
     prizepool=[
-        "in Ut"
+        "consequ"
     ],
     serie_id=[
-        10
+        7
     ],
     slug=[
-        "wc7_ps"
+        "9sb0udh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -127,9 +128,9 @@ sort=[
     ""
 ]
 search=SearchOverOwShortTournaments(
-    name="eu anim",
-    prizepool="Duis sed exerci",
-    slug="bpf03onlf",
+    name="elit ad velit i",
+    prizepool="velit",
+    slug="pd9o",
     tier="a",
     winner_type="Player"
 )
@@ -172,49 +173,50 @@ List past Overwatch tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwShortTournaments(
     begin_at=[
-        "voluptate"
+        "nulla adipi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "non "
     ],
-    has_bracket=False,
+    has_bracket=True,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "non deserunt"
+        "nostrud"
     ],
     name=[
-        "Lorem"
+        "Excepteur "
     ],
     prizepool=[
-        "nostrud ipsum l"
+        "ut in conse"
     ],
     serie_id=[
-        1
+        6
     ],
     slug=[
-        "3hkwl9xeu"
+        "whv5t1by8yq"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        4
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -222,40 +224,40 @@ filter=FilterOverOwShortTournaments(
 )
 range=RangeOverOwShortTournaments(
     begin_at=[
-        "paria"
+        "e"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "ullamco d"
+        "est"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        5
+        3
     ],
     modified_at=[
-        "i"
+        "cupidatat "
     ],
     name=[
-        "culpa ut"
+        "ullamco null"
     ],
     prizepool=[
-        "in Ut"
+        "consequ"
     ],
     serie_id=[
-        10
+        7
     ],
     slug=[
-        "wc7_ps"
+        "9sb0udh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -265,9 +267,9 @@ sort=[
     ""
 ]
 search=SearchOverOwShortTournaments(
-    name="eu anim",
-    prizepool="Duis sed exerci",
-    slug="bpf03onlf",
+    name="elit ad velit i",
+    prizepool="velit",
+    slug="pd9o",
     tier="a",
     winner_type="Player"
 )
@@ -310,49 +312,50 @@ List running Overwatch tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwShortTournaments(
     begin_at=[
-        "voluptate"
+        "nulla adipi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "non "
     ],
-    has_bracket=False,
+    has_bracket=True,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "non deserunt"
+        "nostrud"
     ],
     name=[
-        "Lorem"
+        "Excepteur "
     ],
     prizepool=[
-        "nostrud ipsum l"
+        "ut in conse"
     ],
     serie_id=[
-        1
+        6
     ],
     slug=[
-        "3hkwl9xeu"
+        "whv5t1by8yq"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        4
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -360,40 +363,40 @@ filter=FilterOverOwShortTournaments(
 )
 range=RangeOverOwShortTournaments(
     begin_at=[
-        "paria"
+        "e"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "ullamco d"
+        "est"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        5
+        3
     ],
     modified_at=[
-        "i"
+        "cupidatat "
     ],
     name=[
-        "culpa ut"
+        "ullamco null"
     ],
     prizepool=[
-        "in Ut"
+        "consequ"
     ],
     serie_id=[
-        10
+        7
     ],
     slug=[
-        "wc7_ps"
+        "9sb0udh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -403,9 +406,9 @@ sort=[
     ""
 ]
 search=SearchOverOwShortTournaments(
-    name="eu anim",
-    prizepool="Duis sed exerci",
-    slug="bpf03onlf",
+    name="elit ad velit i",
+    prizepool="velit",
+    slug="pd9o",
     tier="a",
     winner_type="Player"
 )
@@ -448,49 +451,50 @@ List upcoming Overwatch tournaments
 **Example Usage Code Snippet**
 
 ```python
-from pandascore import Pandascore, Environment
-from pandascore.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
+from pandascore_client import PandascoreClient, Environment
+from pandascore_client.models import FilterOverOwShortTournaments, RangeOverOwShortTournaments, SearchOverOwShortTournaments
 
-sdk = Pandascore(
+sdk = PandascoreClient(
     access_token="YOUR_ACCESS_TOKEN",
-    base_url=Environment.DEFAULT.value
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
 )
 filter=FilterOverOwShortTournaments(
     begin_at=[
-        "voluptate"
+        "nulla adipi"
     ],
     detailed_stats=True,
     end_at=[
-        "minim"
+        "non "
     ],
-    has_bracket=False,
+    has_bracket=True,
     id_=[
-        10
+        4
     ],
     live_supported=True,
     modified_at=[
-        "non deserunt"
+        "nostrud"
     ],
     name=[
-        "Lorem"
+        "Excepteur "
     ],
     prizepool=[
-        "nostrud ipsum l"
+        "ut in conse"
     ],
     serie_id=[
-        1
+        6
     ],
     slug=[
-        "3hkwl9xeu"
+        "whv5t1by8yq"
     ],
     tier=[
         "a"
     ],
     videogame_title=[
-        4
+        7
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -498,40 +502,40 @@ filter=FilterOverOwShortTournaments(
 )
 range=RangeOverOwShortTournaments(
     begin_at=[
-        "paria"
+        "e"
     ],
     detailed_stats=[
-        True
+        False
     ],
     end_at=[
-        "ullamco d"
+        "est"
     ],
     has_bracket=[
         True
     ],
     id_=[
-        5
+        3
     ],
     modified_at=[
-        "i"
+        "cupidatat "
     ],
     name=[
-        "culpa ut"
+        "ullamco null"
     ],
     prizepool=[
-        "in Ut"
+        "consequ"
     ],
     serie_id=[
-        10
+        7
     ],
     slug=[
-        "wc7_ps"
+        "9sb0udh"
     ],
     tier=[
         "a"
     ],
     winner_id=[
-        9
+        7
     ],
     winner_type=[
         "Player"
@@ -541,9 +545,9 @@ sort=[
     ""
 ]
 search=SearchOverOwShortTournaments(
-    name="eu anim",
-    prizepool="Duis sed exerci",
-    slug="bpf03onlf",
+    name="elit ad velit i",
+    prizepool="velit",
+    slug="pd9o",
     tier="a",
     winner_type="Player"
 )
@@ -560,3 +564,5 @@ result = sdk.ow_tournaments.get_ow_tournaments_upcoming(
 
 print(result)
 ```
+
+<!-- This file was generated by liblab | https://liblab.com/ -->
